@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Neurons | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-icon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                Tiny<span>Neurons</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="researchers.html" data-aos="fade-down" data-aos-delay="150">Researchers</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="200">Projects</a>
+                <a href="workshop.html" data-aos="fade-down" data-aos-delay="200">Seminar And Workshop</a>
+                <a href="#faq" data-aos="fade-down" data-aos-delay="250">Courses</a>
+                <button class="btn btn-primary" data-aos="fade-down" data-aos-delay="300">
+                    <span>Collaborate</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <div class="hero-bg-parallax" data-parallax="scroll" data-image-src="images/projects-bg.jpg"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Our Research Projects</h1>
+                <p class="subtitle">Innovative solutions powered by cutting-edge research</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Completed Projects -->
+    <section class="projects-section completed-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Completed Projects</h2>
+                <p class="section-subtitle">Successfully delivered research initiatives</p>
+            </div>
+        </div>
+        
+        <div class="projects-scroller" data-aos="fade-up" data-aos-delay="100">
+            <div class="projects-track">
+                <!-- Cards will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects -->
+    <section class="projects-section upcoming-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Upcoming Projects</h2>
+                <p class="section-subtitle">Exciting new research in development</p>
+            </div>
+        </div>
+        
+        <div class="projects-scroller" data-aos="fade-up" data-aos-delay="100">
+            <div class="projects-track">
+                <!-- Cards will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container glass-card">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+                <h2 id="modal-title">Project Title</h2>
+                <div class="modal-divider"></div>
+                <div class="modal-body">
+                    <p id="modal-description">Project description goes here...</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">
+                        <span>View Full Details</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Neurons | Workshops & Seminars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/workshop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-icon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                Tiny<span>Neurons</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="researchers.html">Researchers</a>
+                <a href="projects.html">Projects</a>
+                <a href="#faq" data-aos="fade-down" data-aos-delay="250">Courses</a>
+                <button class="btn btn-primary" data-aos="fade-down" data-aos-delay="350">
+                    <span>Collaborate With Us</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="researchers.html">Researchers</a>
+        <a href="projects.html">Projects</a>
+        <a href="workshops.html">Workshops</a>
+        <button class="btn btn-primary">
+            <span>Collaborate</span>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="workshops-hero">
+        <div class="hero-bg-parallax" data-parallax="scroll" data-image-src="images/workshops-bg.jpg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Workshops & Seminars</h1>
+                <p class="subtitle">Knowledge sharing and collaborative learning opportunities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="workshops-section upcoming-workshops">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p class="section-subtitle">Join our upcoming knowledge-sharing sessions</p>
+            </div>
+            
+            <div class="no-events">
+                <i class="fas fa-calendar-plus"></i>
+                <h3>No upcoming events scheduled</h3>
+                <p>Check back later for our upcoming workshops and seminars</p>
+                <button class="btn btn-outline">
+                    <span>Notify Me</span>
+                    <i class="fas fa-bell"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="workshops-section past-workshops">
+        <div class="container">
+            <div class="section-header">
+                <h2>Past Events</h2>
+                <p class="section-subtitle">Archive of our previous workshops and seminars</p>
+            </div>
+            
+            <div class="workshops-grid">
+                <!-- Event 1 -->
+                <div class="workshop-card">
+                    <div class="workshop-badge" data-type="workshop">Workshop</div>
+                    <div class="workshop-image">
+                        <img src="images/workshops/healthcare-ai.jpg" alt="AI in Healthcare">
+                    </div>
+                    <div class="workshop-content">
+                        <h3>AI in Healthcare – Innovation & Ethics</h3>
+                        <div class="workshop-meta">
+                            <span><i class="far fa-calendar"></i> May 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 3 hours</span>
+                        </div>
+                        <p class="workshop-description">
+                            Exploring the latest AI applications in healthcare while addressing ethical considerations.
+                        </p>
+                        <button class="btn btn-outline view-workshop" data-workshop="1">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="workshop-card">
+                    <div class="workshop-badge" data-type="seminar">Seminar</div>
+                    <div class="workshop-image">
+                        <img src="images/workshops/quantum-ml.jpg" alt="Quantum Machine Learning">
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Quantum Machine Learning Fundamentals</h3>
+                        <div class="workshop-meta">
+                            <span><i class="far fa-calendar"></i> Mar 22, 2023</span>
+                            <span><i class="far fa-clock"></i> 2.5 hours</span>
+                        </div>
+                        <p class="workshop-description">
+                            Introduction to quantum computing principles and their applications in machine learning.
+                        </p>
+                        <button class="btn btn-outline view-workshop" data-workshop="2">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="workshop-card">
+                    <div class="workshop-badge" data-type="workshop">Workshop</div>
+                    <div class="workshop-image">
+                        <img src="images/workshops/responsible-ai.jpg" alt="Responsible AI">
+                    </div>
+                    <div class="workshop-content">
+                        <h3>Responsible AI Development</h3>
+                        <div class="workshop-meta">
+                            <span><i class="far fa-calendar"></i> Jan 10, 2023</span>
+                            <span><i class="far fa-clock"></i> 7 hours</span>
+                        </div>
+                        <p class="workshop-description">
+                            Practical approaches to developing AI systems with fairness and transparency in mind.
+                        </p>
+                        <button class="btn btn-outline view-workshop" data-workshop="3">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Modal -->
+    <div class="workshop-modal" id="workshop-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-badge" id="modal-badge">Workshop</span>
+                    <span class="modal-date" id="modal-date">May 15, 2023</span>
+                </div>
+                <h2 id="modal-title">AI in Healthcare – Innovation & Ethics</h2>
+                <div class="modal-divider"></div>
+                <div class="modal-body">
+                    <div class="modal-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="modal-time">2:00 PM - 5:00 PM</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="modal-location">Online</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span id="modal-audience">Researchers, Medical Professionals</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>About This Event</h3>
+                        <p id="modal-description">
+                            Exploring the latest AI applications in healthcare while addressing ethical considerations and regulatory frameworks. This workshop featured case studies from leading hospitals and interactive discussions with domain experts.
+                        </p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Speakers</h3>
+                        <div class="speakers-grid" id="modal-speakers">
+                            <!-- Speakers will be added by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Event Highlights</h3>
+                        <ul id="modal-highlights">
+                            <!-- Highlights will be added by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Resources</h3>
+                        <div class="resources-grid" id="modal-resources">
+                            <!-- Resources will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">
+                        <span>View Full Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                        Tiny<span>Neurons</span>
+                    </a>
+                    <p>Advancing AI research through collaboration and innovation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Research</h3>
+                    <ul>
+                        <li><a href="researchers.html">Our Team</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="#">Publications</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Visitors</a></li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tiny Neurons Research Group. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/workshop.js"></script>
+</body>
+</html>

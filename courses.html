@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Neurons | Our Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-icon.png">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <img src="images/logo-icon.png" alt="Tiny Neurons">
+            </div>
+            <div class="loader-text">Loading Our Courses...</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                Tiny<span>Neurons</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="researchers.html" data-aos="fade-down" data-aos-delay="150">Researchers</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="200">Projects</a>
+                <a href="courses.html" data-aos="fade-down" data-aos-delay="250" class="active">Courses</a>
+                <a href="workshop.html" data-aos="fade-down" data-aos-delay="300">Workshops</a>
+                <a href="#contact" data-aos="fade-down" data-aos-delay="350">Contact</a>
+                <button class="btn btn-primary" data-aos="fade-down" data-aos-delay="400">
+                    <span>Join Us</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="researchers.html">Researchers</a>
+        <a href="projects.html">Projects</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-primary">
+            <span>Join Us</span>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="courses-hero">
+        <div class="hero-bg-parallax" data-parallax="scroll" data-image-src="images/courses-bg.jpg"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Learn With Us</h1>
+                <p class="subtitle">Cutting-edge courses designed by AI researchers for aspiring scientists and professionals</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" id="explore-courses">
+                        <span>Explore Courses</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="courses-intro">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Learn With Tiny Neurons?</h2>
+                <p class="section-subtitle">Our courses bridge the gap between academic research and practical applications</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research-Backed</h3>
+                    <p>All our courses are developed based on the latest research findings from our labs.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn directly from active researchers and industry practitioners.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Hands-On Projects</h3>
+                    <p>Apply your knowledge through practical projects with real-world datasets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section bg-light" id="courses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Course Offerings</h2>
+                <p class="section-subtitle">Browse our selection of specialized courses in AI and related fields</p>
+            </div>
+            
+            <div class="course-categories" data-aos="fade-up">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">All Courses</button>
+                    <button class="category-tab" data-category="ai">Artificial Intelligence</button>
+                    <button class="category-tab" data-category="ml">Machine Learning</button>
+                    <button class="category-tab" data-category="data">Data Science</button>
+                    <button class="category-tab" data-category="nlp">NLP</button>
+                    <button class="category-tab" data-category="cv">Computer Vision</button>
+                </div>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card" data-category="ai,ml" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="images/course-ml.jpg" alt="Machine Learning Fundamentals">
+                        <span class="course-level beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category ai">AI & ML</div>
+                        <h3>Machine Learning Fundamentals</h3>
+                        <p class="course-description">Learn the core concepts of machine learning and build your first predictive models.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$299</div>
+                            <button class="btn btn-outline view-details" data-course="1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card" data-category="nlp" data-aos="fade-up" data-aos-delay="150">
+                    <div class="course-image">
+                        <img src="images/course-nlp.jpg" alt="Natural Language Processing">
+                        <span class="course-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category nlp">NLP</div>
+                        <h3>Natural Language Processing</h3>
+                        <p class="course-description">Explore text processing, sentiment analysis, and transformer models.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$399</div>
+                            <button class="btn btn-outline view-details" data-course="2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card" data-category="cv" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="images/course-cv.jpg" alt="Computer Vision">
+                        <span class="course-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category cv">Computer Vision</div>
+                        <h3>Deep Learning for Computer Vision</h3>
+                        <p class="course-description">Master image classification, object detection, and segmentation techniques.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$399</div>
+                            <button class="btn btn-outline view-details" data-course="3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card" data-category="data" data-aos="fade-up" data-aos-delay="250">
+                    <div class="course-image">
+                        <img src="images/course-data.jpg" alt="Data Analysis">
+                        <span class="course-level beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category data">Data Science</div>
+                        <h3>Scientific Data Analysis</h3>
+                        <p class="course-description">Essential techniques for cleaning, analyzing, and visualizing research data.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$249</div>
+                            <button class="btn btn-outline view-details" data-course="4">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="course-card" data-category="ai,ml" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="images/course-advanced.jpg" alt="Advanced ML">
+                        <span class="course-level advanced">Advanced</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category ai">AI & ML</div>
+                        <h3>Advanced Machine Learning</h3>
+                        <p class="course-description">Dive deep into ensemble methods, neural networks, and model optimization.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$499</div>
+                            <button class="btn btn-outline view-details" data-course="5">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="course-card" data-category="ai,nlp" data-aos="fade-up" data-aos-delay="350">
+                    <div class="course-image">
+                        <img src="images/course-llm.jpg" alt="Large Language Models">
+                        <span class="course-level advanced">Advanced</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category nlp">NLP</div>
+                        <h3>Large Language Models</h3>
+                        <p class="course-description">Understand, fine-tune, and deploy state-of-the-art language models.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">$449</div>
+                            <button class="btn btn-outline view-details" data-course="6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="courses-testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Students Say</h2>
+                <p class="section-subtitle">Hear from professionals who have taken our courses</p>
+            </div>
+            
+            <div class="testimonial-slider" data-aos="fade-up">
+                <div class="testimonial-track">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">The Machine Learning Fundamentals course provided exactly the structured introduction I needed. The hands-on projects helped me immediately apply concepts to my research work.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Rodriguez" class="author-img">
+                                <div class="author-info">
+                                    <h4>Maria Rodriguez</h4>
+                                    <p>PhD Candidate, Neuroscience</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">As a professional looking to transition into AI, the Advanced ML course gave me both the theoretical foundation and practical skills I needed to land a job in the field.</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James Wilson" class="author-img">
+                                <div class="author-info">
+                                    <h4>James Wilson</h4>
+                                    <p>Data Scientist</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="btn-circle slider-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <button class="btn-circle slider-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="courses-cta">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Advance Your Skills?</h2>
+                <p>Join our community of learners and gain practical, research-backed knowledge from AI experts.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <span>Browse All Courses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <span>Contact Our Advisors</span>
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+                <div class="cta-bonus">
+                    <i class="fas fa-gift"></i>
+                    <span>Register for two courses and get 15% off your total!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Modal -->
+    <div class="course-modal" id="course-modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img id="modal-course-image" src="" alt="Course">
+                </div>
+                <div class="modal-title">
+                    <h2 id="modal-course-title"></h2>
+                    <div class="modal-meta">
+                        <span id="modal-course-category"></span>
+                        <span id="modal-course-level"></span>
+                        <span id="modal-course-duration"></span>
+                        <span id="modal-course-mode"></span>
+                    </div>
+                    <div class="modal-price" id="modal-course-price"></div>
+                </div>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>About This Course</h3>
+                    <p id="modal-course-description"></p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>Course Details</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Start Date</h4>
+                                <p id="modal-course-start-date"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>Instructor</h4>
+                                <p id="modal-course-instructor"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <div>
+                                <h4>Prerequisites</h4>
+                                <p id="modal-course-prerequisites"></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Certificate</h4>
+                                <p id="modal-course-certificate"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>Syllabus</h3>
+                    <ul id="modal-course-syllabus"></ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>What You'll Gain</h3>
+                    <ul id="modal-course-benefits"></ul>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn btn-primary btn-large">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                        Tiny<span>Neurons</span>
+                    </a>
+                    <p>Advancing AI research through collaboration and innovation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">NLP</a></li>
+                        <li><a href="#">Computer Vision</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tiny Neurons Research Group. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>
