@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Floating elements animation
-    const floatingElements = document.querySelectorAll('.feature-icon, .testimonial-content, .logo-icon');
+    const floatingElements = document.querySelectorAll('.feature-icon, .testimonial-content');
     floatingElements.forEach(el => {
         el.style.animation = `float 4s ease-in-out infinite`;
         el.style.animationDelay = `${Math.random() * 2}s`;

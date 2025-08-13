@@ -1,0 +1,1130 @@
+/* About Page Specific Styles */
+
+/* Hero Section */
+.about-hero {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7ff 0%, #e8ecff 100%);
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 100px 0;
+    background: white;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-content {
+    padding-right: 20px;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: var(--gray-color);
+}
+
+.story-text p:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-color), rgba(108, 99, 255, 0.2));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-year {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.timeline-content p {
+    color: var(--gray-color);
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 100px 0;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.mission-card,
+.vision-card {
+    padding: 50px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.mission-card::before,
+.vision-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
+
+.mission-card:hover::before,
+.vision-card:hover::before {
+    opacity: 1;
+}
+
+.mission-card:hover h2,
+.mission-card:hover p,
+.vision-card:hover h2,
+.vision-card:hover p {
+    color: white;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover .card-icon,
+.vision-card:hover .card-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: scale(1.1) rotate(15deg);
+}
+
+.mission-card h2,
+.vision-card h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.mission-card p,
+.vision-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+/* Core Values Section */
+.core-values {
+    padding: 100px 0;
+    background: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
+
+.value-card:hover::before {
+    opacity: 1;
+}
+
+.value-card:hover h3,
+.value-card:hover p {
+    color: white;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: scale(1.1) rotate(15deg);
+}
+
+.value-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.value-card p {
+    line-height: 1.7;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+/* Research Philosophy Section */
+.research-philosophy {
+    padding: 100px 0;
+}
+
+.philosophy-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.philosophy-grid {
+    margin-top: 50px;
+}
+
+.philosophy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.philosophy-item:last-child {
+    margin-bottom: 0;
+}
+
+.philosophy-number {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 5px 20px rgba(108, 99, 255, 0.3);
+    position: relative;
+}
+
+.philosophy-number::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.philosophy-item:hover .philosophy-number::after {
+    opacity: 1;
+}
+
+.philosophy-content-item {
+    flex: 1;
+}
+
+.philosophy-content-item h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.philosophy-content-item p {
+    color: var(--gray-color);
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 100px 0;
+    background: white;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.achievement-card {
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    color: white;
+}
+
+.achievement-card:hover::before {
+    opacity: 1;
+}
+
+.achievement-card:hover h3,
+.achievement-card:hover p {
+    color: white;
+}
+
+.achievement-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: scale(1.1) rotate(15deg);
+}
+
+.achievement-count {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-count {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.achievement-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.achievement-card p {
+    color: var(--gray-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 100px 0;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.facility-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.facility-image {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.facility-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.facility-card:hover .facility-image img {
+    transform: scale(1.1);
+}
+
+.facility-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(108, 99, 255, 0.8), rgba(255, 3, 62, 0.6));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.facility-card:hover .facility-image::after {
+    opacity: 1;
+}
+
+.facility-content {
+    padding: 30px;
+}
+
+.facility-content h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.facility-content p {
+    color: var(--gray-color);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Join CTA Section */
+.join-cta {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.cta-content {
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Parallax Effects */
+.story-visual,
+.timeline {
+    position: relative;
+}
+
+.story-visual::before,
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.story-visual::before {
+    top: -50px;
+    right: -50px;
+}
+
+.timeline::before {
+    top: 50px;
+    left: -50px;
+    animation-delay: -3s;
+}
+
+/* Loading and Interactive States */
+.about-card.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.achievement-card .achievement-count {
+    transition: all 0.5s ease;
+}
+
+.achievement-card.counting .achievement-count {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+/* Accessibility Enhancements */
+.value-card:focus,
+.achievement-card:focus,
+.facility-card:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .timeline-content,
+    .philosophy-item,
+    .facility-card,
+    .value-card,
+    .achievement-card {
+        transition: none;
+    }
+    
+    .facility-image img {
+        transition: none;
+    }
+    
+    .value-icon,
+    .achievement-icon,
+    .card-icon {
+        transition: none;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .story-grid {
+        gap: 40px;
+    }
+    
+    .story-content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .philosophy-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .philosophy-number {
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+    
+    .our-story,
+    .mission-vision,
+    .core-values,
+    .research-philosophy,
+    .achievements,
+    .facilities,
+    .join-cta {
+        padding: 80px 0;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline::before {
+        left: 15px;
+        width: 2px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-year {
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .mission-card,
+    .vision-card {
+        padding: 40px 30px;
+    }
+    
+    .card-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .philosophy-item {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .philosophy-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-content {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .values-grid,
+    .achievements-grid,
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card,
+    .achievement-card {
+        padding: 30px 20px;
+    }
+    
+    .facility-content {
+        padding: 25px 20px;
+    }
+    
+    .story-text p {
+        font-size: 1rem;
+    }
+    
+    .mission-card h2,
+    .vision-card h2 {
+        font-size: 1.75rem;
+    }
+    
+    .achievement-count {
+        font-size: 2.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .join-cta {
+        display: none;
+    }
+    
+    .facility-card,
+    .value-card,
+    .achievement-card,
+    .mission-card,
+    .vision-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .timeline-content {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .philosophy-item {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .value-card,
+    .achievement-card,
+    .facility-card,
+    .mission-card,
+    .vision-card {
+        border: 2px solid var(--dark-color);
+    }
+    
+    .timeline-content {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .philosophy-item {
+        border: 2px solid var(--dark-color);
+    }
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+    .story-text p,
+    .facility-content p,
+    .value-card p,
+    .achievement-card p,
+    .philosophy-content-item p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .timeline-content,
+    .philosophy-item,
+    .facility-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Custom Scrollbar */
+.timeline::-webkit-scrollbar {
+    width: 8px;
+}
+
+.timeline::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* Keyframe Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Counter Animation */
+.achievement-count[data-count] {
+    animation: countUp 0.8s ease-out;
+}
+
+/* Intersection Observer Animations */
+.story-content.animate-in,
+.story-visual.animate-in,
+.mission-card.animate-in,
+.vision-card.animate-in,
+.value-card.animate-in,
+.achievement-card.animate-in,
+.facility-card.animate-in,
+.philosophy-item.animate-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Timeline Item Animations */
+.timeline-item.animate-in {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Philosophy Item Animations */
+.philosophy-item.animate-in {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stagger Animation Delays */
+.value-card:nth-child(1) { animation-delay: 0.1s; }
+.value-card:nth-child(2) { animation-delay: 0.2s; }
+.value-card:nth-child(3) { animation-delay: 0.3s; }
+.value-card:nth-child(4) { animation-delay: 0.4s; }
+.value-card:nth-child(5) { animation-delay: 0.5s; }
+.value-card:nth-child(6) { animation-delay: 0.6s; }
+
+.achievement-card:nth-child(1) { animation-delay: 0.1s; }
+.achievement-card:nth-child(2) { animation-delay: 0.2s; }
+.achievement-card:nth-child(3) { animation-delay: 0.3s; }
+.achievement-card:nth-child(4) { animation-delay: 0.4s; }
+
+.facility-card:nth-child(1) { animation-delay: 0.1s; }
+.facility-card:nth-child(2) { animation-delay: 0.2s; }
+.facility-card:nth-child(3) { animation-delay: 0.3s; }
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.timeline-item:nth-child(5) { animation-delay: 0.5s; }
+
+.philosophy-item:nth-child(1) { animation-delay: 0.1s; }
+.philosophy-item:nth-child(2) { animation-delay: 0.2s; }
+.philosophy-item:nth-child(3) { animation-delay: 0.3s; }
+.philosophy-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Loading States */
+.section-loading {
+    position: relative;
+}
+
+.section-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--light-gray);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Interactive Elements */
+.timeline-item:hover .timeline-year {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.4);
+}
+
+.philosophy-number {
+    transition: all 0.3s ease;
+}
+
+.philosophy-item:hover .philosophy-number {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.4);
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--dark-color) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Focus States */
+.timeline-content:focus,
+.philosophy-item:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* Enhanced Mobile Interactions */
+@media (max-width: 768px) {
+    .value-card:active,
+    .achievement-card:active,
+    .facility-card:active {
+        transform: translateY(-5px);
+    }
+    
+    .timeline-content:active {
+        transform: translateX(5px);
+    }
+    
+    .philosophy-item:active {
+        transform: scale(0.98);
+    }
+}

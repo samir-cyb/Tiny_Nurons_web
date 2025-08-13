@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Neurons | Publications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-icon.png">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <img src="images/logo-icon.png" alt="Tiny Neurons">
+            </div>
+            <div class="loader-text">Loading Publications...</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <img src="images/logo-icon.png" alt="Logo" class="logo-icon">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="150">About</a>
+                <a href="researchers.html" data-aos="fade-down" data-aos-delay="200">Researchers</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="250">Projects</a>
+                <a href="workshop.html" data-aos="fade-down" data-aos-delay="300">Workshops</a>
+                <a href="courses.html" data-aos="fade-down" data-aos-delay="350">Courses</a>
+                <a href="publications.html" data-aos="fade-down" data-aos-delay="400" class="active">Publications</a>
+                <a href="contact.html" data-aos="fade-down" data-aos-delay="450">Contact</a>
+                <button class="btn btn-primary" data-aos="fade-down" data-aos-delay="450">
+                    <span>Collaborate</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="researchers.html">Researchers</a>
+        <a href="projects.html">Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="courses.html">Courses</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+        <button class="btn btn-primary">
+            <span>Collaborate</span>
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="publications-hero">
+        <div class="hero-bg-parallax" data-parallax="scroll" data-image-src="images/publications-bg.jpg"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Our Publications</h1>
+                <p class="subtitle">Explore our research contributions to the scientific community</p>
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-count="127">0</div>
+                        <div class="stat-label">Total Papers</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Journal Articles</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-count="2847">0</div>
+                        <div class="stat-label">Total Citations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Filters -->
+    <section class="publications-filters section">
+        <div class="container">
+            <div class="filters-container" data-aos="fade-up">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Publications</button>
+                    <button class="filter-tab" data-filter="journal">Journal Articles</button>
+                    <button class="filter-tab" data-filter="conference">Conference Papers</button>
+                    <button class="filter-tab" data-filter="workshop">Workshop Papers</button>
+                    <button class="filter-tab" data-filter="preprint">Preprints</button>
+                </div>
+                
+                <div class="search-sort">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search publications..." id="publication-search">
+                    </div>
+                    <select class="sort-select" id="sort-publications">
+                        <option value="year-desc">Newest First</option>
+                        <option value="year-asc">Oldest First</option>
+                        <option value="citations-desc">Most Cited</option>
+                        <option value="title-asc">Title A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Publications -->
+    <section class="featured-publications section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Publications</h2>
+                <p class="section-subtitle">Our most impactful research contributions</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-publication glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="publication-badge featured">
+                        <i class="fas fa-star"></i>
+                        <span>Featured</span>
+                    </div>
+                    <div class="publication-header">
+                        <h3>Attention Mechanisms in Transformer Networks for Medical Image Analysis</h3>
+                        <p class="authors">Smith, J., Chen, S., Johnson, M., et al.</p>
+                        <div class="publication-meta">
+                            <span class="venue">Nature Machine Intelligence</span>
+                            <span class="year">2023</span>
+                            <span class="citations">
+                                <i class="fas fa-quote-right"></i>
+                                142 citations
+                            </span>
+                        </div>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>We present a novel attention mechanism specifically designed for medical image analysis, demonstrating significant improvements in diagnostic accuracy across multiple imaging modalities including MRI, CT, and X-ray datasets.</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-file-pdf"></i>
+                            PDF
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-database"></i>
+                            Dataset
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="featured-publication glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="publication-badge featured">
+                        <i class="fas fa-star"></i>
+                        <span>Featured</span>
+                    </div>
+                    <div class="publication-header">
+                        <h3>Federated Learning for Privacy-Preserving Healthcare Analytics</h3>
+                        <p class="authors">Rodriguez, E., Kim, D., Patel, P., et al.</p>
+                        <div class="publication-meta">
+                            <span class="venue">IEEE TPAMI</span>
+                            <span class="year">2023</span>
+                            <span class="citations">
+                                <i class="fas fa-quote-right"></i>
+                                89 citations
+                            </span>
+                        </div>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>A comprehensive framework for federated learning in healthcare that preserves patient privacy while enabling collaborative model training across multiple institutions, validated on real-world clinical datasets.</p>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-file-pdf"></i>
+                            PDF
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-play-circle"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Publications -->
+    <section class="all-publications section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>All Publications</h2>
+                <p class="section-subtitle">Complete list of our research output</p>
+            </div>
+            
+            <div class="publications-list" id="publications-container">
+                <!-- Publications will be loaded by JavaScript -->
+            </div>
+            
+            <div class="pagination" data-aos="fade-up">
+                <button class="pagination-btn" id="prev-page" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                <div class="pagination-info">
+                    <span id="page-info">Page 1 of 5</span>
+                </div>
+                <button class="pagination-btn" id="next-page">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Metrics -->
+    <section class="research-metrics section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Research Impact</h2>
+                <p class="section-subtitle">Measuring our contribution to the scientific community</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="metric-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="metric-value" data-count="24">0</div>
+                    <div class="metric-label">H-Index</div>
+                </div>
+                
+                <div class="metric-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="metric-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="metric-value" data-count="7">0</div>
+                    <div class="metric-label">Best Paper Awards</div>
+                </div>
+                
+                <div class="metric-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="metric-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="metric-value" data-count="45">0</div>
+                    <div class="metric-label">Countries Collaborated</div>
+                </div>
+                
+                <div class="metric-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="metric-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="metric-value" data-count="156">0</div>
+                    <div class="metric-label">Co-authors</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="publications-cta section">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Collaborate With Us</h2>
+                <p>Interested in collaborating on cutting-edge AI research? We're always looking for new partnerships and joint research opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <span>Start Collaboration</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary btn-large">
+                        <span>Subscribe to Updates</span>
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Detail Modal -->
+    <div class="publication-modal" id="publication-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container glass-card">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-badge" id="modal-publication-type">Journal Article</span>
+                    <h2 id="modal-publication-title">Publication Title</h2>
+                    <p class="modal-authors" id="modal-publication-authors">Authors</p>
+                    <div class="modal-meta">
+                        <span id="modal-publication-venue">Venue</span>
+                        <span id="modal-publication-year">2023</span>
+                        <span id="modal-publication-citations">
+                            <i class="fas fa-quote-right"></i>
+                            <span id="modal-citation-count">0</span> citations
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-divider"></div>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h3>Abstract</h3>
+                        <p id="modal-publication-abstract">Publication abstract will be displayed here...</p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Key Contributions</h3>
+                        <ul id="modal-publication-contributions">
+                            <!-- Contributions will be added by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Resources</h3>
+                        <div class="resource-links" id="modal-publication-resources">
+                            <!-- Resource links will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">
+                        <span>Download PDF</span>
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button class="btn btn-outline">
+                        <span>Cite This Paper</span>
+                        <i class="fas fa-quote-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-icon.png" alt="Tiny Neurons" class="logo-icon">
+                        Tiny<span>Neurons</span>
+                    </a>
+                    <p>Advancing AI research through collaboration and innovation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Research</h3>
+                    <ul>
+                        <li><a href="researchers.html">Our Team</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="workshop.html">Workshops</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Visitors</a></li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tiny Neurons Research Group. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>
