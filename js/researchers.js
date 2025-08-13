@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Researcher data
     const researchers = {
         1: {
-            name: "Dr. Jonathan Smith",
-            image: "https://randomuser.me/api/portraits/men/32.jpg",
-            expertise: "Professor of AI & Machine Learning",
+            name: "Fazlay Rabby",
+            image: "images/Fazlay_Rabby.png",
+            expertise: "Iot | Tiny ML | Computer Vision",
             about: "Dr. Smith leads our AI research initiatives with over 15 years of experience in machine learning algorithms. His work focuses on developing novel approaches to deep learning that improve model interpretability.",
             projects: [
                 "Interpretable AI Models for Healthcare",
@@ -26,9 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Smith, J. (2020). 'Advances in Neural Networks'. ML Quarterly."
             ],
             education: [
-                "PhD in Computer Science, MIT",
-                "MSc in Artificial Intelligence, Stanford",
-                "BSc in Mathematics, Cambridge"
+                "BSc in EEE, ULAB",
             ]
         },
         2: {
