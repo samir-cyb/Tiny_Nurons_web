@@ -479,7 +479,7 @@
 }
 
 .facility-card {
-    background: white;
+    background: rgb(211, 211, 211);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-md);

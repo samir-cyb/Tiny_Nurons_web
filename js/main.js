@@ -286,3 +286,16 @@ slider.addEventListener('mouseleave', resetInterval);
 
 // Initialize first slide
 goToSlide(0);
+
+// Highlight current page in navigation
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href');
+    if (linkHref === currentPage || 
+        (currentPage === 'index.html' && linkHref === '/') || 
+        (currentPage === '' && linkHref === 'index.html')) {
+        link.classList.add('active');
+    }
+});
