@@ -14,122 +14,81 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Fazlay Rabby",
             image: "images/Fazlay_Rabby.png",
             expertise: "Iot | Tiny ML | Computer Vision",
-            about: "Dr. Smith leads our AI research initiatives with over 15 years of experience in machine learning algorithms. His work focuses on developing novel approaches to deep learning that improve model interpretability.",
-            projects: [
-                "Interpretable AI Models for Healthcare",
-                "Self-Learning Neural Networks",
-                "Ethical AI Framework Development"
-            ],
+            about: "Fazlay Rabby leads our AI research initiatives with over 3 years of experience in machine learning algorithms.",
             publications: [
-                "Smith, J. et al. (2022). 'Interpretable Deep Learning Models'. Nature AI.",
-                "Smith, J. & Chen, S. (2021). 'Ethical Considerations in AI'. AI Ethics Journal.",
-                "Smith, J. (2020). 'Advances in Neural Networks'. ML Quarterly."
+                "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Datasets (2025 9th International Conference on Electrical, Electronics, and Information Engineering).",
+                "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings.(Qpain 2025)",
             ],
             education: [
-                "BSc in EEE, ULAB",
+                "BSc in Electrical and Electronic Engineering, University of Liberal Arts Bangladesh",
             ]
         },
         2: {
-            name: "Dr. Sarah Chen",
+            name: "Md. Sajid Hasan",
             image: "https://randomuser.me/api/portraits/women/45.jpg",
-            expertise: "Associate Professor of Neural Networks",
-            about: "Dr. Chen specializes in neural network architectures and their applications in natural language processing. Her current research explores transformer models for low-resource languages.",
-            projects: [
-                "Multilingual NLP for Indigenous Languages",
-                "Efficient Transformer Architectures",
-                "AI for Language Preservation"
-            ],
+            expertise: "Renewable Energy | Artificial Intelligence | Machine Learning | Semiconductors | Energy Management",
+            about: "",
             publications: [
-                "Chen, S. (2023). 'Transformers for Low-Resource Languages'. ACL.",
-                "Chen, S. & Lee, M. (2022). 'Neural Approaches to Syntax'. Computational Linguistics.",
-                "Chen, S. et al. (2021). 'Cross-Lingual Transfer Learning'. NAACL."
+                "A. Jawad, Md. S. Hasan, Md. F. I. Faruqui, and N.-A.- Masood, “Small-scale floating photovoltaic systems in university campus: A pathway to achieving SDG 7 goals in Bangladesh,” Energy Conversion and Management, vol. 297, p. 117722, Dec. 2023, doi: 10.1016/j.enconman.2023.117722. [IF: 10.4, Q1]",
+                "M. A. I. Rafi, Md. S. Hassan, I.-U. Rashid, M. M. Hasan, J. A. Chowdhury, M. R. Sohan, N. A. Jahan, and M. M. Hossain, “Techno-Economic and Environmental Analysis of Solar PV System at Sher-e-Bangla National Cricket Stadium: a Comprehensive Case Study,” IEEE Access, vol. 13, pp. 52658–52682, 2025, doi: https://doi.org/10.1109/access.2025.3553636 [IF:3.4, Q1]",
+                "Md. S. Hasan and A. Jawad, “Clean Hydrogen Production from Floating Photovoltaics: A Case Study in Dhanmondi Lake, Dhaka,” in 2023 10th IEEE International Conference on Power Systems (ICPS), pp. 1–6, Dec. 2023, doi: https://doi.org/10.1109/icps60393.2023.10428710."
             ],
             education: [
-                "PhD in Computational Linguistics, Carnegie Mellon",
-                "MSc in Computer Science, University of Toronto",
-                "BA in Linguistics, Harvard"
+                "BSc in Electrical and Electronic Engineering, University of Liberal Arts Bangladesh",
             ]
         },
         3: {
-            name: "Dr. Michael Johnson",
-            image: "https://randomuser.me/api/portraits/men/67.jpg",
-            expertise: "Assistant Professor of Computer Vision",
-            about: "Dr. Johnson's research focuses on computer vision applications in medical imaging and autonomous systems. He develops novel techniques for image segmentation and 3D reconstruction.",
-            projects: [
-                "AI-Assisted Medical Diagnosis",
-                "Real-Time 3D Scene Understanding",
-                "Robust Vision for Autonomous Vehicles"
-            ],
+            name: "Md. Hridoy Hossain",
+            image: "images/Md._Hridoy_Hossain.png",
+            expertise: "AI | ML | LLM",
+            about: "",
             publications: [
-                "Johnson, M. et al. (2023). 'Deep Learning for Medical Imaging'. Medical AI Journal.",
-                "Johnson, M. (2022). '3D Reconstruction from Single Images'. CVPR.",
-                "Johnson, M. & Patel, R. (2021). 'Vision for Autonomous Systems'. Robotics Today."
+                "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings (Accepted in IEEE QPAIN 2025)",
+                "Scalable Hand Gesture Recognition from SEMG Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset (Submitted)",
+                "Scalable SEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control (Submitted)",
+                "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings (Submitted)",
+                "Real-Time Brain Tumor Localization and Classification Using YOLOv1l and MONAI MedNeXt (Submitted)",
             ],
             education: [
-                "PhD in Computer Vision, ETH Zurich",
-                "MSc in Robotics, University of Pennsylvania",
-                "BSc in Electrical Engineering, Georgia Tech"
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ]
         },
         4: {
-            name: "Emily Rodriguez",
-            image: "https://randomuser.me/api/portraits/women/22.jpg",
-            expertise: "PhD Candidate - Natural Language Processing",
-            about: "Emily's doctoral research investigates bias mitigation in large language models. She develops techniques to identify and reduce harmful biases in model outputs.",
-            projects: [
-                "Bias Detection in Language Models",
-                "Fairness Metrics for NLP",
-                "Debiasing Techniques Evaluation"
-            ],
+            name: "Shaikh Radwan Ahmed Ratul",
+            image: "images/ratul.png",
+            expertise: "Computer Vision | Robotics",
+            about: "",
             publications: [
-                "Rodriguez, E. & Smith, J. (2023). 'Measuring Bias in GPT Models'. ACL.",
-                "Rodriguez, E. (2022). 'Approaches to Model Debiasing'. EMNLP.",
-                "Rodriguez, E. et al. (2021). 'Bias in Pretrained Embeddings'. NAACL."
+                "An Improved Interpretable Transformer Based Approach for Identifying Kidney Abnormalities (2024 5th International Conference on Sustainable Technologies for Industry 5.0, IEEE)",
+                "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML"
             ],
             education: [
-                "PhD Candidate in Computer Science (Current)",
-                "MSc in AI, University of Washington",
-                "BA in Computer Science, UC Berkeley"
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ]
         },
         5: {
-            name: "David Kim",
-            image: "https://randomuser.me/api/portraits/men/28.jpg",
-            expertise: "MSc Student - Robotics and AI",
-            about: "David's research combines reinforcement learning with robotic control systems. He focuses on developing adaptive learning algorithms for dynamic environments.",
-            projects: [
-                "Reinforcement Learning for Robotic Manipulation",
-                "Sim-to-Real Transfer Learning",
-                "Multi-Agent Robotic Systems"
-            ],
+            name: "Redwan Ahamad Samir",
+            image: "images/samir.png",
+            expertise: "AI/ML Engineer | Computer Vision",
+            about: "",
             publications: [
-                "Kim, D. & Johnson, M. (2023). 'RL for Robotic Control'. ICRA.",
-                "Kim, D. (2022). 'Adaptive Learning in Robotics'. Robotics and Automation Letters."
+                "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings (Submitted)",
+                "Scalable SEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control (Submitted)",
             ],
             education: [
-                "MSc in Robotics (Current)",
-                "BSc in Mechanical Engineering, MIT"
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ]
         },
         6: {
-            name: "Priya Patel",
-            image: "https://randomuser.me/api/portraits/women/33.jpg",
-            expertise: "PhD Candidate - AI Ethics",
-            about: "Priya's research examines the societal impacts of AI systems, with a focus on governance frameworks and policy recommendations for responsible AI development.",
-            projects: [
-                "AI Governance Models",
-                "Ethical Impact Assessments",
-                "Public Perception of AI"
-            ],
+            name: "Bahadur Zaman Shezan",
+            image: "images/bahadur.png",
+            expertise: "AI | ML",
+            about: "",
             publications: [
-                "Patel, P. & Chen, S. (2023). 'Governance for AI Systems'. AI & Society.",
-                "Patel, P. (2022). 'Ethical Frameworks in Practice'. Ethics of Technology Journal.",
-                "Patel, P. et al. (2021). 'Public Trust in AI'. Technology Policy Review."
+                "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML"
             ],
             education: [
-                "PhD Candidate in Ethics & Technology (Current)",
-                "MA in Philosophy, Oxford",
-                "BA in Political Science, Columbia"
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ]
         }
     };
@@ -152,13 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('modal-researcher-about').textContent = researcher.about;
             
             // Populate projects
-            const projectsList = document.getElementById('modal-researcher-projects');
-            projectsList.innerHTML = '';
-            researcher.projects.forEach(project => {
-                const li = document.createElement('li');
-                li.textContent = project;
-                projectsList.appendChild(li);
-            });
+            // const projectsList = document.getElementById('modal-researcher-projects');
+            // projectsList.innerHTML = '';
+            // researcher.projects.forEach(project => {
+            //     const li = document.createElement('li');
+            //     li.textContent = project;
+            //     projectsList.appendChild(li);
+            // });
             
             // Populate publications
             const publicationsList = document.getElementById('modal-researcher-publications');
