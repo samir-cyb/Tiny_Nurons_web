@@ -70,11 +70,23 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Redwan Ahamad Samir",
             image: "images/samir.png",
             expertise: "AI/ML Engineer | Computer Vision",
-            about: "",
+            about: "Motivated and curious Computer Science And Engineering undergraduate with a deep interest in AI and computer vision. Adept in a wide range of programming languages and frameworks. Eager to apply and grow technical and analytical skills in a challenging, growth-oriented role within a tech-forward company.",
+
             publications: [
                 "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings (Submitted)",
                 "Scalable SEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control (Submitted)",
             ],
+
+            skills: [
+                " Languages: C, C++, C#, Python, Java, Dart, JavaScript",
+                " Frameworks: TensorFlow, PyTorch, OpenCV, keras, Flutter, Djanongo",
+                " Machine Learning & Deep Learning: Regression, Classification, CNNs, Transfer Learning, Yolo models",
+                " Tools & Technologies: Git, Docker, Jupyter Notebook, VS Code, Android Studio",
+                " Databases: MySQL, MongoDB, Firebase",
+                " Operating Systems: Windows, Linux, MacOS",
+                " Other Skills: Problem Solving, Data Structures and Algorithms, Agile Methodologies, Team Collaboration"
+            ],
+
             education: [
                 "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ]
@@ -98,50 +110,59 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalClose = document.querySelector('.modal-close');
     const viewProfileButtons = document.querySelectorAll('.view-profile');
 
-    viewProfileButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const researcherId = this.getAttribute('data-researcher');
-            const researcher = researchers[researcherId];
-            
-            // Populate modal
-            document.getElementById('modal-researcher-name').textContent = researcher.name;
-            document.getElementById('modal-researcher-image').src = researcher.image;
-            document.getElementById('modal-researcher-image').alt = researcher.name;
-            document.getElementById('modal-researcher-expertise').textContent = researcher.expertise;
-            document.getElementById('modal-researcher-about').textContent = researcher.about;
-            
-            // Populate projects
-            // const projectsList = document.getElementById('modal-researcher-projects');
-            // projectsList.innerHTML = '';
-            // researcher.projects.forEach(project => {
-            //     const li = document.createElement('li');
-            //     li.textContent = project;
-            //     projectsList.appendChild(li);
-            // });
-            
-            // Populate publications
-            const publicationsList = document.getElementById('modal-researcher-publications');
-            publicationsList.innerHTML = '';
-            researcher.publications.forEach(pub => {
-                const li = document.createElement('li');
-                li.textContent = pub;
-                publicationsList.appendChild(li);
-            });
-            
-            // Populate education
-            const educationList = document.getElementById('modal-researcher-education');
-            educationList.innerHTML = '';
-            researcher.education.forEach(edu => {
-                const li = document.createElement('li');
-                li.textContent = edu;
-                educationList.appendChild(li);
-            });
-            
-            // Show modal
-            modal.classList.add('active');
-            document.body.classList.add('no-scroll');
+   viewProfileButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const researcherId = this.getAttribute('data-researcher');
+        const researcher = researchers[researcherId];
+        
+        // Populate modal
+        document.getElementById('modal-researcher-name').textContent = researcher.name;
+        document.getElementById('modal-researcher-image').src = researcher.image;
+        document.getElementById('modal-researcher-image').alt = researcher.name;
+        document.getElementById('modal-researcher-expertise').textContent = researcher.expertise;
+        document.getElementById('modal-researcher-about').textContent = researcher.about;
+        
+        // Populate publications
+        const publicationsList = document.getElementById('modal-researcher-publications');
+        publicationsList.innerHTML = '';
+        researcher.publications.forEach(pub => {
+            const li = document.createElement('li');
+            li.textContent = pub;
+            publicationsList.appendChild(li);
         });
+        
+        // Populate education
+        const educationList = document.getElementById('modal-researcher-education');
+        educationList.innerHTML = '';
+        researcher.education.forEach(edu => {
+            const li = document.createElement('li');
+            li.textContent = edu;
+            educationList.appendChild(li);
+        });
+        
+        // Populate skills (NEW CODE)
+        const skillsList = document.getElementById('modal-researcher-skills');
+        skillsList.innerHTML = ''; // Clear previous content
+        
+        // Check if researcher has skills
+        if (researcher.skills && researcher.skills.length > 0) {
+            researcher.skills.forEach(skill => {
+                const li = document.createElement('li');
+                li.textContent = skill;
+                skillsList.appendChild(li);
+            });
+            // Ensure the section is visible
+            skillsList.parentElement.style.display = 'block';
+        } else {
+            // Hide the entire Skills section if no skills exist
+            skillsList.parentElement.style.display = 'none';
+        }
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.classList.add('no-scroll');
     });
+});
 
     modalClose.addEventListener('click', function() {
         modal.classList.remove('active');
