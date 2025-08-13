@@ -143,4 +143,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize everything
     initProjects();
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-links a');
+});
+// Highlight current page in navigation
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href');
+        // Updated comparison to handle projects.html specifically
+        if (linkHref === currentPage || 
+            (currentPage === 'index.html' && linkHref === '/') || 
+            (currentPage === '' && linkHref === 'index.html') ||
+            (currentPage === 'projects.html' && linkHref.includes('projects'))) {
+            link.classList.add('active');
+        }
 });

@@ -235,6 +235,12 @@
     transition: opacity 0.3s ease;
 }
 
+.value-card p {
+
+    color: black !important;
+    
+}
+
 .value-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-xl);
@@ -245,9 +251,11 @@
     opacity: 1;
 }
 
+
+
 .value-card:hover h3,
 .value-card:hover p {
-    color: white;
+    color: white !important;
 }
 
 .value-icon {
@@ -280,6 +288,7 @@
     line-height: 1.7;
     margin-bottom: 0;
     transition: color 0.3s ease;
+    
 }
 
 /* Research Philosophy Section */
@@ -363,6 +372,7 @@
     line-height: 1.7;
     margin-bottom: 0;
     font-size: 1.1rem;
+    color: black !important;
 }
 
 /* Achievements Section */
@@ -538,6 +548,7 @@
     color: var(--gray-color);
     line-height: 1.7;
     margin-bottom: 0;
+    color: black !important;
 }
 
 /* Join CTA Section */
