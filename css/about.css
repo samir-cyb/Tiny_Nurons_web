@@ -30,13 +30,13 @@
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 25px;
-    color: var(--gray-color);
+    color: black;
 }
 
 .story-text p:first-child {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--dark-color);
+    color: black;
 }
 
 /* Timeline Styles */
@@ -886,7 +886,7 @@
     .value-card p,
     .achievement-card p,
     .philosophy-content-item p {
-        color: rgba(255, 255, 255, 0.8);
+        color: black;
     }
     
     .timeline-content,
