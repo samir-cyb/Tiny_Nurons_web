@@ -124,39 +124,43 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('no-scroll');
     }
     
+    // Highlight current page in navigation
+    function highlightCurrentPage() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || 
+                (currentPage === 'index.html' && linkHref === '/') || 
+                (currentPage === '' && linkHref === 'index.html') ||
+                (currentPage === 'projects.html' && linkHref.includes('projects'))) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
     // Event listeners
-    document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('view-project') || e.target.closest('.view-project')) {
-            const button = e.target.classList.contains('view-project') ? e.target : e.target.closest('.view-project');
-            const projectId = button.dataset.projectId;
-            showProjectModal(projectId);
-        }
-        
-        if (e.target.classList.contains('modal-close') || e.target.closest('.modal-close')) {
-            closeProjectModal();
-        }
-        
-        if (e.target.classList.contains('modal-overlay')) {
-            closeProjectModal();
-        }
-    });
+    function setupEventListeners() {
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('view-project') || e.target.closest('.view-project')) {
+                const button = e.target.classList.contains('view-project') ? e.target : e.target.closest('.view-project');
+                const projectId = button.dataset.projectId;
+                showProjectModal(projectId);
+            }
+            
+            if (e.target.classList.contains('modal-close') || e.target.closest('.modal-close')) {
+                closeProjectModal();
+            }
+            
+            if (e.target.classList.contains('modal-overlay')) {
+                closeProjectModal();
+            }
+        });
+    }
     
     // Initialize everything
     initProjects();
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-links a');
-});
-// Highlight current page in navigation
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-const navLinks = document.querySelectorAll('.nav-links a');
-
-navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-        // Updated comparison to handle projects.html specifically
-        if (linkHref === currentPage || 
-            (currentPage === 'index.html' && linkHref === '/') || 
-            (currentPage === '' && linkHref === 'index.html') ||
-            (currentPage === 'projects.html' && linkHref.includes('projects'))) {
-            link.classList.add('active');
-        }
+    highlightCurrentPage();
+    setupEventListeners();
 });
