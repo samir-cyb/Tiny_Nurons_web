@@ -185,39 +185,52 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('no-scroll');
     }
     
-    // Event listeners for view buttons
-    document.querySelectorAll('.view-workshop').forEach(button => {
-        button.addEventListener('click', function() {
-            const workshopId = this.getAttribute('data-workshop');
-            showWorkshopModal(workshopId);
+    // Highlight current page in navigation
+    function highlightCurrentPage() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage || 
+                (currentPage === 'index.html' && linkHref === '/') || 
+                (currentPage === '' && linkHref === 'index.html') ||
+                (currentPage === 'workshop.html' && linkHref.includes('workshop'))) {
+                link.classList.add('active');
+            }
         });
-    });
-    
-    // Close modal when clicking close button or overlay
-    document.querySelector('.modal-close').addEventListener('click', closeWorkshopModal);
-    document.querySelector('.modal-overlay').addEventListener('click', closeWorkshopModal);
+    }
 
-    // Close modal when pressing Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closeWorkshopModal();
-        }
-    });
+    // Event listeners for view buttons
+    function setupEventListeners() {
+        document.querySelectorAll('.view-workshop').forEach(button => {
+            button.addEventListener('click', function() {
+                const workshopId = this.getAttribute('data-workshop');
+                showWorkshopModal(workshopId);
+            });
+        });
+        
+        // Close modal when clicking close button or overlay
+        document.querySelector('.modal-close').addEventListener('click', closeWorkshopModal);
+        document.querySelector('.modal-overlay').addEventListener('click', closeWorkshopModal);
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeWorkshopModal();
+            }
+        });
+    }
 
     // Initialize Parallax effect
-    if (document.querySelector('.hero-bg-parallax')) {
-        new Parallax(document.querySelector('.hero-bg-parallax'));
+    function initParallax() {
+        if (document.querySelector('.hero-bg-parallax')) {
+            new Parallax(document.querySelector('.hero-bg-parallax'));
+        }
     }
-});
-// Highlight current page in navigation
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-const navLinks = document.querySelectorAll('.nav-links a');
 
-navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-    if (linkHref === currentPage || 
-        (currentPage === 'index.html' && linkHref === '/') || 
-        (currentPage === '' && linkHref === 'index.html')) {
-        link.classList.add('active');
-    }
+    // Initialize everything
+    highlightCurrentPage();
+    setupEventListeners();
+    initParallax();
 });
