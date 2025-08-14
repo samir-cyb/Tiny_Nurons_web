@@ -126,19 +126,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Highlight current page in navigation
     function highlightCurrentPage() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname;
+    
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        // Remove 'active' class first
+        link.classList.remove('active');
         
-        navLinks.forEach(link => {
-            const linkHref = link.getAttribute('href');
-            if (linkHref === currentPage || 
-                (currentPage === 'index.html' && linkHref === '/') || 
-                (currentPage === '' && linkHref === 'index.html') ||
-                (currentPage === 'projects.html' && linkHref.includes('projects'))) {
-                link.classList.add('active');
-            }
-        });
-    }
+        // Check if current path includes the link path
+        if (currentPath.includes(linkPath) || 
+            (linkPath === 'index.html' && currentPath.endsWith('/')) ||
+            (linkPath === 'projects.html' && currentPath.includes('projects'))) {
+            link.classList.add('active');
+        }
+    });
+}
     
     // Event listeners
     function setupEventListeners() {

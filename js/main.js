@@ -299,3 +299,21 @@ navLinks.forEach(link => {
         link.classList.add('active');
     }
 });
+
+// Highlight current page in navigation
+function highlightCurrentPage() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const linkPage = link.getAttribute('href').split('/').pop();
+        
+        // Check for exact match or projects page
+        if (linkPage === currentPage || 
+            (currentPage === 'projects.html' && linkPage === 'projects.html') ||
+            (currentPage === '' && linkPage === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+}
