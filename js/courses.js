@@ -278,43 +278,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Testimonial slider
-    const testimonialTrack = document.querySelector('.testimonial-track');
-    const testimonialSlides = document.querySelectorAll('.testimonial');
-    const dots = document.querySelectorAll('.dot');
-    const prevBtn = document.querySelector('.slider-prev');
-    const nextBtn = document.querySelector('.slider-next');
-    
-    let currentSlide = 0;
-    const slideCount = testimonialSlides.length;
-    
-    function goToSlide(index) {
-        testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
-        currentSlide = index;
-    }
-    
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => goToSlide(index));
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-        goToSlide(currentSlide);
-    });
-    
-    nextBtn.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slideCount;
-        goToSlide(currentSlide);
-    });
-    
-    // Auto-advance slides
-    setInterval(() => {
-        currentSlide = (currentSlide + 1) % slideCount;
-        goToSlide(currentSlide);
-    }, 8000);
-
     // Scroll to courses
     document.getElementById('explore-courses').addEventListener('click', function() {
         document.getElementById('courses').scrollIntoView({

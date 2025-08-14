@@ -190,12 +190,6 @@
     color: var(--dark-color);
 }
 
-/* Testimonials Section */
-.courses-testimonials {
-    padding: 100px 0;
-    background: white;
-}
-
 /* CTA Section */
 .courses-cta {
     padding: 120px 0;
