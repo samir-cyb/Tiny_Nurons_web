@@ -82,11 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
             expertise: "AI | ML | LLM",
             about: "",
             publications: [
-                "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings (Accepted in IEEE QPAIN 2025)",
-                "Scalable Hand Gesture Recognition from SEMG Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset (Submitted)",
-                "Scalable SEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control (Submitted)",
-                "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings (Submitted)",
-                "Real-Time Brain Tumor Localization and Classification Using YOLOv1l and MONAI MedNeXt (Submitted)",
+                "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings (QPAIN 2025)",
+                "Scalable Hand Gesture Recognition from SEMG Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset (ICEEIE 2025)",
             ],
             education: [
                 "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
@@ -210,6 +207,102 @@ document.addEventListener('DOMContentLoaded', function() {
                 github: "https://github.com/rifatmilon",
                 orcid: "https://orcid.org/0000-0000-0000-0003",
                 researchgate: "https://researchgate.net/profile"
+            }
+        },
+
+        10: {
+            name: "Kaniz Fatema Antora",
+            image: "images/Kaniz.png",
+            expertise: "Iot | AI | Blockchain",
+            about: "Completed Bachelor's degree in Computer Science and Engineering from the University of Liberal Arts Bangladesh. She has has distinguished herself both academically and professionally. Her research interests are prominently featured in high-impact publications. She is a co-author of a paper in the prestigious Q1 journal IEEE Access, which presents a comprehensive review of blockchain approaches for enhancing the Know Your Customer (KYC) process. Her research portfolio also includes co-authoring papers on an AI platform for phishing email detection published in Computers and Electrical Engineering and a novel framework named Alblocknet that combines blockchain and machine learning for fake image detection, showcasing her interdisciplinary expertise at the intersection of cybersecurity and decentralized technology.",
+            publications: [
+                "Novel interpretable and robust web-based AI platform for phishing email detection",
+                "Development of a Blockchain-Based On-Demand Lightweight Commodity Delivery System",
+                "A Review of Blockchain Approaches for KYC"
+            ],
+
+            skills: [
+                "Blockchain, DDS, Security, Blockchain Network, KYC",
+            ],
+
+            education: [
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
+                
+
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/kaniz-fatema-antora/",
+                researchgate: "researchgate.net/profile/Kaniz_Antora"
+            }
+        },
+
+        11: {
+            name: "Ehasan Ahmed",
+            image: "images/Ehasan.png",
+            expertise: "Blockchain | Cryptography | IoT | AL | Web",
+            about: "",
+            publications: [
+                "A Robust Routing Protocol in Cognitive Unmanned Aerial Vehicular Networks",
+            ],
+
+            skills: [
+                "Blockchain Systems, Distributed Ledger Technologies, Privacy-Preserving Data Sharing, Cryptography, IoT Integration, Artificial Intelligence, Machine Learning, Data Analysis, Smart Contract Design, System Architecture, Research Methodology, Experiment Design, Academic Writing, Data Modeling",
+            ],
+
+            education: [
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
+                
+
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/ehasan-ahmed-7a1b591b5/",
+                orcid: "https://orcid.org/0009-0002-6481-070X",
+                GoogleScholar: "https://scholar.google.com/citations?hl=en&authuser=2&user=lX7bhJAAAAAJ"
+            }
+        },
+
+        12: {
+            name: "Mumtahina Tasnim Mahi",
+            image: "images/Mumtahina.png",
+            expertise: "Iot | Tiny ML | Computer Vision",
+            about: "",
+            publications: [
+                "Design and Implementation of a Low-Cost Weather Monitoring System using ESP-NOW (ICECE 2024)",
+                "JailBreakLLM: An Eff ective LLaMa Model Designed Specifi cally to Jailbreak OpenAI GPT (QPAIN 2025)",
+            ],
+            education: [
+                "BSc in Electrical and Electronic Engineering, University of Liberal Arts Bangladesh",
+            ],
+            skills: {
+                Tools: "Proteus, PSpice, MATLAB, TinkerCAD, AutoCAD, Cadence, Arduino IDE",
+                Programming: "C/C++, Python (Basic), Verilog (Basic)",
+                Hardware: "ESP32, ESP8266, Atmega32A, NRF24L01, various sensors & modules",
+                Concepts: "IoT, Embedded Systems, PCB Design, Wireless Communication, Data Acquisition",
+            },
+            socialLinks: {
+                linkedin: "www.linkedin.com/in/mumtahina-tasnim-4bb837236",
+            }
+        },
+
+        13: {
+            name: "Saniida Salwa Mou",
+            image: "images/mou.png",
+            expertise: "AI | Computer Vision",
+            about: "",
+            publications: [
+                "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt (Submitted on COMPAS 2025)",
+            ],
+            education: [
+                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
+            ],
+            skills: {
+                Programming: "C, C++, Web Design,HTML,CSS",
+                Database: "MySQL",
+                Other: "Content Writing, Data Analysis,Canva and Visualization",
+                Languages: "Native Bangla, Advanced English, Learning French",
+            },
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/sanjida-salwa-mou-67a35437a",
             }
         },
 
