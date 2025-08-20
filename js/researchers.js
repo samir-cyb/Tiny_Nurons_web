@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
         13: {
             name: "Saniida Salwa Mou",
             image: "images/mou.png",
-            expertise: "AI | Computer Vision",
+            expertise: "AI | ML",
             about: "",
             publications: [
                 "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt (Submitted on COMPAS 2025)",
