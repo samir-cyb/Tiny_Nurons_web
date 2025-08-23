@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         6: {
             name: "Redwan Ahamad Samir",
             image: "images/samir.png",
-            expertise: "AI/ML Engineer | Computer Vision",
+            expertise: "ML | Computer Vision",
             about: "Motivated and curious Computer Science And Engineering undergraduate with a deep interest in AI and computer vision. Adept in a wide range of programming languages and frameworks. Eager to apply and grow technical and analytical skills in a challenging, growth-oriented role within a tech-forward company.",
             publications: [
                 "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings (Submitted)",
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         8: {
             name: "Md. Rifat Aknda",
             image: "images/rifat.jpg",
-            expertise: "AI/ML | Computer Vision | Data Analisis",
+            expertise: "ML | Computer Vision",
             about: "I am a CSE Engineer with a B.Sc. in CSE from ULAB with specializations in Data Science. Currently, I work as an AI Engineer in the Research and Development team at EVOMED Technology. My research focuses on deep learning, computer vision, biomedical signal processing, and AI-driven diagnostics with projects such as Interpretable enhanced transfer learning model and feature fusion model for binary skin cancer classification, brain tumor localization and classification, hand gesture recognition from surface electromyography, and mechanical arm control using TinyML. I also served as Vice President of the ULAB Computer Programming Club (UCPC) in 2023.",
             publications: [
                 "Fazlay Rabby, Rajdeep Das, MD. Musfiqur Rahman, Md. Hridoy Hossain, Md. Rifat Aknda, 'Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset', 9th International Conference on Electrical, Electronics and Information Engineering (ICEEIE, 2025) [Accepted]"
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         9: {
             name: "MD: MUSFIQUR RAHMAN",
             image: "images/musfiq.jpg",
-            expertise: "AI/ML | Computer Vision | Data Analisis",
+            expertise: "IoT | Signal Processing",
             about: "",
             publications: [
                 "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset",
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
         11: {
             name: "Ehasan Ahmed",
             image: "images/Ehasan.png",
-            expertise: "Blockchain | Cryptography | IoT | AL | Web",
+            expertise: "Blockchain | Cryptography | IoT | Web Technology",
             about: "",
             publications: [
                 "A Robust Routing Protocol in Cognitive Unmanned Aerial Vehicular Networks",
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
         12: {
             name: "Mumtahina Tasnim Mahi",
             image: "images/Mumtahina.png",
-            expertise: "Iot | Tiny ML | Computer Vision",
+            expertise: "Iot | Tiny ML | LLM",
             about: "",
             publications: [
                 "Design and Implementation of a Low-Cost Weather Monitoring System using ESP-NOW (ICECE 2024)",
