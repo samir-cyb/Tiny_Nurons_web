@@ -139,25 +139,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ],
             socialLinks: {
-                linkedin: "https://linkedin.com/in/redwan-samir",
-                github: "https://github.com/redwansamir",
-                orcid: "https://orcid.org/0000-0000-0000-0004",
-                researchgate: "https://researchgate.net/profile/Redwan-Samir"
+                linkedin: "https://www.linkedin.com/in/redwan-ahamad-samir-701508312/",
+                github: "https://github.com/samir-cyb",
+                orcid: "https://orcid.org/my-orcid?orcid=0009-0008-3446-0845",
+                researchgate: "https://www.researchgate.net/profile/Redwan-Samir?ev=hdr_xprf"
             }
         },
         7: {
             name: "Bahadur Zaman Shezan",
             image: "images/bahadur.png",
             expertise: "AI | ML",
-            about: "",
+            about: " I am a Computer Science Engineering student at ULAB with strong skills in JAVA, C, and C++. Alongside coding, I bring creativity as a graphic designer. A passionate learner and avid gamer, I enjoy solving problems and continuously seek opportunities to grow and apply my knowledge.",
+
             publications: [
                 "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML"
             ],
+            skills: [
+                "Languages: C, Python, Java, javaScript",
+                "Tools & Technologies: Jupyter Notebook, VS Code, RoboFLow",
+                "Databases: MySQL",
+                "Operating Systems: Windows, Linux, MacOS",
+                "Other Skills: Problem Solving, Data Structures and Algorithms"
+            ],
+
             education: [
                 "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
             ],
             socialLinks: {
-                linkedin: "https://linkedin.com/in/bahadur-shezan",
+                linkedin: "https://www.linkedin.com/in/bahadur-zamn-shezan-633141261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 github: "https://github.com/bahadurshezan",
                 orcid: "https://orcid.org/0000-0000-0000-0005",
                 researchgate: "https://researchgate.net/profile/Bahadur-Shezan"
