@@ -193,3 +193,9 @@
         padding: 20px;
     }
 }
+
+.ongoing-projects {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e6ebff 100%);
+    border-top: 1px solid rgba(108, 99, 255, 0.1);
+    border-bottom: 1px solid rgba(108, 99, 255, 0.1);
+}

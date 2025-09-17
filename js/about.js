@@ -30,6 +30,104 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Certificate Carousel
+    const certificateCarousel = () => {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dots .dot');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        // Function to show a specific slide
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Add active class to current slide and dot
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            
+            currentSlide = index;
+        }
+
+        // Function to go to next slide
+        function nextSlide() {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            showSlide(newIndex);
+        }
+
+        // Function to go to previous slide
+        function prevSlide() {
+            let newIndex = currentSlide - 1;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            showSlide(newIndex);
+        }
+
+        // Start auto sliding
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+        }
+
+        // Stop auto sliding
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Add click events to arrows
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                nextSlide();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        }
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                prevSlide();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        }
+
+        // Add click events to dots
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                const slideIndex = parseInt(this.getAttribute('data-index'));
+                showSlide(slideIndex);
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        // Initialize carousel
+        if (slides.length > 0) {
+            showSlide(0);
+            startAutoSlide();
+
+            // Pause auto slide on hover
+            const carousel = document.querySelector('.certificate-carousel');
+            const arrows = document.querySelectorAll('.carousel-arrow');
+            
+            if (carousel) {
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+            }
+            
+            // Also pause when hovering over arrows
+            arrows.forEach(arrow => {
+                arrow.addEventListener('mouseenter', stopAutoSlide);
+                arrow.addEventListener('mouseleave', startAutoSlide);
+            });
+        }
+    };
+
+    // Initialize certificate carousel
+    certificateCarousel();
+
     // Timeline animation
     const timelineItems = document.querySelectorAll('.timeline-item');
     const timelineObserver = new IntersectionObserver((entries) => {
@@ -394,29 +492,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Text typewriter effect for hero subtitle
+    // Static subtitle (removed typewriter effect)
     const heroSubtitle = document.querySelector('.about-hero .subtitle');
     if (heroSubtitle) {
-        const text = heroSubtitle.textContent;
-        heroSubtitle.textContent = '';
-        heroSubtitle.style.borderRight = '2px solid';
+        // Ensure the subtitle is fully visible with no cursor
+        heroSubtitle.style.borderRight = 'none';
         
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroSubtitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            } else {
-                // Remove cursor after typing is complete
-                setTimeout(() => {
-                    heroSubtitle.style.borderRight = 'none';
-                }, 1000);
-            }
-        };
-        
-        // Start typing after hero loads
-        setTimeout(typeWriter, 1000);
+        // Make sure the content is properly displayed
+        heroSubtitle.style.opacity = '1';
+        heroSubtitle.style.visibility = 'visible';
     }
 
     // Achievement cards tilt effect

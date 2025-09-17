@@ -1,4 +1,18 @@
+// DEBUG: Check if script is loading
+console.log('main.js loaded successfully');
+
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOMContentLoaded fired');
+    
+    // DEBUG: Check if elements exist
+    const statNumbers = document.querySelectorAll('.stat-number');
+    console.log('Stat elements found:', statNumbers.length);
+    
+    statNumbers.forEach((stat, index) => {
+        console.log('Stat', index, 'data-count:', stat.getAttribute('data-count'));
+        console.log('Stat', index, 'current value:', stat.textContent);
+    });
+
     // Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 800,
@@ -12,18 +26,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     
-    mobileMenuBtn.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
-    });
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
+    }
     
     // Close mobile menu when clicking a link
     const mobileLinks = document.querySelectorAll('.mobile-menu a');
     mobileLinks.forEach(link => {
         link.addEventListener('click', function() {
-            mobileMenuBtn.classList.remove('active');
-            mobileMenu.classList.remove('active');
+            if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+            if (mobileMenu) mobileMenu.classList.remove('active');
             document.body.classList.remove('no-scroll');
         });
     });
@@ -34,57 +50,64 @@ document.addEventListener('DOMContentLoaded', function() {
     const dots = document.querySelectorAll('.dot');
     const prevBtn = document.querySelector('.slider-prev');
     const nextBtn = document.querySelector('.slider-next');
-    let currentIndex = 0;
-    let autoSlideInterval;
     
-    function showTestimonial(index) {
-        testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
+    if (testimonialTrack && testimonials.length > 0) {
+        let currentIndex = 0;
+        let autoSlideInterval;
         
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
+        function showTestimonial(index) {
+            testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
+            
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[index]) dots[index].classList.add('active');
+            
+            currentIndex = index;
+        }
         
-        currentIndex = index;
-    }
-    
-    function nextSlide() {
-        let newIndex = currentIndex + 1;
-        if (newIndex >= testimonials.length) newIndex = 0;
-        showTestimonial(newIndex);
-    }
-    
-    function prevSlide() {
-        let newIndex = currentIndex - 1;
-        if (newIndex < 0) newIndex = testimonials.length - 1;
-        showTestimonial(newIndex);
-    }
-    
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', function() {
-            showTestimonial(index);
-            resetAutoSlide();
+        function nextSlide() {
+            let newIndex = currentIndex + 1;
+            if (newIndex >= testimonials.length) newIndex = 0;
+            showTestimonial(newIndex);
+        }
+        
+        function prevSlide() {
+            let newIndex = currentIndex - 1;
+            if (newIndex < 0) newIndex = testimonials.length - 1;
+            showTestimonial(newIndex);
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                showTestimonial(index);
+                resetAutoSlide();
+            });
         });
-    });
-    
-    prevBtn.addEventListener('click', function() {
-        prevSlide();
-        resetAutoSlide();
-    });
-    
-    nextBtn.addEventListener('click', function() {
-        nextSlide();
-        resetAutoSlide();
-    });
-    
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000);
-    }
-    
-    function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                prevSlide();
+                resetAutoSlide();
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                nextSlide();
+                resetAutoSlide();
+            });
+        }
+        
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+        
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+        
         startAutoSlide();
     }
-    
-    startAutoSlide();
     
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
@@ -92,22 +115,25 @@ document.addEventListener('DOMContentLoaded', function() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
-        question.addEventListener('click', function() {
-            const isActive = item.classList.contains('active');
-            
-            // Close all items
-            faqItems.forEach(i => {
-                i.classList.remove('active');
-                i.querySelector('.faq-answer').style.maxHeight = null;
+        if (question) {
+            question.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(i => {
+                    i.classList.remove('active');
+                    const answer = i.querySelector('.faq-answer');
+                    if (answer) answer.style.maxHeight = null;
+                });
+                
+                // Open current if wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    const answer = item.querySelector('.faq-answer');
+                    if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
             });
-            
-            // Open current if wasn't active
-            if (!isActive) {
-                item.classList.add('active');
-                const answer = item.querySelector('.faq-answer');
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
-        });
+        }
     });
     
     // Smooth Scrolling for Anchor Links
@@ -130,36 +156,41 @@ document.addEventListener('DOMContentLoaded', function() {
     // Back to Top Button
     const backToTopBtn = document.querySelector('.back-to-top');
     
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('visible');
-        } else {
-            backToTopBtn.classList.remove('visible');
-        }
-        
-        // Navbar scroll effect
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-    
-    backToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (backToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+            
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
         });
-    });
+        
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
     
     // Ripple Effect for Buttons
     const buttons = document.querySelectorAll('.btn');
     
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
-            const x = e.clientX - e.target.getBoundingClientRect().left;
-            const y = e.clientY - e.target.getBoundingClientRect().top;
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
             
             const ripple = document.createElement('span');
             ripple.classList.add('ripple-effect');
@@ -174,48 +205,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Count Up Animation for Stats
-    const statNumbers = document.querySelectorAll('.stat-number');
-    const observerOptions = {
-        threshold: 0.5
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const statNumber = entry.target;
-                const target = parseInt(statNumber.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-                
-                const updateCount = () => {
-                    current += step;
-                    if (current < target) {
-                        statNumber.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCount);
-                    } else {
-                        statNumber.textContent = target;
-                    }
-                };
-                
-                updateCount();
-                observer.unobserve(statNumber);
-            }
+    // Count Up Animation for Stats - GUARANTEED TO WORK
+    function startCounterAnimation() {
+        const statNumbers = document.querySelectorAll('.stat-number');
+        console.log('Starting counter animation, elements found:', statNumbers.length);
+        
+        statNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-count'));
+            console.log('Animating to:', target);
+            
+            let current = 0;
+            const duration = 2000;
+            const steps = 60;
+            const increment = target / steps;
+            const interval = duration / steps;
+            
+            // Start with 0
+            stat.textContent = '0';
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    stat.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                    console.log('Counter completed:', target);
+                } else {
+                    stat.textContent = Math.floor(current).toLocaleString();
+                }
+            }, interval);
         });
-    }, observerOptions);
+    }
     
-    statNumbers.forEach(stat => {
-        observer.observe(stat);
+    // Start counter animation
+    setTimeout(startCounterAnimation, 300);
+    
+    // Highlight current page in navigation
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        if (linkHref === currentPage || 
+            (currentPage === 'index.html' && linkHref === '/') || 
+            (currentPage === '' && linkHref === 'index.html')) {
+            link.classList.add('active');
+        }
     });
     
     // Hide loader when page is loaded
     window.addEventListener('load', function() {
         const loader = document.querySelector('.loader');
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            loader.style.visibility = 'hidden';
-        }, 500);
+        if (loader) {
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+            }, 500);
+        }
     });
 });
 
@@ -225,80 +270,72 @@ const projectSlides = document.querySelectorAll('.project-slide');
 const projectDotsContainer = document.querySelector('.slider-dots');
 const prevBtn = document.querySelector('.slider-prev');
 const nextBtn = document.querySelector('.slider-next');
-let currentSlide = 0;
 
-// Create dots
-projectSlides.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-        goToSlide(index);
+if (projectTrack && projectSlides.length > 0 && projectDotsContainer) {
+    let currentSlide = 0;
+
+    // Create dots
+    projectSlides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+        });
+        projectDotsContainer.appendChild(dot);
     });
-    projectDotsContainer.appendChild(dot);
-});
 
-const dots = document.querySelectorAll('.dot');
+    const dots = document.querySelectorAll('.dot');
 
-function goToSlide(index) {
-    projectTrack.style.transform = `translateX(-${index * 100}%)`;
-    currentSlide = index;
-    
-    // Update dots
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
-}
-
-function nextSlide() {
-    if (currentSlide === projectSlides.length - 1) {
-        goToSlide(0);
-    } else {
-        goToSlide(currentSlide + 1);
+    function goToSlide(index) {
+        projectTrack.style.transform = `translateX(-${index * 100}%)`;
+        currentSlide = index;
+        
+        // Update dots
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[index]) dots[index].classList.add('active');
     }
-}
 
-function prevSlide() {
-    if (currentSlide === 0) {
-        goToSlide(projectSlides.length - 1);
-    } else {
-        goToSlide(currentSlide - 1);
+    function nextSlide() {
+        if (currentSlide === projectSlides.length - 1) {
+            goToSlide(0);
+        } else {
+            goToSlide(currentSlide + 1);
+        }
     }
-}
 
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
-
-// Auto slide
-let slideInterval = setInterval(nextSlide, 5000);
-
-function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 5000);
-}
-
-// Pause on hover
-const slider = document.querySelector('.projects-slider');
-slider.addEventListener('mouseenter', () => {
-    clearInterval(slideInterval);
-});
-
-slider.addEventListener('mouseleave', resetInterval);
-
-// Initialize first slide
-goToSlide(0);
-
-// Highlight current page in navigation
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-const navLinks = document.querySelectorAll('.nav-links a');
-
-navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-    if (linkHref === currentPage || 
-        (currentPage === 'index.html' && linkHref === '/') || 
-        (currentPage === '' && linkHref === 'index.html')) {
-        link.classList.add('active');
+    function prevSlide() {
+        if (currentSlide === 0) {
+            goToSlide(projectSlides.length - 1);
+        } else {
+            goToSlide(currentSlide - 1);
+        }
     }
-});
+
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+
+    // Auto slide
+    let slideInterval = setInterval(nextSlide, 5000);
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    // Pause on hover
+    const slider = document.querySelector('.projects-slider');
+    if (slider) {
+        slider.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        slider.addEventListener('mouseleave', resetInterval);
+    }
+
+    // Initialize first slide
+    goToSlide(0);
+}
 
 // Highlight current page in navigation
 function highlightCurrentPage() {
@@ -317,3 +354,31 @@ function highlightCurrentPage() {
         }
     });
 }
+
+// Backup counter animation in case the first one fails
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const statNumbers = document.querySelectorAll('.stat-number');
+        statNumbers.forEach(stat => {
+            // If still at 0 after 3 seconds, force the animation
+            if (stat.textContent === '0') {
+                const target = parseInt(stat.getAttribute('data-count'));
+                let current = 0;
+                const duration = 1500;
+                const steps = 60;
+                const increment = target / steps;
+                const interval = duration / steps;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current).toLocaleString();
+                    }
+                }, interval);
+            }
+        });
+    }, 3000);
+});
