@@ -78,17 +78,89 @@
                 <p class="section-subtitle">Join our upcoming knowledge-sharing sessions</p>
             </div>
             
-            <div class="no-events">
-                <i class="fas fa-calendar-plus"></i>
-                <h3>No upcoming events scheduled</h3>
-                <p>Check back later for our upcoming workshops and seminars</p>
-                <button class="btn btn-outline">
-                    <span>Notify Me</span>
-                    <i class="fas fa-bell"></i>
-                </button>
+            <div class="upcoming-events-container">
+                <!-- Left Panel - Events List -->
+                <div class="events-list-panel">
+                    <div class="events-list-header">
+                        <h3>Upcoming Events</h3>
+                        <div class="events-count">3 events</div>
+                    </div>
+                    <div class="events-scroll-container">
+                        <div class="events-list">
+                            <div class="event-list-item active" data-event="1">
+                                <div class="event-date-badge">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">JUN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>AI in Healthcare Workshop</h4>
+                                    <p>2:00 PM - 5:00 PM • Online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="event-list-item" data-event="2">
+                                <div class="event-date-badge">
+                                    <span class="event-day">22</span>
+                                    <span class="event-month">JUN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Quantum Computing Seminar</h4>
+                                    <p>10:00 AM - 12:00 PM • Campus Hall</p>
+                                </div>
+                            </div>
+                            
+                            <div class="event-list-item" data-event="3">
+                                <div class="event-date-badge">
+                                    <span class="event-day">30</span>
+                                    <span class="event-month">JUN</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Machine Learning Bootcamp</h4>
+                                    <p>9:00 AM - 4:00 PM • Lab 204</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Panel - Event Details -->
+                <div class="event-details-panel">
+                    <div class="event-details-content">
+                        <div class="event-header">
+                            <span class="event-type-badge">Workshop</span>
+                            <h3 id="detail-title">AI in Healthcare Workshop</h3>
+                            <div class="event-meta">
+                                <span><i class="far fa-calendar"></i> <span id="detail-date">June 15, 2023</span></span>
+                                <span><i class="far fa-clock"></i> <span id="detail-time">2:00 PM - 5:00 PM</span></span>
+                                <span><i class="fas fa-map-marker-alt"></i> <span id="detail-location">Online</span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="event-description">
+                            <h4>About This Event</h4>
+                            <p id="detail-description">Join us for an interactive workshop exploring the latest advancements in AI applications for healthcare. This session will cover diagnostic tools, treatment planning algorithms, and ethical considerations in medical AI.</p>
+                            
+                            <h4>What You'll Learn</h4>
+                            <ul id="detail-highlights">
+                                <li>Current AI applications in medical diagnostics</li>
+                                <li>Ethical frameworks for healthcare AI</li>
+                                <li>Hands-on with medical imaging AI tools</li>
+                                <li>Regulatory considerations</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary notify-btn">
+                            <span>Notify Me</span>
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+
     <!-- Past Events -->
      <section class="workshops-section past-workshops">
         <div class="container">
@@ -96,7 +168,6 @@
                 <h2>Past Events</h2>
                 <p class="section-subtitle">Archive of our previous workshops and seminars</p>
             </div>
-            
             <div class="workshops-grid">
                 <div class="workshop-card">
                     <div class="workshop-badge" data-type="workshop">Workshop</div>
@@ -305,5 +376,44 @@
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/workshop.js"></script>
+
+
+
+
+ <!-- Notify Me Modal -->
+<div class="notify-modal">
+    <div class="notify-modal-overlay"></div>
+    <div class="notify-modal-container">
+        <button class="notify-modal-close">&times;</button>
+        <div class="notify-modal-header">
+            <h3>Notify Me About This Event</h3>
+            <p id="notify-event-title">Event Title</p>
+        </div>
+        <form class="notify-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+            <input type="hidden" name="_subject" id="notify-event-subject" value="Workshop Notification Request">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+            
+            <div class="form-group">
+                <label for="notify-name">Your Name</label>
+                <input type="text" id="notify-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="notify-email">Your Email</label>
+                <input type="email" id="notify-email" name="email" required>
+            </div>
+            <input type="hidden" id="notify-event" name="event" value="">
+            
+            <div class="notify-modal-footer">
+                <button type="button" class="btn btn-outline notify-modal-close">Cancel</button>
+                <button type="submit" class="btn btn-primary">Notify Me</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+</div>
 </body>
 </html>

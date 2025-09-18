@@ -115,6 +115,52 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // Upcoming Events Data
+    const upcomingEventsData = {
+        1: {
+            type: "workshop",
+            title: "AI in Healthcare Workshop",
+            date: "June 15, 2023",
+            time: "2:00 PM - 5:00 PM",
+            location: "Online",
+            description: "Join us for an interactive workshop exploring the latest advancements in AI applications for healthcare. This session will cover diagnostic tools, treatment planning algorithms, and ethical considerations in medical AI.",
+            highlights: [
+                "Current AI applications in medical diagnostics",
+                "Ethical frameworks for healthcare AI",
+                "Hands-on with medical imaging AI tools",
+                "Regulatory considerations"
+            ]
+        },
+        2: {
+            type: "seminar",
+            title: "Quantum Computing Seminar",
+            date: "June 22, 2023",
+            time: "10:00 AM - 12:00 PM",
+            location: "Campus Hall",
+            description: "Discover the fundamentals of quantum computing and its potential impact on machine learning and cryptography. This seminar will include live demonstrations of quantum algorithms.",
+            highlights: [
+                "Quantum computing basics",
+                "QML algorithms overview",
+                "Live quantum computing demo",
+                "Future applications discussion"
+            ]
+        },
+        3: {
+            type: "workshop",
+            title: "Machine Learning Bootcamp",
+            date: "June 30, 2023",
+            time: "9:00 AM - 4:00 PM",
+            location: "Lab 204",
+            description: "A full-day intensive bootcamp covering machine learning fundamentals, practical implementation, and real-world case studies. Perfect for beginners and intermediate practitioners.",
+            highlights: [
+                "ML fundamentals review",
+                "Hands-on coding sessions",
+                "Real-world project implementation",
+                "Best practices and optimization"
+            ]
+        }
+    };
+
     // Show workshop modal
     function showWorkshopModal(workshopId) {
         const modal = document.getElementById('workshop-modal');
@@ -201,8 +247,126 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Initialize upcoming events
+    function initUpcomingEvents() {
+        // Set first event as active by default
+        showEventDetails(1);
+        
+        // Add event listeners to list items
+        document.querySelectorAll('.event-list-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const eventId = this.getAttribute('data-event');
+                
+                // Remove active class from all items
+                document.querySelectorAll('.event-list-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Show event details
+                showEventDetails(eventId);
+            });
+        });
+        
+        // Add event listener to notify button
+        document.querySelector('.notify-btn').addEventListener('click', function() {
+            showNotifyModal();
+        });
+    }
+
+    // Show event details in right panel
+    function showEventDetails(eventId) {
+        const event = upcomingEventsData[eventId];
+        
+        if (event) {
+            document.getElementById('detail-title').textContent = event.title;
+            document.getElementById('detail-date').textContent = event.date;
+            document.getElementById('detail-time').textContent = event.time;
+            document.getElementById('detail-location').textContent = event.location;
+            document.getElementById('detail-description').textContent = event.description;
+            
+            // Update event type badge
+            const badge = document.querySelector('.event-type-badge');
+            badge.textContent = event.type.charAt(0).toUpperCase() + event.type.slice(1);
+            
+            // Update highlights
+            const highlightsContainer = document.getElementById('detail-highlights');
+            highlightsContainer.innerHTML = '';
+            event.highlights.forEach(highlight => {
+                const li = document.createElement('li');
+                li.textContent = highlight;
+                highlightsContainer.appendChild(li);
+            });
+            
+            // Store current event ID for notification
+            document.querySelector('.notify-btn').setAttribute('data-event', eventId);
+        }
+    }
+
+    // Show notify me modal
+    function showNotifyModal() {
+        const modal = document.querySelector('.notify-modal');
+        const eventId = document.querySelector('.notify-btn').getAttribute('data-event');
+        const event = upcomingEventsData[eventId];
+        
+        if (event) {
+            document.getElementById('notify-event-title').textContent = event.title;
+            modal.classList.add('active');
+            document.body.classList.add('no-scroll');
+        }
+    }
+
+    // Close notify modal
+    function closeNotifyModal() {
+        const modal = document.querySelector('.notify-modal');
+        modal.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+
+    // Handle notify form submission
+    function handleNotifySubmit(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(e.target);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const eventId = document.querySelector('.notify-btn').getAttribute('data-event');
+        const event = upcomingEventsData[eventId];
+        
+        // Simple validation
+        if (!name || !email) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address');
+            return;
+        }
+        
+        // Here you would typically send this data to your server
+        // For now, we'll just show a confirmation and close the modal
+        console.log('Notification request:', { name, email, event: event.title });
+        
+        // Show success message
+        alert(`Thank you, ${name}! We'll notify you about "${event.title}"`);
+        
+        // Close modal and reset form
+        closeNotifyModal();
+        e.target.reset();
+    }
+
+    // Email validation helper
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
     // Event listeners for view buttons
     function setupEventListeners() {
+        // Workshop modal event listeners
         document.querySelectorAll('.view-workshop').forEach(button => {
             button.addEventListener('click', function() {
                 const workshopId = this.getAttribute('data-workshop');
@@ -220,6 +384,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeWorkshopModal();
             }
         });
+        
+        // New listeners for upcoming events
+        document.querySelector('.notify-modal-close').addEventListener('click', closeNotifyModal);
+        document.querySelector('.notify-modal-overlay').addEventListener('click', closeNotifyModal);
+        document.querySelector('.notify-form').addEventListener('submit', handleNotifySubmit);
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.querySelector('.notify-modal.active')) {
+                closeNotifyModal();
+            }
+        });
     }
 
     // Initialize Parallax effect
@@ -230,7 +406,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize everything
-    highlightCurrentPage();
-    setupEventListeners();
-    initParallax();
+    function initEverything() {
+        highlightCurrentPage();
+        initUpcomingEvents();
+        setupEventListeners();
+        initParallax();
+    }
+
+    // Call the initialization
+    initEverything();
 });
