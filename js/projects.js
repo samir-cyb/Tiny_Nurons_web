@@ -60,117 +60,60 @@ document.addEventListener('DOMContentLoaded', function() {
         ongoing: [
             {
                 id: 6,
-                title: "AI Drug Discovery",
-                category: "Pharmaceutical AI",
+                title: "TinyML-Based Automated Wheelchair",
+                category: "Hardware AI",
                 progress: "Phase 2 Testing",
-                description: "Developing generative AI models to accelerate pharmaceutical research. The system will predict molecular interactions and suggest promising drug candidates.",
+                description: "This project introduces a hybrid deep learning framework deployed on TinyML to control a smart wheelchair using sEMG and IMU signals, eliminating dependency on external computers. The lightweight model is optimized for embedded devices, enabling real-time processing directly on low-power microcontrollers. The approach ensures portability, low latency, and accessibility for daily use in diverse environments.",
                 highlights: [
-                    "Identified 15 promising drug candidates",
-                    "Reduced discovery time by 60%",
-                    "Partnership with major pharmaceutical company",
-                    "Clinical trials planned for Q4 2023"
+                    "Empowering mobility-impaired users to operate a wheelchair through personalized gestures without reliance on bulky computing devices",
+                    "Integrating into compact, low-power assistive devices that adapt to individual user patterns with minimal data requirements.",
+                    "Extending personalized rehabilitation robotics and smart mobility solutions to resource-constrained or portable settings."
                 ],
-                icon: "fa-pills"
+                icon: "fas fa-cogs"
             },
             {
                 id: 7,
-                title: "Robot-Human Collaboration",
-                category: "Robotics",
+                title: "Diabetic Condition Prediction and Monitoring System",
+                category: "Health care AI",
                 progress: "Prototype Development",
-                description: "Creating adaptive AI systems that enable seamless collaboration between humans and robots in manufacturing environments. Focus on intuitive interfaces and safety protocols.",
+                description: "This project introduces a hybrid user-independent model for predicting and monitoring diabetic conditions. The model integrates advanced preprocessing and multimodal feature extraction with a hybrid architecture, ensuring accurate and user-independent predictions across diverse populations. To maximize accessibility, the system is planned for deployment on a smartwatch, enabling continuous and non-invasive monitoring directly from the user’s wrist without dependence on external devices.",
                 highlights: [
-                    "Intuitive gesture-based interface developed",
-                    "Safety protocols certified by regulatory body",
-                    "Pilot program with automotive manufacturer",
-                    "3 research papers submitted"
+                    "Providing continuous, non-invasive, and personalized monitoring of diabetic conditions through wearable technology.",
+                    "Supporting early detection of abnormal patterns, enabling timely medical interventions.",
+                    "Facilitating integration into medical and digital health platforms, expanding accessibility for remote and underserved populations.",
+                    "Assisting healthcare providers in improving patient management, reducing complications, and enhancing overall treatment outcomes."
                 ],
-                icon: "fa-robot"
+                icon: "fas fa-stethoscope"
             },
-            {
-                id: 8,
-                title: "Emotion Recognition",
-                category: "Affective Computing",
-                progress: "Data Collection Phase",
-                description: "Building multi-modal systems that understand human emotions through voice, facial expressions, and physiological signals. Applications in mental health and education.",
-                highlights: [
-                    "Multi-modal approach increases accuracy by 35%",
-                    "Partnership with mental health organizations",
-                    "Ethical framework developed for deployment",
-                    "Dataset of 10,000+ annotated samples collected"
-                ],
-                icon: "fa-smile"
-            }
         ],
         upcoming: [
             {
                 id: 9,
-                title: "AI Ethics Framework",
-                category: "Responsible AI",
+                title: "Colorectal Cancer Detection from Bowel Sounds",
+                category: "Health care",
                 stage: "Planning Phase",
-                description: "Developing tools to detect and mitigate bias in AI systems across different domains. Includes fairness metrics and explainability dashboards.",
+                description: "This project introduces a novel deep learning pipeline for analyzing bowel sound signals to support early detection of colorectal cancer. Bowel sounds were captured using a custom-designed device specifically developed for accurate bowel sound acquisition. The pipeline applies advanced signal preprocessing and feature extraction techniques, followed by classification through a hybrid deep learning model. A web-based interface enables real-time analysis and user-friendly interaction.",
                 highlights: [
-                    "Comprehensive bias detection toolkit",
-                    "Explainable AI dashboards",
-                    "Industry partnerships being established",
-                    "Grant funding secured"
+                    "Offering a non-invasive, cost-effective, and accessible screening tool for colorectal cancer detection.",
+                    "Enabling continuous health monitoring and early warning systems outside clinical environments.",
+                    "Supporting integration into digital health and clinical platforms, enhancing access to cancer screening in remote and underserved regions.",
+                    "Assisting healthcare providers in early diagnosis, lowering treatment costs, and improving patient survival outcomes."
                 ],
-                icon: "fa-balance-scale"
+                icon: "fa-heartbeat"
             },
             {
                 id: 10,
-                title: "Space Exploration AI",
-                category: "Space Tech",
+                title: "Vehicle Type Classification from a Self-Collected Horn Sound Dataset",
+                category: "Industrial AI",
                 stage: "Concept Development",
-                description: "Creating autonomous systems for planetary exploration that can make independent decisions while navigating unknown environments with limited communication.",
+                description: "This project introduces a deep learning pipeline for classifying vehicle types based on self-collected horn sounds. The system applies advanced preprocessing and feature extraction techniques to capture local, global, and spectrogram characteristics of horn signals. A hybrid dual-CNN model then performs robust classification, enabling accurate recognition across diverse vehicle categories.",
                 highlights: [
-                    "Autonomous decision-making algorithms",
-                    "Designed for limited communication environments",
-                    "Partnership with space research organization",
-                    "Simulation environment developed"
+                    "Enhancing intelligent transportation systems with acoustic-based vehicle detection.",
+                    "Supporting traffic monitoring in low-visibility or camera-restricted environments.",
+                    "Assisting smart city infrastructure in identifying and prioritizing emergency or heavy vehicles.",
+                    "Enabling low-cost, sensor-based vehicle classification without relying solely on visual data."
                 ],
-                icon: "fa-rocket"
-            },
-            {
-                id: 11,
-                title: "Personalized Education AI",
-                category: "EdTech",
-                stage: "Research Phase",
-                description: "Building adaptive learning systems that personalize educational content based on individual student needs, learning styles, and progress.",
-                highlights: [
-                    "Adaptive learning algorithms",
-                    "Multi-modal student assessment",
-                    "Pilot program with 3 schools",
-                    "Privacy-first design approach"
-                ],
-                icon: "fa-graduation-cap"
-            },
-            {
-                id: 12,
-                title: "Sustainable Agriculture AI",
-                category: "AgriTech",
-                stage: "Feasibility Study",
-                description: "Developing AI systems to optimize crop yields, reduce resource consumption, and predict pest outbreaks for sustainable agriculture practices.",
-                highlights: [
-                    "Yield optimization algorithms",
-                    "Resource consumption reduction targets",
-                    "Partnerships with agricultural organizations",
-                    "Field testing planned for next growing season"
-                ],
-                icon: "fa-leaf"
-            },
-            {
-                id: 13,
-                title: "AI-Powered Healthcare Access",
-                category: "Health Equity",
-                stage: "Grant Proposal",
-                description: "Creating AI tools to improve healthcare access in underserved communities through telemedicine, diagnostic support, and resource allocation optimization.",
-                highlights: [
-                    "Focus on underserved communities",
-                    "Telemedicine integration",
-                    "Diagnostic support tools",
-                    "Resource allocation algorithms"
-                ],
-                icon: "fa-heartbeat"
+                icon: "fas fa-gamepad"
             }
         ]
     };

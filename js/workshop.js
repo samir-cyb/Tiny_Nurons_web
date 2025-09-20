@@ -2,79 +2,80 @@ document.addEventListener('DOMContentLoaded', function() {
     // Workshop data
     const workshopsData = {
         1: {
-            type: "workshop",
-            title: "AI in Healthcare – Innovation & Ethics",
-            date: "May 15, 2023",
-            time: "2:00 PM - 5:00 PM",
+            type: "seminar",
+            title: "IEEE Publications and Benefits & How to Do Research",
+            date: "August 11 , 2025",
+            time: "9:00 PM",
             location: "Online",
             audience: "Researchers, Medical Professionals",
-            description: "Exploring the latest AI applications in healthcare while addressing ethical considerations and regulatory frameworks. This workshop featured case studies from leading hospitals and interactive discussions with domain experts.",
+            description: "On August 11, 2025, the IEEE ULAB Student Branch hosted a webinar titled 'IEEE Publications and Benefits & How to Do Research.' The session provided a comprehensive guide to the research and publication process, beginning with strategies for generating research ideas—moving from initial hypothesis through literature review to formal idea generation. It then covered how to effectively convert a research idea into a structured study, followed by guidance on selecting an appropriate publication venue, including the decision between conference papers and journals. The webinar also detailed the process of writing a paper from introduction to conclusion, offered advice on identifying suitable and legitimate conferences or journals, outlined typical timelines after article submission, and explained the steps to take following an article acceptance, including handling updates and revisions.",
             highlights: [
-                "Case studies from leading hospitals",
-                "Ethical framework development",
-                "Interactive Q&A with experts",
-                "Regulatory compliance discussion"
+                "Strategies for generating and shaping research ideas.",
+                "Step-by-step process of writing a paper from introduction to conclusion.",
+                "Guidance on choosing the right publication venue (conference vs. journal).",
+                "Insights into submission timelines, acceptance procedures, and revisions."
             ],
             speakers: [
                 {
-                    name: "Dr. Sarah Chen",
-                    role: "Chief AI Officer, Boston Medical",
-                    image: "images/speakers/speaker1.jpg"
-                },
-                {
-                    name: "Prof. James Wilson",
-                    role: "Bioethics, Harvard University",
-                    image: "images/speakers/speaker2.jpg"
+                    name: "Fazlay Rabbi",
+                    role: "Lead Researcher Tiny Neurons Research Group",
+                    image: "images/rabbi vai.jpg"
                 }
             ],
             resources: [
                 {
                     type: "slides",
                     title: "Presentation Slides",
-                    icon: "file-powerpoint"
-                },
-                {
-                    type: "video",
-                    title: "Full Recording",
-                    icon: "video"
+                    icon: "file-powerpoint",
+                    link: "https://www.canva.com/design/DAGvlGm5rfc/15H-pM2al5xnDLx10uvlLA/edit?utm_content=DAGvlGm5rfc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 }
+            ],
+            gallery: [
+                "images/gallery/s1c.jpeg",
             ]
         },
-        2: {
+        3: {
             type: "seminar",
-            title: "Quantum Machine Learning Fundamentals",
-            date: "Mar 22, 2023",
-            time: "10:00 AM - 12:30 PM",
-            location: "Main Campus, Room 204",
-            audience: "CS Students, Researchers",
-            description: "Introduction to quantum computing principles and their applications in machine learning algorithms. The seminar included theoretical foundations and practical coding examples using Qiskit.",
+            title: "Bridging AI and EEE",
+            date: "Febuary 25, 2025",
+            time: "12:30 PM",
+            location: "Stamford University Bangladesh",
+            audience: "EEE Students",
+            description: "On February 25, 2025, the IEEE Stamford University Bangladesh Student Branch and the Department of EEE at Stamford University Bangladesh co-organized a technical seminar titled 'Bridging AI and EEE: Intelligent Solutions for Modern Engineering.' The event, held as a hands-on training session at the Department of EEE, focused on the intersection of Artificial Intelligence, Machine Learning, and Data Science with Electrical and Electronics Engineering. Participants explored practical applications of ML in engineering, covering areas such as predictive maintenance and intelligent control systems. The discussions emphasized how EEE students can integrate AI-driven solutions to address real-world challenges, thereby enhancing automation, optimization, and decision-making processes in modern engineering.",
             highlights: [
-                "Quantum vs classical computing",
-                "QML algorithm walkthroughs",
-                "Hands-on coding session",
-                "Future research directions"
+                "Hands-on training on integrating AI, ML, and Data Science with EEE.",
+                "Practical applications in predictive maintenance and intelligent control systems.",
+                "Focus on solving real-world engineering challenges with AI-driven solutions.",
+                "Emphasis on automation, optimization, and smarter decision-making in EEE."
             ],
             speakers: [
                 {
-                    name: "Dr. Elena Rodriguez",
-                    role: "Quantum Computing Lab",
-                    image: "images/speakers/speaker3.jpg"
+                    name: "Fazlay Rabbi",
+                    role: "Lead Researcher Tiny Neurons Research Group",
+                    image: "images/rabbi vai.jpg"
                 }
             ],
             resources: [
                 {
                     type: "slides",
                     title: "Lecture Slides",
-                    icon: "file-powerpoint"
-                },
-                {
-                    type: "code",
-                    title: "Example Code",
-                    icon: "code"
+                    icon: "file-powerpoint",
+                    link: "https://www.canva.com/design/DAGf9I_o0ck/N3ty4n204-aGFHCCZ2Rj_g/edit?utm_content=DAGf9I_o0ck&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 }
+            ],
+
+
+
+            gallery: [
+                "images/gallery/s2c.jpeg",
+                "images/gallery/s2cl1.jpeg", 
+                "images/gallery/s2cl2.jpeg",
+                "images/gallery/s2cl3.jpeg",
+                "images/gallery/s2cl4.jpeg",
+                "images/gallery/s2cl5.jpeg"
             ]
         },
-        3: {
+        4: {
             type: "workshop",
             title: "Responsible AI Development",
             date: "Jan 10, 2023",
@@ -208,14 +209,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const resourcesContainer = document.getElementById('modal-resources');
             resourcesContainer.innerHTML = '';
             workshop.resources.forEach(resource => {
-                const resourceItem = document.createElement('div');
+                const resourceItem = document.createElement(resource.link ? 'a' : 'div');
                 resourceItem.className = 'resource-item';
+                
+                if (resource.link) {
+                    resourceItem.href = resource.link;
+                    resourceItem.target = '_blank';
+                    resourceItem.rel = 'noopener noreferrer';
+                }
+                
                 resourceItem.innerHTML = `
                     <div class="resource-icon">
                         <i class="fas fa-${resource.icon}"></i>
                     </div>
-                    <p>${resource.title}</p>
-                `;
+                    <p>${resource.title}</p>`;
                 resourcesContainer.appendChild(resourceItem);
             });
             
@@ -227,6 +234,44 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close workshop modal
     function closeWorkshopModal() {
         const modal = document.getElementById('workshop-modal');
+        modal.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+    
+    // Show gallery modal
+    function showGalleryModal(workshopId) {
+        const modal = document.getElementById('gallery-modal');
+        const workshop = workshopsData[workshopId];
+        
+        if (workshop && workshop.gallery) {
+            // Set gallery title
+            document.getElementById('gallery-title').textContent = workshop.title + ' - Gallery';
+            
+            // Clear previous images
+            const galleryGrid = document.getElementById('gallery-grid');
+            galleryGrid.innerHTML = '';
+            
+            // Add images to gallery
+            workshop.gallery.forEach(imageSrc => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
+                galleryItem.innerHTML = `
+                    <img src="${imageSrc}" alt="Event photo" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                `;
+                galleryGrid.appendChild(galleryItem);
+            });
+            
+            modal.classList.add('active');
+            document.body.classList.add('no-scroll');
+        }
+    }
+
+    // Close gallery modal
+    function closeGalleryModal() {
+        const modal = document.getElementById('gallery-modal');
         modal.classList.remove('active');
         document.body.classList.remove('no-scroll');
     }
@@ -394,6 +439,40 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && document.querySelector('.notify-modal.active')) {
                 closeNotifyModal();
+            }
+        });
+
+        // Gallery button event listener
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.modal-footer .btn') && 
+                document.getElementById('workshop-modal').classList.contains('active')) {
+                
+                // Get the workshop ID from the currently open modal
+                const modalTitle = document.getElementById('modal-title').textContent;
+                let workshopId = null;
+                
+                // Find which workshop matches the current modal title
+                for (const id in workshopsData) {
+                    if (workshopsData[id].title === modalTitle) {
+                        workshopId = id;
+                        break;
+                    }
+                }
+                
+                if (workshopId) {
+                    showGalleryModal(workshopId);
+                }
+            }
+        });
+
+        // Gallery modal close events
+        document.querySelector('.gallery-modal-close').addEventListener('click', closeGalleryModal);
+        document.querySelector('.gallery-modal-overlay').addEventListener('click', closeGalleryModal);
+
+        // Close gallery with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('gallery-modal').classList.contains('active')) {
+                closeGalleryModal();
             }
         });
     }
