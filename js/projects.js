@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Project data
+    // Initialize EmailJS
+    emailjs.init('Nmby0hkvoQYVrKDZv'); //YOUR_PUBLIC_KEY replace
     const projectsData = {
         completed: [
             {
@@ -236,8 +237,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (project) {
             document.getElementById('notify-project-title').textContent = project.title;
+            document.getElementById('notify-project').value = project.title;
             modal.classList.add('active');
             document.body.classList.add('no-scroll');
+            
+            // Reset form and messages
+            document.querySelector('.notify-form').style.display = 'block';
+            document.getElementById('notify-success-message').style.display = 'none';
+            document.getElementById('notify-error-message').style.display = 'none';
         }
     }
     
@@ -252,32 +259,84 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleNotifySubmit(e) {
         e.preventDefault();
         
+        const submitBtn = document.getElementById('notify-submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        const successMessage = document.getElementById('notify-success-message');
+        const errorMessage = document.getElementById('notify-error-message');
+        
         const formData = new FormData(e.target);
         const name = formData.get('name');
         const email = formData.get('email');
+        const message = formData.get('message') || 'No additional message';
         const projectId = document.querySelector('.upcoming-projects .notify-btn').getAttribute('data-project-id');
         const project = projectsData.upcoming.find(p => p.id == projectId);
         
         // Simple validation
         if (!name || !email) {
-            alert('Please fill in all fields');
+            showErrorMessage(errorMessage, 'Please fill in all required fields');
             return;
         }
         
         if (!validateEmail(email)) {
-            alert('Please enter a valid email address');
+            showErrorMessage(errorMessage, 'Please enter a valid email address');
             return;
         }
         
-        // Here you would typically send this data to your server
-        console.log('Notification request:', { name, email, project: project.title });
+        // Show loading state
+        submitBtn.disabled = true;
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'flex';
         
-        // Show success message
-        alert(`Thank you, ${name}! We'll notify you about "${project.title}"`);
+        // Hide previous messages
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
         
-        // Close modal and reset form
-        closeNotifyModal();
-        e.target.reset();
+        // Prepare email data
+        const emailData = {
+            name: name,
+            email: email,
+            project: project.title,
+            message: message,
+            to_email: 'ratul.tnrg214@gmail.com' // Replace with YOUR_EMAIL@gmail.com
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('service_m456ivu', 'template_e5y0zt8', emailData)  // Replace with YOUR_SERVICE_ID, YOUR_TEMPLATE_ID
+            .then(function(response) {
+                console.log('Email sent successfully:', response);
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                e.target.style.display = 'none';
+                
+                // Reset form and close modal after 2 seconds
+                setTimeout(() => {
+                    closeNotifyModal();
+                    e.target.reset();
+                    e.target.style.display = 'block';
+                    successMessage.style.display = 'none';
+                }, 2000);
+                
+            }, function(error) {
+                console.error('Email sending failed:', error);
+                showErrorMessage(errorMessage, 'Failed to send notification. Please try again.');
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.disabled = false;
+                btnText.style.display = 'block';
+                btnLoading.style.display = 'none';
+            });
+    }
+    
+    // Helper function to show error messages
+    function showErrorMessage(errorElement, message) {
+        errorElement.querySelector('p').textContent = message;
+        errorElement.style.display = 'block';
+        setTimeout(() => {
+            errorElement.style.display = 'none';
+        }, 5000);
     }
     
     // Email validation helper
