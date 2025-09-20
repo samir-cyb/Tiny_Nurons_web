@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Workshop data
     const workshopsData = {
         1: {
-            type: "workshop",
-            title: "AI in Healthcare – Innovation & Ethics",
-            date: "May 15, 2023",
-            time: "2:00 PM - 5:00 PM",
+            type: "seminar",
+            title: "IEEE Publications and Benefits & How to Do Research",
+            date: "August 11 , 2025",
+            time: "9:00 PM",
             location: "Online",
             audience: "Researchers, Medical Professionals",
-            description: "Exploring the latest AI applications in healthcare while addressing ethical considerations and regulatory frameworks. This workshop featured case studies from leading hospitals and interactive discussions with domain experts.",
+            description: "On August 11, 2025, the IEEE ULAB Student Branch hosted a webinar titled 'IEEE Publications and Benefits & How to Do Research.' The session provided a comprehensive guide to the research and publication process, beginning with strategies for generating research ideas—moving from initial hypothesis through literature review to formal idea generation. It then covered how to effectively convert a research idea into a structured study, followed by guidance on selecting an appropriate publication venue, including the decision between conference papers and journals. The webinar also detailed the process of writing a paper from introduction to conclusion, offered advice on identifying suitable and legitimate conferences or journals, outlined typical timelines after article submission, and explained the steps to take following an article acceptance, including handling updates and revisions.",
             highlights: [
                 "Case studies from leading hospitals",
                 "Ethical framework development",
@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         2: {
             type: "seminar",
-            title: "Quantum Machine Learning Fundamentals",
+            title: "Bridging AI and EEE",
             date: "Mar 22, 2023",
             time: "10:00 AM - 12:30 PM",
             location: "Main Campus, Room 204",
             audience: "CS Students, Researchers",
-            description: "Introduction to quantum computing principles and their applications in machine learning algorithms. The seminar included theoretical foundations and practical coding examples using Qiskit.",
+            description: "On February 25, 2025, the IEEE Stamford University Bangladesh Student Branch and the Department of EEE at Stamford University Bangladesh co-organized a technical seminar titled 'Bridging AI and EEE: Intelligent Solutions for Modern Engineering.' The event, held as a hands-on training session at the Department of EEE, focused on the intersection of Artificial Intelligence, Machine Learning, and Data Science with Electrical and Electronics Engineering. Participants explored practical applications of ML in engineering, covering areas such as predictive maintenance and intelligent control systems. The discussions emphasized how EEE students can integrate AI-driven solutions to address real-world challenges, thereby enhancing automation, optimization, and decision-making processes in modern engineering.",
             highlights: [
                 "Quantum vs classical computing",
                 "QML algorithm walkthroughs",
