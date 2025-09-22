@@ -29,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 "IoT"
             ],
             socialLinks: {
-                linkedin: "https://linkedin.com/in/fazlay-rabby",
+                linkedin: "https://www.linkedin.com/in/fazlayrabbyofficial/",
                 github: "https://github.com/fazlayrabby",
                 orcid: "https://orcid.org/0000-0000-0000-0000",
-                researchgate: "https://researchgate.net/profile/Fazlay-Rabby"
+                researchgate: "https://researchgate.net/profile/Fazlay-Rabby",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
         2: {
@@ -50,12 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/md-sajid-hasan-469919280/ ",
-                github: "https://github.com/sajidhasan",
-                orcid: "https://orcid.org/0000-0000-0000-0001",
-                researchgate: "https://researchgate.net/profile/Sajid-Hasan"
+                //github: "https://github.com/sajidhasan",
+                //orcid: "https://orcid.org/0000-0000-0000-0001",
+                //researchgate: "https://researchgate.net/profile/Sajid-Hasan",
+                googlescholar: "https://scholar.google.com/citations?user=6Aine5dr21kC&hl=en", // Add this
+                website: "https://sites.google.com/view/mdsajidhasan" // Add this
             }
         },
-
         3: {
             name: "Mahbuba Habib",
             image: "images/mahbuba.jpg",
@@ -71,11 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
             socialLinks: {
                 linkedin: "linkedin.com/in/mahbuba",
                 github: "mahbuba26.github.io/b",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
-
-
-
         4: {
             name: "Md. Hridoy Hossain",
             image: "images/Md._Hridoy_Hossain.png",
@@ -86,13 +88,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Scalable Hand Gesture Recognition from SEMG Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset (ICEEIE 2025)",
             ],
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
                 linkedin: "https://linkedin.com/in/hridoy-hossain",
                 github: "https://github.com/hridoyhossain",
                 orcid: "https://orcid.org/0000-0000-0000-0002",
-                researchgate: "https://researchgate.net/profile/Hridoy-Hossain"
+                researchgate: "https://researchgate.net/profile/Hridoy-Hossain",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
         5: {
@@ -105,13 +109,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML"
             ],
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
                 linkedin: "https://linkedin.com/in/radwan-ratul",
                 github: "https://github.com/radwanratul",
                 orcid: "https://orcid.org/0000-0000-0000-0003",
-                researchgate: "https://researchgate.net/profile/Radwan-Ratul"
+                researchgate: "https://researchgate.net/profile/Radwan-Ratul",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
         6: {
@@ -133,13 +139,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Other Skills: Problem Solving, Data Structures and Algorithms, Agile Methodologies, Team Collaboration"
             ],
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/redwan-ahamad-samir-701508312/",
                 github: "https://github.com/samir-cyb",
                 orcid: "https://orcid.org/my-orcid?orcid=0009-0008-3446-0845",
-                researchgate: "https://www.researchgate.net/profile/Redwan-Samir?ev=hdr_xprf"
+                researchgate: "https://www.researchgate.net/profile/Redwan-Samir?ev=hdr_xprf",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
         7: {
@@ -147,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "images/bahadur.png",
             expertise: "AI | ML",
             about: " I am a Computer Science Engineering student at ULAB with strong skills in JAVA, C, and C++. Alongside coding, I bring creativity as a graphic designer. A passionate learner and avid gamer, I enjoy solving problems and continuously seek opportunities to grow and apply my knowledge.",
-
             publications: [
                 "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML"
             ],
@@ -158,15 +165,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Operating Systems: Windows, Linux, MacOS",
                 "Other Skills: Problem Solving, Data Structures and Algorithms"
             ],
-
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/bahadur-zamn-shezan-633141261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-                github: "https://github.com/bahadurshezan",
-                orcid: "https://orcid.org/0000-0000-0000-0005",
-                researchgate: "https://researchgate.net/profile/Bahadur-Shezan"
+                github: "https://github.com/BzShezan",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
         8: {
@@ -178,17 +186,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Fazlay Rabby, Rajdeep Das, MD. Musfiqur Rahman, Md. Hridoy Hossain, Md. Rifat Aknda, 'Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset', 9th International Conference on Electrical, Electronics and Information Engineering (ICEEIE, 2025) [Accepted]"
             ],
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh",
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/rifatmilon/",
                 github: "https://github.com/rifatmilon",
-                orcid: "https://orcid.org/0000-0000-0000-0003",
-                researchgate: "https://researchgate.net/profile"
+                orcid: "https://orcid.org/0009-0003-8483-0668",
+                //researchgate: "https://researchgate.net/profile",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
-
-
         9: {
             name: "MD: MUSFIQUR RAHMAN",
             image: "images/musfiq.jpg",
@@ -199,26 +207,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings",
                 "Rice Leaf Disease Detection System Using the Convolutional Neural Network (ResNet)"
             ],
-
             skills: [
                 "Languages: C, Python",
                 "Operating Systems: Windows, Linux, MacOS",
                 "Other Skills: Problem Solving, Team Collaboration",
             ],
-
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
-                
-
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)"
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/musfiqur-rahman-82b2241ab/",
                 github: "https://github.com/rifatmilon",
                 orcid: "https://orcid.org/0000-0000-0000-0003",
-                researchgate: "https://researchgate.net/profile"
+                researchgate: "https://researchgate.net/profile",
+                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                website: "https://personal-website.com" // Add this
             }
         },
-
         10: {
             name: "Kaniz Fatema Antora",
             image: "images/Kaniz.png",
@@ -229,22 +234,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Development of a Blockchain-Based On-Demand Lightweight Commodity Delivery System",
                 "A Review of Blockchain Approaches for KYC"
             ],
-
             skills: [
                 "Blockchain, DDS, Security, Blockchain Network, KYC",
             ],
-
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
-                
-
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)"
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/kaniz-fatema-antora/",
-                researchgate: "researchgate.net/profile/Kaniz_Antora"
+                researchgate: "https://www.researchgate.net/profile/Kaniz_Antora",
+                googlescholar: "https://scholar.google.com/citations?user=MSiWacUAAAAJ&hl=en", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
-
         11: {
             name: "Ehasan Ahmed",
             image: "images/Ehasan.png",
@@ -253,23 +255,19 @@ document.addEventListener('DOMContentLoaded', function() {
             publications: [
                 "A Robust Routing Protocol in Cognitive Unmanned Aerial Vehicular Networks",
             ],
-
             skills: [
                 "Blockchain Systems, Distributed Ledger Technologies, Privacy-Preserving Data Sharing, Cryptography, IoT Integration, Artificial Intelligence, Machine Learning, Data Analysis, Smart Contract Design, System Architecture, Research Methodology, Experiment Design, Academic Writing, Data Modeling",
             ],
-
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
-                
-
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)"
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/ehasan-ahmed-7a1b591b5/",
                 orcid: "https://orcid.org/0009-0002-6481-070X",
-                GoogleScholar: "https://scholar.google.com/citations?hl=en&authuser=2&user=lX7bhJAAAAAJ"
+                googlescholar: "https://scholar.google.com/citations?hl=en&authuser=2&user=lX7bhJAAAAAJ", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
-
         12: {
             name: "Mumtahina Tasnim Mahi",
             image: "images/Mumtahina.png",
@@ -289,10 +287,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 Concepts: "IoT, Embedded Systems, PCB Design, Wireless Communication, Data Acquisition",
             },
             socialLinks: {
-                linkedin: "www.linkedin.com/in/mumtahina-tasnim-4bb837236",
+                linkedin: "https://www.linkedin.com/in/mumtahina-tasnim-4bb837236/",
             }
         },
-
         13: {
             name: "Saniida Salwa Mou",
             image: "images/mou.png",
@@ -302,7 +299,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt (Submitted on COMPAS 2025)",
             ],
             education: [
-                "BSc in Science in Computer Science & Engineering, University of Liberal Arts Bangladesh (ULAB)"
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
+                "CGPA: 3.92/4.00"
             ],
             skills: {
                 Programming: "C, C++, Web Design,HTML,CSS",
@@ -315,9 +313,172 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
 
-        
+
+
+
+        // new
+
+        14: {
+            name: "Ishrak Maisha Muskan",
+            image: "images/maisha.jpg",
+            expertise: "Programming",
+            about: "My enthusiasm lies in working towards the amelioration of the community through the use of technology. I am always excited to adapt to new technologies and engage in critical thinking. In addition, I have a love for learning and teaching young minds. As an undergraduate student pursuing my bachelor's degree in computer science and engineering, I am eager to continue expanding my knowledge and skills and to make a positive impact in the world.",
+            publications: [
+                
+            ],
+            skills: [
+                "Languages: C, C++, Python, Java"
+            ],
+            education: [
+                "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
+            ],
+            socialLinks: {
+                //linkedin: "https://www.linkedin.com/in/bahadur-zamn-shezan-633141261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                //github: "https://github.com/BzShezan",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+        15: {
+            name: "Shuvo Ronjon Das",
+            image: "images/ronjon.jpg",
+            expertise: "Biomedical Signal Processing, IoT in Healthcare",
+            about: "To apply my technical knowledge and passion for innovation in the field of Electrical and Electronics Engineering, Artificial Intellige nce(ML+DL), Signal Processing with a strong focus on research and development. Seeking opportunities that allow me to contribute to cutting-edge projects.",
+            publications: [
+            ],
+            skills: [
+                "Languages: Python , ML, DL,",
+                "MatLab"
+            ],
+            education: [
+                "B.Sc(Engg) in Electrical and Electronic Engineering, Jashore University of Science and Technology, Jashore, Bangladesh with CGPA: 3.48 (Till 6th semester)",
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/shuvoronjon/",
+                github: "https://github.com/iamsrdas",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+
+        16: {
+            name: "Ahmar khan",
+            image: "images/khan.jpg",
+            expertise: "Pcb Hardware designer",
+            about: "",
+            publications: [
+            ],
+            skills: [
+                "Languages: C, C++",
+                "MatLab",
+                "Pcb Designing: Altium Designer, Eagle, KiCad"
+            ],
+            education: [
+                "University of Engineering and Technology, Peshawar, Pakistan",
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/ahmar-khan/",
+                github: "https://github.com/ahmar-caan",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+        17: {
+            name: "Nafisa Binte Ghulam Kibria",
+            image: "images/khibria.png",
+            expertise: "Programmer",
+            about: "",
+            publications: [
+                "Optimized Voting Classifier for Loan Approval Prediction: An Explainable AI Approach",
+                "OptimizingWasteClassificationUsingTransferLearningandOneCyclePolicy",
+                "OptimizedCreditCardFraudDetectionUsingSoftVotingClassifierwithTomekLinks",
+                "ExplainableStacking-BasedRegressionModel forConcreteStrengthPrediction"
+            ],
+            skills: [
+                "Languages: C, C++, Python, Java, JavaScript, Html, Css, React",
+                "Frameworks: Node.js, Next.js",
+                "Tools: Github, Jira, Trello",
+                "Databases: Oracle, MySQL, MongoDB, Neo4j"
+            ],
+            education: [
+                "B.Sc. in Software Engineering, Islamic University of Technology, CGPA: 3.74 / 4.00",
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/nafisa-kibria-6a7117366",
+                github: "https://github.com/N-Kibria",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+        18: {
+            name: "SOUROV DEY",
+            image: "images/sourov.jpg",
+            expertise: "Programmer",
+            about: "This is Sourov Dey. I am a curious individual who enjoys exploring a variety of fields and topics, from Science and Technology to Philosophy and Psychology. My projects, including Emoji Prediction and Toxic Comment Classification, have enhanced my foundational knowledge in Machine Learning. Through volunteering, I have gained leadership and communication experience and learned how to tackle real-world problem-solving. I aim to apply my expertise as a Data Scientist in the sports industry, supporting strategic decision-making and performance improvement.",
+            publications: [
+            ],
+            skills: [
+                "Languages: Python , JS, C, R, Html, CSS",
+                "Frameworks: Node.js, Next.js",
+                "Tools: Github, Jira, Trello",
+                "Databases: SQL, MySQL"
+            ],
+            education: [
+                "Bachelor of Science, Computer Science and Engineering, North East University Bangladesh, CGPA: 3.48 out of 4.00"
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/sourov-bd71/",
+                github: "https://github.com/sourovdeybd71/",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+
+        19: {
+            name: "Ishrat Shefa Noor",
+            image: "images/Ishrat - Ishrat Shefa Noor.jpg",
+            expertise: "Programmer",
+            about: "To contribute my fresh perspective, dedication, and strong work ethic to a dynamic team. I aspire to apply my knowledge and develop practical skills while continuously learning and growing. I am committed to embracing challenges, adapting to new environments, and contributing positively for the betterment of the organization and personal growth.",
+            publications: [
+            ],
+            skills: [
+
+            ],
+            education: [
+                "Bachelor of Science, Computer Science and Engineering, Khulna University of Engineering & Technology (KUET), 3.15 out of 4.00 CGPA"
+            ],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/sourov-bd71/",
+                github: "https://github.com/sourovdeybd71/",
+                //orcid: "https://orcid.org/0000-0000-0000-0005",
+                //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
+            }
+        },
+
+
+
+
+
+
+
     };
-    
 
     // Modal functionality
     const modal = document.getElementById('researcher-modal');
@@ -368,7 +529,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 skillsList.parentElement.style.display = 'none';
             }
             
-            // Populate social links
+            // Populate social links - THIS IS THE CORRECTED SECTION
             const socialLinksContainer = document.getElementById('researcher-social-links');
             socialLinksContainer.innerHTML = '';
             
@@ -388,6 +549,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (researcher.socialLinks.researchgate) {
                     const researchgateLink = createSocialLink('researchgate', researcher.socialLinks.researchgate);
                     socialLinksContainer.appendChild(researchgateLink);
+                }
+                // Add these new conditions for Google Scholar and Website
+                if (researcher.socialLinks.googlescholar) {
+                    const scholarLink = createSocialLink('googlescholar', researcher.socialLinks.googlescholar);
+                    socialLinksContainer.appendChild(scholarLink);
+                }
+                if (researcher.socialLinks.website) {
+                    const websiteLink = createSocialLink('website', researcher.socialLinks.website);
+                    socialLinksContainer.appendChild(websiteLink);
                 }
             }
             
@@ -419,6 +589,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'researchgate':
                 icon.className = 'fab fa-researchgate';
+                break;
+            case 'googlescholar':  // Add this case
+                icon.className = 'fas fa-graduation-cap'; // Google Scholar icon
+                break;
+            case 'website':  // Add this case
+                icon.className = 'fas fa-globe'; // Website icon
                 break;
             default:
                 icon.className = 'fas fa-external-link-alt';

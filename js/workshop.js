@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             speakers: [
                 {
                     name: "Fazlay Rabbi",
-                    role: "Lead Researcher Tiny Neurons Research Group",
+                    role: "Lead Researcher, Tiny Neurons Research Group",
                     image: "images/rabbi vai.jpg"
                 }
             ],
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             speakers: [
                 {
                     name: "Fazlay Rabbi",
-                    role: "Lead Researcher Tiny Neurons Research Group",
+                    role: "Lead Researcher, Tiny Neurons Research Group",
                     image: "images/rabbi vai.jpg"
                 }
             ],
@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ],
 
-
-
             gallery: [
                 "images/gallery/s2c.jpeg",
                 "images/gallery/s2cl1.jpeg", 
@@ -75,30 +73,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 "images/gallery/s2cl5.jpeg"
             ]
         },
-        4: {
-            type: "workshop",
-            title: "Responsible AI Development",
-            date: "Jan 10, 2023",
-            time: "9:00 AM - 4:00 PM",
-            location: "Innovation Center",
-            audience: "Developers, Product Managers",
-            description: "Practical approaches to developing AI systems with fairness, accountability, and transparency in mind. The workshop covered tools and frameworks for bias detection and model explainability.",
+        2: {
+            type: "seminar",
+            title: "Mastering Git",
+            date: "August 16, 2025",
+            time: "8:00 PM",
+            location: "Online",
+            audience: "Students of ULAB",
+            description: "The IEEE ULAB Student Branch successfully hosted “Mastering Git” on 16th August 2025, conducted by Ehasan Ahmed (Ngaze), Junior Software Engineer. The webinar covered the fundamentals of Git and GitHub with live demonstrations, practical commands, and best practices like Conventional Commits. It was an engaging session designed to strengthen participants’ understanding of version control systems.",
             highlights: [
-                "Bias detection techniques",
-                "Explainability tools",
-                "Regulatory compliance",
-                "Case study analysis"
+                "Covered essential Git and GitHub concepts with live demos.",
+                "Introduced practical commands and workflows for version control.",
+                "Emphasized best practices, including Conventional Commits.",
+                "Strengthened participants’ skills in collaborative software development."
             ],
             speakers: [
                 {
-                    name: "Dr. Priya Patel",
-                    role: "AI Ethics Lead, TechCorp",
-                    image: "images/speakers/speaker4.jpg"
-                },
-                {
-                    name: "Prof. David Kim",
-                    role: "Computer Science Dept.",
-                    image: "images/speakers/speaker5.jpg"
+                    name: "Mr. Ehasan Ahmed",
+                    role: "Research Assistants, Tiny Neurons Research Group",
+                    image: "images/Ehasan.png"
                 }
             ],
             resources: [
@@ -106,13 +99,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     type: "slides",
                     title: "Workshop Slides",
                     icon: "file-powerpoint"
-                },
-                {
-                    type: "toolkit",
-                    title: "Responsible AI Toolkit",
-                    icon: "toolbox"
                 }
+            ],
+
+
+            gallery: [
+                "images/gallery/s3c1.jpg",
+                "images/gallery/s3c2.jpg", 
+                "images/gallery/s3c2.jpg",
+                "images/gallery/s3c3.jpg",
+                "images/gallery/s3c4.jpg",
+                "images/gallery/s3c5.jpg",
+                "images/gallery/s3c6.jpg",
+                "images/gallery/s3c7.jpg"
             ]
+
+
         }
     };
 

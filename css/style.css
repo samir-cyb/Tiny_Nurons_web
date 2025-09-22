@@ -1879,3 +1879,46 @@ footer .footer-col a:hover {
     }
 }
 
+/* Add to your existing CSS */
+.social-link-icon .fa-graduation-cap,
+.social-link-icon .fa-globe {
+    font-size: 16px;
+}
+
+/* For responsive adjustments */
+@media (max-width: 768px) {
+    .social-link-icon .fa-graduation-cap,
+    .social-link-icon .fa-globe {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-link-icon .fa-graduation-cap,
+    .social-link-icon .fa-globe {
+        font-size: 12px;
+    }
+}
+
+/* Past Researchers Section */
+.past-researchers {
+    background: linear-gradient(135deg, #f9faff 0%, #f0f3ff 100%);
+}
+
+.past-researchers .researcher-card {
+    opacity: 0.85;
+    transition: all 0.4s ease;
+}
+
+.past-researchers .researcher-card:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.past-researchers .researcher-image {
+    border: 3px solid rgba(108, 99, 255, 0.1);
+}
+
+.past-researchers .researcher-card:hover .researcher-image {
+    border-color: rgba(108, 99, 255, 0.3);
+}
