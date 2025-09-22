@@ -463,8 +463,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Bachelor of Science, Computer Science and Engineering, Khulna University of Engineering & Technology (KUET), 3.15 out of 4.00 CGPA"
             ],
             socialLinks: {
-                linkedin: "https://www.linkedin.com/in/sourov-bd71/",
-                github: "https://github.com/sourovdeybd71/",
+                linkedin: "https://www.linkedin.com/in/ishratshefa/",
+                //github: "https://github.com/sourovdeybd71/",
                 //orcid: "https://orcid.org/0000-0000-0000-0005",
                 //researchgate: "https://researchgate.net/profile/Bahadur-Shezan",
                 //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
