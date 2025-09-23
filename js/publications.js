@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const publicationsData = [
         {
             id: 1,
-            title: "Attention Mechanisms in Transformer Networks for Medical Image Analysis",
-            authors: "Smith, J., Chen, S., Johnson, M., Rodriguez, E., Kim, D.",
+            title: " Preeclampsia Prediction Using Machine Learning with Electronic Medical Records in Low-Resource Settings",
+            authors: "Fazlay Rabby, A. B. M. S. U. Doulah",
             venue: "Nature Machine Intelligence",
-            year: 2023,
-            type: "journal",
-            citations: 142,
-            abstract: "We present a novel attention mechanism specifically designed for medical image analysis, demonstrating significant improvements in diagnostic accuracy across multiple imaging modalities including MRI, CT, and X-ray datasets. Our approach leverages domain-specific knowledge to enhance feature representation and spatial attention mechanisms.",
+            year: 2025,
+            type: "Conferences",
+            citations: 7,
+            abstract: "Preeclampsia is a serious pregnancy complication characterized by hypertension and proteinuria that can result in severe maternal and fetal morbidity. Early prediction and timely intervention are essential to improve outcomes. The purpose of this study was to evaluate the effectiveness of several machine learning models in predicting preeclampsia by focusing on their ability to minimize false negatives and enhance clinical decision making. A publicly available dataset comprising patient records was used for model evaluation. Several machine learning models, including Logistic Regression (LR), Passive Aggressive Classifier (PAC), Extra Trees Classifier (ETC), Support Vector Machines (SVM), and CatBoost, were implemented. F1-score, precision, recall, sensitivity and specificity were calculated to measure the performance. Among the models tested, CatBoost outperformed the others, achieving the highest AUC of 0.9992 and an F1 score of 0.9812, demonstrating its strong predictive capability. SVM,LR, ETC, and PAC also showed competitive performance, while Random Forest exhibited the weakest classification ability. These findings highlight the potential of machine learning models, particularly CatBoost, in predicting preeclampsia conditions. The integration of such models into clinical practice could enhance early prediction and intervention, ultimately enhancing maternal and fetal health outcomes. Future studies should concentrate on integrating these models into clinical decision support systems and validating them using diverse datasets to further optimize their applicability in real-world settings.",
             contributions: [
                 "Novel attention mechanism for medical imaging",
                 "Cross-modal learning framework",
@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 2,
-            title: "Federated Learning for Privacy-Preserving Healthcare Analytics",
+            title: "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings.",
             authors: "Rodriguez, E., Kim, D., Patel, P., Zhang, L., Wilson, R.",
             venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-            year: 2023,
+            year: 2025,
             type: "journal",
             citations: 89,
-            abstract: "A comprehensive framework for federated learning in healthcare that preserves patient privacy while enabling collaborative model training across multiple institutions. We address key challenges in medical federated learning including data heterogeneity and security.",
+            abstract: "Preeclampsia prediction is a critical aspect of maternal health which enables early diagnosis and intervention for better maternal and fetal outcomes. However, preeclampsia prediction remains a challenging task due to diverse patient demographics, varying clinical practices, and limited resources. Traditional diagnostic methods often rely on clinical measurements like blood pressure and proteinuria, which can be expensive and time-consuming. This study proposes TabM, a parameter-efficient and interpretable deep learning-based model uniquely tailored for real-time preeclampsia prediction in low resource settings. The model was trained on datasets from both online and local hospital sources which include features such as maternal age, blood pressure levels and protein-to-creatinine ratios. Despite one dataset being small, the model incorporates domain adaptation strategies and external testing to enhance generalizability. Even in low-resource environments, TabM operates effectively using its ensemble learning mechanism and compact architecture, making it suitable for edge deployment. TabM outperformed traditional machine learning models including XGBoost, Random Forest, and Logistic Regression, achieving an AUCof 0.975. Furthermore, SHAP-based error analysis and confusion matrix breakdowns ensure transparency decision-making in clinical environments. This study highlights the potential of TabM to enhance preeclampsia prediction, making it an ideal solution for real-time clinical application in resource-constraints and diverse-healthcare environments.",
             contributions: [
                 "Privacy-preserving federated learning framework",
                 "Differential privacy integration",
@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 3,
-            title: "Neural Architecture Search for Efficient Computer Vision Models",
+            title: "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset",
             authors: "Johnson, M., Chen, S., Williams, A., Brown, K.",
             venue: "International Conference on Machine Learning (ICML)",
             year: 2023,
             type: "conference",
             citations: 67,
-            abstract: "We propose a novel neural architecture search method that automatically discovers efficient architectures for computer vision tasks while maintaining high accuracy. Our approach reduces computational costs by 40% compared to traditional methods.",
+            abstract: "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset ICEEIE 2025ICEEIE 2025 Surface electromyography (sEMG) provides a non invasive and effective way to interpret hand gestures. It plays a crucial role in areas such as prosthetics, human-computer interaction (HCI), and rehabilitation systems. In this study, a hybrid approach was proposed that combines multi-scale one dimensional convolutional neural networks (1D CNNs), bidirectional long short-term memory (BiLSTM) layers and an attention mechanism. The hybrid approach is lightweight but can easily captures the complex spatiotemporal patterns of sEMG signals. The study also focuses on collecting a novel dataset which was recorded from 26 individuals of different age and gender group. The basic five hand gestures samples were collected by using a user-friendly and customed application. The proposed model achieves an impressive test accuracy of 97% while maintaining a compact of 616K parameters. This lightweight model becomes more suitable for real-time deployment on low-power edge devices. The study further validated through experiments on the publicly available Ninapro dataset DB1 for its robustness and generalizability. By using a hybrid feature extraction techniques with deep neural modeling, the proposed method improves both interpretability and performance which offers a practical solution for real-time applications. This study contributes a scalable data collection framework, a novel benchmark dataset and a hybrid model advancing in sEMG-based gesture recognition.",
             contributions: [
                 "Efficient NAS algorithm",
                 "Mobile-optimized architectures",
@@ -79,13 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 4,
-            title: "Large Language Models for Scientific Literature Analysis",
-            authors: "Chen, S., Davis, J., Thompson, L., Martinez, C.",
-            venue: "Nature Communications",
+            title: "A review of blockchain approaches for kyc",
+            authors: "Nafees Mansoor, Kaniz Fatema Antora, Priyata Deb, Tarek Ahammed Arman, Azizah Abdul Manaf, Mahdi Zareei",
+            venue: "",
             year: 2023,
             type: "journal",
-            citations: 134,
-            abstract: "We develop specialized large language models for analyzing scientific literature, enabling automated knowledge extraction and synthesis across multiple domains. Our models achieve state-of-the-art performance on scientific text understanding tasks.",
+            citations: 34,
+            abstract: "The traditional Know Your Customer (KYC) procedure used by banks is deemed unreliable and costly. Therefore, the adoption of emerging technologies is essential for banking firms' future prospects. One such technology that has gained widespread acceptance is Blockchain, which is known for its reliability and security across various fields. This study aims to investigate how the implementation of Blockchain technology can modify the existing banking business, particularly the KYC document verification process, by storing and monitoring of information. The current need for an optimized KYC system is paramount; one that is coupled with a secure and trustworthy technology like Blockchain that can withstand fraudulent activities while also overcoming scalability and privacy challenges. The article analyzes previous relevant works, which highlight how the implementation of Blockchain technology eliminates the need for intermediaries, thereby reducing the possibility of malicious activities and errors that may occur when there are multiple manual tasks involved. ",
             contributions: [
                 "Domain-specific language model architecture",
                 "Scientific text understanding benchmarks",
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Multi-domain evaluation framework"
             ],
             resources: [
-                { type: "pdf", link: "#", label: "PDF" },
-                { type: "code", link: "#", label: "Code" },
+                { type: "pdf", link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10299643", label: "PDF" },
+                //{ type: "code", link: "#", label: "Code" },
                 { type: "model", link: "#", label: "Model" },
                 { type: "dataset", link: "#", label: "Dataset" }
             ],
@@ -102,13 +102,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 5,
-            title: "Interpretable Machine Learning for Clinical Decision Support",
-            authors: "Patel, P., Rodriguez, E., Lee, S., Kumar, R.",
-            venue: "Conference on Neural Information Processing Systems (NeurIPS)",
-            year: 2023,
-            type: "conference",
-            citations: 98,
-            abstract: "We introduce interpretable ML methods specifically designed for clinical applications, providing explanations that are meaningful to healthcare professionals while maintaining predictive accuracy.",
+            title: "Novel interpretable and robust web-based AI platform for phishing email detection",
+            authors: "Abdulla Al-Subaiey, Mohammed Al-Thani, Naser Abdullah Alam, Kaniz Fatema Antora, Amith Khandakar, SM Ashfaq Uz Zaman",
+            venue: "",
+            year: 2024,
+            type: "Journal",
+            citations: 28,
+            abstract: "Phishing emails continue to pose a significant threat, causing financial losses and security breaches. This study addresses limitations in existing research, such as reliance on proprietary datasets and lack of real-world application, by proposing a high-performance machine learning model for email classification. Utilizing a comprehensive and largest available public dataset, the model achieves a f1 score of 0.99 and is designed for deployment within relevant applications. Additionally, Explainable AI (XAI) is integrated to enhance user trust. This research offers a practical and highly accurate solution, contributing to the fight against phishing by empowering users with a real-time web-based application for phishing email detection.",
             contributions: [
                 "Clinical interpretation framework",
                 "Explanation quality metrics",
@@ -124,13 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            title: "Multimodal Learning for Autonomous Systems",
-            authors: "Kim, D., Wilson, R., Zhang, L., Adams, M.",
-            venue: "International Conference on Computer Vision (ICCV)",
-            year: 2022,
+            title: "Development of a blockchain-based on-demand lightweight commodity delivery system",
+            authors: "Bayezid Al Hossain Onee, Kaniz Fatema Antora, Omar Sharif Rajme, Nafees Mansoor",
+            venue: "",
+            year: 2023,
             type: "conference",
-            citations: 76,
-            abstract: "A comprehensive multimodal learning framework for autonomous systems that combines vision, audio, and sensor data to improve decision-making in complex environments.",
+            citations: 8,
+            abstract: "The COVID-19 pandemic has caused a surge in the use of online delivery services, which rely on user-generated content to promote collaborative consumption. Although Online Food Delivery (OFD) is a popular delivery system in Bangladesh, it has yet to ensure item authenticity, especially with the increasing demand for lightweight commodity delivery services across the country. The authenticity of products, involvement of multiple parties, and fair exchange are all challenging aspects of coast-to-coast services. Therefore, it is necessary for the three entities involved in the supply chain transaction - Seller, Carrier, and Buyer - to establish at least two peer-to-peer operations to ensure reliability and efficiency. To address these limitations and meet consumer expectations, the study proposes a framework for a nationwide on-demand marketplace for lightweight commodity items and a delivery system. Furthermore, transaction details are stored in a Blockchain to ensure the transparency and reliability of the proposed system.",
             contributions: [
                 "Multimodal fusion architecture",
                 "Sensor integration protocols",
@@ -146,13 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 7,
-            title: "Quantum-Classical Hybrid Algorithms for Optimization",
-            authors: "Zhang, L., Johnson, M., Taylor, B., Clark, N.",
-            venue: "Workshop on Quantum Machine Learning",
+            title: "Aiblocknet-Novel Framework for Authenticity Validation Using Blockchain and Machine Learning for Fake Image Detection",
+            authors: "Kaniz Fatema Antora, Naser Abdullah Alam, Mohammed Al-Thani, Abdulla Al-Subaiey, Ahasanur Rahman, Kevin Kunjukutty Thomas, SM Zaman, Amith Khandakar",
+            venue: "",
             year: 2023,
             type: "workshop",
             citations: 23,
-            abstract: "We explore hybrid quantum-classical algorithms for solving complex optimization problems, demonstrating quantum advantage in specific problem domains.",
+            abstract: "The proliferation of fake images online poses a significant challenge. According to a 2022 RAND Corporation study, this issue is estimated to cost businesses $10 billion annually. Fake images erode trust and can have detrimental effects, as highlighted by a 2020 Pew Research Center survey revealing that 64% of Americans are concerned about the spread of disinformation. This work introduces a novel blockchain-based system for image authentication. The system leverages the secure and transparent ledger offered by Sepholia Testnet to create an immutable record of an image's authenticity. This is achieved by capturing and storing a cryptographic hash of the image, alongside relevant metadata, on the blockchain. Users can verify image originality by comparing a calculated hash with the one stored on the blockchain. This approach provides enhanced security, transparency, and decentralization compared to traditional methods. Furthermore, the potential integration of a deep learning model for image analysis offers additional benefits. This could significantly reduce the time spent verifying image authenticity, potentially by as much as 50% according to a 2019 Poynter Institute study focusing on journalists grappling with the vast volume of online content.",
             contributions: [
                 "Hybrid quantum-classical framework",
                 "Optimization problem benchmarks",
@@ -238,6 +238,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let filteredPublications = [...publicationsData];
     let currentFilter = 'all';
     let currentSort = 'year-desc';
+    let currentRequestedResource = '';
+
+    // Modal elements
+    const publicationModal = document.getElementById('publication-modal');
+    const datasetModal = document.getElementById('dataset-modal');
+    const successModal = document.getElementById('success-modal');
 
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -377,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             return `
-                <a href="${resource.link}" class="btn btn-outline btn-small">
+                <a href="${resource.link}" class="btn btn-outline btn-small resource-btn" data-resource-type="${resource.type}" data-resource-label="${resource.label}">
                     <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
                     ${resource.label}
                 </a>
@@ -519,7 +525,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const link = document.createElement('a');
             link.href = resource.link;
-            link.className = 'btn btn-outline';
+            link.className = 'btn btn-outline resource-btn';
+            link.setAttribute('data-resource-type', resource.type);
+            link.setAttribute('data-resource-label', resource.label);
             link.innerHTML = `
                 <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
                 <span>${resource.label}</span>
@@ -552,6 +560,94 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('no-scroll');
         }
     });
+
+    // Dataset/Model Request Modal Functionality
+    function setupDatasetModal() {
+        const datasetRequestForm = document.getElementById('dataset-request-form');
+        const cancelRequestBtn = document.getElementById('cancel-request');
+        const successOkBtn = document.getElementById('success-ok');
+
+        // Handle resource button clicks
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.resource-btn')) {
+                e.preventDefault();
+                const resourceBtn = e.target.closest('.resource-btn');
+                const resourceType = resourceBtn.getAttribute('data-resource-type');
+                const resourceLabel = resourceBtn.getAttribute('data-resource-label');
+                
+                // Only show modal for dataset and model resources
+                if (resourceType === 'dataset' || resourceType === 'model') {
+                    currentRequestedResource = resourceLabel;
+                    document.getElementById('requested-resource').value = resourceLabel;
+                    showDatasetModal();
+                }
+            }
+        });
+
+        // Show dataset modal
+        function showDatasetModal() {
+            datasetModal.classList.add('active');
+            document.body.classList.add('no-scroll');
+        }
+
+        // Close dataset modal
+        function closeDatasetModal() {
+            datasetModal.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+            datasetRequestForm.reset();
+        }
+
+        // Show success modal
+        function showSuccessModal() {
+            datasetModal.classList.remove('active');
+            successModal.classList.add('active');
+        }
+
+        // Close success modal
+        function closeSuccessModal() {
+            successModal.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+
+        // Form submission
+        datasetRequestForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For now, we'll just show the success message
+            showSuccessModal();
+        });
+
+        // Cancel request
+        cancelRequestBtn.addEventListener('click', closeDatasetModal);
+
+        // Success modal OK button
+        successOkBtn.addEventListener('click', closeSuccessModal);
+
+        // Close modals when clicking outside
+        datasetModal.addEventListener('click', function(e) {
+            if (e.target === datasetModal) {
+                closeDatasetModal();
+            }
+        });
+
+        successModal.addEventListener('click', function(e) {
+            if (e.target === successModal) {
+                closeSuccessModal();
+            }
+        });
+
+        // Escape key to close modals
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                if (datasetModal.classList.contains('active')) {
+                    closeDatasetModal();
+                } else if (successModal.classList.contains('active')) {
+                    closeSuccessModal();
+                }
+            }
+        });
+    }
 
     // Back to top button
     const backToTopBtn = document.querySelector('.back-to-top');
@@ -677,6 +773,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the page
     applyFilters();
+    setupDatasetModal();
     
     // Auto-refresh AOS on dynamic content
     const publicationsContainer = document.getElementById('publications-container');

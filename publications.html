@@ -355,6 +355,61 @@
         </div>
     </div>
 
+    <!-- Dataset Request Modal -->
+<div class="dataset-modal" id="dataset-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container glass-card">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Request Dataset/Model</h2>
+                <p>Please provide your details to access the requested resource</p>
+            </div>
+            <div class="modal-divider"></div>
+            <div class="modal-body">
+                <form id="dataset-request-form" class="request-form">
+                    <div class="form-group">
+                        <label for="requester-name">Full Name</label>
+                        <input type="text" id="requester-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requester-email">Email Address</label>
+                        <input type="email" id="requester-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requester-institution">Institution/Organization</label>
+                        <input type="text" id="requester-institution" name="institution">
+                    </div>
+                    <div class="form-group">
+                        <label for="requester-purpose">Intended Use</label>
+                        <textarea id="requester-purpose" name="purpose" rows="3" placeholder="Please describe how you plan to use this resource..."></textarea>
+                    </div>
+                    <input type="hidden" id="requested-resource" name="resource">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancel-request">Cancel</button>
+                <button type="submit" form="dataset-request-form" class="btn btn-primary">Submit Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Message Modal -->
+<div class="success-modal" id="success-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container glass-card">
+        <div class="modal-content text-center">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Request Submitted Successfully!</h2>
+            <p>Thanks for your request. We'll contact you within 7 days.</p>
+            <button class="btn btn-primary" id="success-ok">OK</button>
+        </div>
+    </div>
+</div>
+
     <!-- Footer -->
         <!-- Footer -->
 <footer>
