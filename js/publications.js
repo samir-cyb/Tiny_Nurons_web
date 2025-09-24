@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 1,
             title: " Preeclampsia Prediction Using Machine Learning with Electronic Medical Records in Low-Resource Settings",
             authors: "Fazlay Rabby, A. B. M. S. U. Doulah",
-            venue: "Nature Machine Intelligence",
+            venue: "2025 2nd International Conference on Next-Generation Computing, IoT and Machine Learning (NCIM)",
             year: 2025,
-            type: "Conferences",
+            type: "Journal Article",
             citations: 7,
             abstract: "Preeclampsia is a serious pregnancy complication characterized by hypertension and proteinuria that can result in severe maternal and fetal morbidity. Early prediction and timely intervention are essential to improve outcomes. The purpose of this study was to evaluate the effectiveness of several machine learning models in predicting preeclampsia by focusing on their ability to minimize false negatives and enhance clinical decision making. A publicly available dataset comprising patient records was used for model evaluation. Several machine learning models, including Logistic Regression (LR), Passive Aggressive Classifier (PAC), Extra Trees Classifier (ETC), Support Vector Machines (SVM), and CatBoost, were implemented. F1-score, precision, recall, sensitivity and specificity were calculated to measure the performance. Among the models tested, CatBoost outperformed the others, achieving the highest AUC of 0.9992 and an F1 score of 0.9812, demonstrating its strong predictive capability. SVM,LR, ETC, and PAC also showed competitive performance, while Random Forest exhibited the weakest classification ability. These findings highlight the potential of machine learning models, particularly CatBoost, in predicting preeclampsia conditions. The integration of such models into clinical practice could enhance early prediction and intervention, ultimately enhancing maternal and fetal health outcomes. Future studies should concentrate on integrating these models into clinical decision support systems and validating them using diverse datasets to further optimize their applicability in real-world settings.",
             contributions: [
-                "Novel attention mechanism for medical imaging",
-                "Cross-modal learning framework",
-                "Benchmark improvements on 5 medical datasets",
-                "Open-source implementation and pretrained models"
+                "Comprehensive Model Comparison – The study evaluated multiple machine learning models (LR, PAC, ETC, SVM, CatBoost, and Random Forest) on preeclampsia prediction, providing a systematic performance comparison using clinically relevant metrics",
+                "Identification of CatBoost as the Best Predictor – CatBoost demonstrated superior predictive capability with an AUC of 0.9992 and F1-score of 0.9812, highlighting its effectiveness in minimizing false negatives and improving prediction reliability.",
+                "Focus on Clinical Decision Support – By prioritizing sensitivity and false negative reduction, the study emphasized the clinical importance of early detection, aligning model development with real-world healthcare needs.",
+                "uidance for Future Research – The work suggested validating models with diverse datasets and integrating them into clinical decision support systems, paving the way for practical implementation in maternal healthcare."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -167,18 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 8,
-            title: "Self-Supervised Learning for Medical Image Segmentation",
-            authors: "Wilson, R., Smith, J., Garcia, A., Evans, D.",
-            venue: "Medical Image Computing and Computer Assisted Intervention (MICCAI)",
-            year: 2022,
-            type: "conference",
-            citations: 112,
-            abstract: "We propose self-supervised learning methods for medical image segmentation that reduce dependence on labeled data while maintaining high segmentation accuracy.",
+            title: "Small-scale floating photovoltaic systems in university campus: A pathway to achieving SDG 7 goals in Bangladesh",
+            authors: "Atik Jawad, Md Sajid Hasan, Md Fatin Ishraq Faruqui",
+            venue: "Energy Conversion and Management",
+            year: 2023,
+            type: "Journal Article",
+            citations: 15,
+            abstract: "Floating photovoltaic systems (FPVs) are gaining popularity in the Asian subcontinent, particularly in densely populated countries like Bangladesh. Small-scale FPV plants, especially on university campuses, can be crucial to fulfilling SDG7 objectives by providing clean energy and addressing economic concerns, which are currently unexplored in the context of Bangladesh. To this end, this paper proposes a systematic methodology to comprehensively assess the potential of small-scale FPV in achieving SDG 7 goals, covering technical, economic, environmental, and social aspects. This study is the first to present an assessment of water evaporation deduction analysis (environmental aspect) and a systematic survey to evaluate the social aspects of the small-scale FPV plant in Bangladesh. To demonstrate the proposed approach, a simulation case study is conducted for a test FPV plant with a capacity of 116.5 kW in a small water reservoir (pond) located within the University of Liberal Arts Bangladesh (ULAB) campus in Dhaka. The results demonstrate that the proposed FPV plant can generate approximately 169.5 MWh yearly with a levelized cost of energy (LCOE) of 0.032 $. Additionally, the plant can prevent 3,715.32 m3 of water from evaporating and reduce 61 tons of GHG emissions annually, saving 93,025 $ of social cost of carbon (SCC) during its entire lifespan. In addition, the conducted survey shows a positive attitude towards FPV installation in the chosen area. Furthermore, a comparison with a rooftop solar plant in the same region highlights FPV's potential as an alternative solar-based energy source in techno-economic evaluations. Implementing the proposed FPV can significantly decrease the yearly total generating cost to meet the university's demand while ensuring clean energy in alignment with SDG7. This study can aid in the integration of renewable energy into the grid and assist policymakers in facilitating future small-scale FPV installations in Bangladesh.",
             contributions: [
-                "Self-supervised segmentation framework",
-                "Label efficiency analysis",
-                "Multi-organ segmentation validation",
-                "Transfer learning protocols"
+                "First Comprehensive FPV Assessment in Bangladesh – The paper presents the first systematic evaluation of small-scale floating photovoltaic systems in Bangladesh, addressing technical, economic, environmental, and social aspects together.",
+                "Novel Environmental and Social Analysis – It introduces water evaporation reduction analysis (environmental benefit) and a structured social survey (community acceptance), which had not been studied before in this context.",
+                "Case Study Demonstration – Through a 116.5 kW FPV simulation on the ULAB campus pond, the study quantifies annual energy generation (169.5 MWh), cost-effectiveness (LCOE of $0.032), water savings (3,715.32 m³), and emission reduction (61 tons CO₂/year).",
+                "Techno-Economic Comparison and Policy Guidance – By comparing FPV with rooftop solar plants, the research highlights FPV’s potential as a viable alternative and provides insights for integrating FPVs into the national renewable energy strategy aligned with SDG7."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -189,11 +189,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 9,
-            title: "Reinforcement Learning for Drug Discovery",
-            authors: "Davis, J., Chen, S., Kumar, R., White, S.",
-            venue: "arXiv preprint",
-            year: 2023,
-            type: "preprint",
+            title: "Exploring classification of vehicles using horn sound analysis: a deep learning-based approach",
+            authors: "Mohammad Ariful Islam Rafi, Moshiur Rahman Sohan, Md Sajid Hasan, Tammim Shahara Rafa, Atik Jawad",
+            venue: "2024 23rd International Symposium INFOTEH-JAHORINA (INFOTEH)",
+            year: 2024,
+            type: "Conference Paper",
             citations: 15,
             abstract: "We apply reinforcement learning techniques to accelerate drug discovery, focusing on molecular design and optimization for specific therapeutic targets.",
             contributions: [
@@ -215,13 +215,13 @@ document.addEventListener('DOMContentLoaded', function() {
             venue: "International Conference on Learning Representations (ICLR)",
             year: 2022,
             type: "conference",
-            citations: 156,
-            abstract: "We investigate adversarial robustness in deep learning systems and propose novel defense mechanisms that maintain model performance while improving security.",
+            citations: 2,
+            abstract: "Vehicle classification in real-life traffic scenarios is crucial for road safety and traffic management. However, it is a complex task due to the diverse vehicle types, uncontrolled environments, and limitations of computational resources. Although visual-based models are highly accurate, they require high computational resources and have limitations. On the other hand, audio-based vehicle classification has unique strengths, making it ideal for continuous, real-time monitoring and minimizing computational load. This study proposes a new approach to vehicle classification using a 1D Convolutional Neural Network (CNN1D) by analyzing the sound of vehicle horns. It involved collecting 200 horn sounds from various vehicles and analyzing, scaling, and labeling them through Audacity. The Mel-Frequency Cepstral Coefficients (MFCCs) were used for preprocessing and feature extraction. The CNN1D model, trained on this data, accurately classifies vehicles like bikes, buses, cars, and CNG autos. The proposed model was compared to other models, including Long Short-Term Memory (LSTM), Support Vector Machines (SVM), and Artificial Neural Networks (ANN), for validation purposes. It demonstrates a well-balanced and precise vehicle classification, resulting in high precision, recall, F1-score, and accuracy of 95.12%. Moreover, the model performs better than other assessments in terms of recall, accuracy, and precision, further validating the usage of the model. This study's proposed model can be a potential solution for real-world vehicle classification and detection applications, providing a viable path for real-world applications. It may also help identify which vehicle is responsible for continuous sound pollution, leading to better traffic management and environmental protection.",
             contributions: [
-                "Robust training methodologies",
-                "Adversarial detection algorithms",
-                "Security evaluation frameworks",
-                "Industry deployment guidelines"
+                "Novel Audio-Based Classification Approach – The study proposes a CNN1D model that classifies vehicles based on horn sounds, reducing reliance on computationally expensive vision-based methods",
+                "Custom Dataset Creation – A dataset of 200 horn sounds from multiple vehicle types (bikes, buses, cars, and CNG autos) was collected, labeled, and preprocessed using MFCCs, enabling efficient audio-based classification.",
+                "Superior Performance Over Baseline Models – The CNN1D model achieved 95.12% accuracy and outperformed benchmark models such as LSTM, SVM, and ANN across precision, recall, and F1-score.",
+                "Real-World Applicability – Beyond classification, the model can aid in traffic monitoring, sound pollution management, and vehicle accountability, making it suitable for smart city and environmental protection applications."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -229,7 +229,93 @@ document.addEventListener('DOMContentLoaded', function() {
                 { type: "demo", link: "#", label: "Demo" }
             ],
             featured: false
-        }
+        },
+
+
+
+        {
+            id: 11,
+            title: "Clean hydrogen production from floating photovoltaics: a case study in dhanmondi Lake, Dhaka",
+            authors: "Md Sajid Hasan, Atik Jawad",
+            venue: "2023 10th IEEE International Conference on Power Systems (ICPS)",
+            year: 2023,
+            type: "conference",
+            citations: 2,
+            abstract: "Clean hydrogen is pivotal for reducing natural gas usage and advancing decarbonization. In this context, solar-based photovoltaic (PV) plants present a viable and eco-friendly approach to generating clean hydrogen energy. However, in densely populated countries like Bangladesh, the scarcity of available land necessitates the utilization of water bodies for PV installations, referred to as Floating PV systems (FPV). To this end, this paper proposes a novel methodology for assessing hydrogen generation through FPV systems in water bodies, taking into consideration technical, economic, and environmental concerns. The proposed methodology is implemented through the simulation of an FPV plant on Dhanmondi Lake, Dhaka, utilizing 1% of the total water body area as a conservative approach. The necessary simulations using PVsyst software demonstrate that the proposed FPV system with a capacity of 634 kWp, achieves a performance ratio (PR) of 77%. It generates an annual output of 925 MWh/year at a levelized cost of energy (LCOE) of 0.028 USD per kWh. Interestingly, this system can produce 149.6 tons of clean hydrogen annually through the PEM electrolyzation process. Furthermore, it significantly reduces greenhouse gas (GHG) emissions by 12,900.88 tons and curtails water evaporation by 14,424 m³ per year. Over the lifespan of the project, the estimated social cost of carbon for the system amounts to 786,953.68 USD. The findings of this study highlight the promising potential of FPV-based hydrogen production, offering a cleaner and more cost-effective method of energy generation. This research can aid the researchers in developing models for future large-scale FPV-based hydrogen production endeavors in Bangladesh.",
+            contributions: [
+                "Novel Methodology for FPV-Based Hydrogen Generation – The paper introduces a systematic framework for assessing hydrogen production from FPV systems, incorporating technical, economic, and environmental dimensions in the context of Bangladesh.",
+                "Case Study on Dhanmondi Lake – A simulation of a 634 kWp FPV plant (covering only 1% of the lake area) demonstrates its feasibility, achieving 925 MWh/year generation, a 77% performance ratio, and an LCOE of 0.028 USD/kWh.",
+                "Integration with PEM Electrolyzation – The study showcases the potential of producing 149.6 tons of clean hydrogen annually, highlighting the synergy between FPV power and green hydrogen production.",
+                "Significant Environmental Benefits – Beyond energy, the proposed system reduces GHG emissions by 12,900.88 tons, prevents 14,424 m³ of water evaporation, and saves ~786,954 USD in social carbon cost over its lifespan."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+        {
+            id: 12,
+            title: "Techno-Economic and Environmental Analysis of Solar PV System at Sher-e-Bangla National Cricket Stadium: A Comprehensive Case Study",
+            authors: "Mohammad Ariful Islam Rafi, Md Sajid Hasan, Md Manzurul Hasan, Jawadul Alam Chowdhury, Moshiur Rahman Sohan, Nahid A Jahan, M Mofazzal Hossain",
+            venue: "IEEE Access",
+            year: 2023,
+            type: "Journal Article",
+            citations: 1,
+            abstract: "The proposed rooftop solar photovoltaic (PV) system at the Sher-e-Bangla National Cricket Stadium (SBNCS) demonstrates a sustainable energy solution addressing Bangladesh’s energy challenges. The system has a capacity of 83.2 kWp and is estimated to generate 129.5 MWh of energy annually. This deployment reduces reliance on fossil fuels and contributes to global Sustainable Development Goal 7 (SDG7). The performance evaluation reveals a Performance Ratio (PR) of 79.4%, ensuring efficient solar resource utilization. Economically, the project involves a total investment of $ 101,031, achieving annual energy cost savings of $ 5,370. Financial feasibility metrics include a Net Present Value (NPV) of $ 99,131.5, an Internal Rate of Return (IRR) of 6%, and a Payback Period (PBP) of 13 years. Furthermore, the system reduces 50 tons of CO2 emissions annually, resulting in a Social Cost of Carbon (SCC) savings of $ 77,064 over its 25-year lifespan. The project’s Levelized Cost of Energy (LCOE) is calculated as $ 0.03/kWh, reflecting its long-term cost-effectiveness. This analysis highlights the economic, environmental, and performance benefits of implementing a rooftop solar PV system at SBNCS, offering a scalable model for integrating renewable energy into and other stadiums and large infrastructure. This study can aid in the integration of renewable energy into the grid and assist policymakers in facilitating the future energy storage systems and expanding grid-tied operations for enhanced sustainability.",
+            contributions: [
+                "First-Ever Rooftop PV Assessment at a National Stadium in Bangladesh – The study provides a detailed techno-economic and environmental evaluation of an 83.2 kWp rooftop solar PV system at Sher-e-Bangla National Cricket Stadium, serving as a pioneering case study for large-scale sports infrastructure",
+                "Comprehensive Performance and Financial Analysis – The system demonstrates strong performance (PR of 79.4%) and economic viability, with a Net Present Value (NPV) of $99,131.5, IRR of 6%, Payback Period of 13 years, and LCOE of $0.03/kWh, ensuring long-term cost-effectiveness.",
+                "Environmental Sustainability and Carbon Savings – The proposed system reduces 50 tons of CO₂ emissions annually, saving $77,064 in Social Cost of Carbon (SCC) over 25 years, directly contributing to Bangladesh’s SDG7 and climate commitments.",
+                "Scalable Model for Future Applications – Beyond SBNCS, the findings establish a replicable framework for deploying rooftop solar PV in other stadiums and large infrastructure, supporting policymakers in integrating renewable energy and future grid-tied storage systems."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+
+
+        {
+            id: 13,
+            title: "Techno-Economic and Environmental Analysis of Solar PV System at Sher-e-Bangla National Cricket Stadium: A Comprehensive Case Study",
+            authors: "Mohammad Ariful Islam Rafi, Md Sajid Hasan, Md Manzurul Hasan, Jawadul Alam Chowdhury, Moshiur Rahman Sohan, Nahid A Jahan, M Mofazzal Hossain",
+            venue: "IEEE Access",
+            year: 2023,
+            type: "Journal Article",
+            citations: 1,
+            abstract: "The proposed rooftop solar photovoltaic (PV) system at the Sher-e-Bangla National Cricket Stadium (SBNCS) demonstrates a sustainable energy solution addressing Bangladesh’s energy challenges. The system has a capacity of 83.2 kWp and is estimated to generate 129.5 MWh of energy annually. This deployment reduces reliance on fossil fuels and contributes to global Sustainable Development Goal 7 (SDG7). The performance evaluation reveals a Performance Ratio (PR) of 79.4%, ensuring efficient solar resource utilization. Economically, the project involves a total investment of $ 101,031, achieving annual energy cost savings of $ 5,370. Financial feasibility metrics include a Net Present Value (NPV) of $ 99,131.5, an Internal Rate of Return (IRR) of 6%, and a Payback Period (PBP) of 13 years. Furthermore, the system reduces 50 tons of CO2 emissions annually, resulting in a Social Cost of Carbon (SCC) savings of $ 77,064 over its 25-year lifespan. The project’s Levelized Cost of Energy (LCOE) is calculated as $ 0.03/kWh, reflecting its long-term cost-effectiveness. This analysis highlights the economic, environmental, and performance benefits of implementing a rooftop solar PV system at SBNCS, offering a scalable model for integrating renewable energy into and other stadiums and large infrastructure. This study can aid in the integration of renewable energy into the grid and assist policymakers in facilitating the future energy storage systems and expanding grid-tied operations for enhanced sustainability.",
+            contributions: [
+                "First-Ever Rooftop PV Assessment at a National Stadium in Bangladesh – The study provides a detailed techno-economic and environmental evaluation of an 83.2 kWp rooftop solar PV system at Sher-e-Bangla National Cricket Stadium, serving as a pioneering case study for large-scale sports infrastructure",
+                "Comprehensive Performance and Financial Analysis – The system demonstrates strong performance (PR of 79.4%) and economic viability, with a Net Present Value (NPV) of $99,131.5, IRR of 6%, Payback Period of 13 years, and LCOE of $0.03/kWh, ensuring long-term cost-effectiveness.",
+                "Environmental Sustainability and Carbon Savings – The proposed system reduces 50 tons of CO₂ emissions annually, saving $77,064 in Social Cost of Carbon (SCC) over 25 years, directly contributing to Bangladesh’s SDG7 and climate commitments.",
+                "Scalable Model for Future Applications – Beyond SBNCS, the findings establish a replicable framework for deploying rooftop solar PV in other stadiums and large infrastructure, supporting policymakers in integrating renewable energy and future grid-tied storage systems."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+
+        
+
+
+
+
+
+
+
     ];
 
     // Pagination variables
