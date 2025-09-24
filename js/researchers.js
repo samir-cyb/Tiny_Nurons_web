@@ -91,12 +91,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Bachelor of Science, Computer Science and Engineering, University of Liberal Arts Bangladesh (ULAB)",
             ],
             socialLinks: {
-                linkedin: "https://linkedin.com/in/hridoy-hossain",
-                github: "https://github.com/hridoyhossain",
-                orcid: "https://orcid.org/0000-0000-0000-0002",
-                researchgate: "https://researchgate.net/profile/Hridoy-Hossain",
-                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
-                website: "https://personal-website.com" // Add this
+                linkedin: "https://www.linkedin.com/in/hossain-hridoy/",
+                github: "https://github.com/md-hridoy-hossain",
+                //orcid: "https://orcid.org/0000-0000-0000-0002",
+                //researchgate: "https://researchgate.net/profile/Hridoy-Hossain",
+                //googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
         5: {
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 orcid: "https://orcid.org/my-orcid?orcid=0009-0008-3446-0845",
                 researchgate: "https://www.researchgate.net/profile/Redwan-Samir?ev=hdr_xprf",
                 googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
-                website: "https://personal-website.com" // Add this
+                website: "https://samir-cyb.github.io/my_portfolio/" // Add this
             }
         },
         7: {

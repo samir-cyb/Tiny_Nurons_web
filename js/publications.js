@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 120
     });
 
-    // Publications data
-    const publicationsData = [
+const publicationsData = [
+        
         {
             id: 1,
-            title: " Preeclampsia Prediction Using Machine Learning with Electronic Medical Records in Low-Resource Settings",
+            title: "Preeclampsia Prediction Using Machine Learning with Electronic Medical Records in Low-Resource Settings",
             authors: "Fazlay Rabby, A. B. M. S. U. Doulah",
             venue: "2025 2nd International Conference on Next-Generation Computing, IoT and Machine Learning (NCIM)",
             year: 2025,
@@ -36,17 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 2,
             title: "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings.",
-            authors: "Rodriguez, E., Kim, D., Patel, P., Zhang, L., Wilson, R.",
+            authors: "Fazlay Rabby, MD. Musfiqur Rahman, and Rajdeep Das, ",
             venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
             year: 2025,
             type: "journal",
-            citations: 89,
+            citations: 1,
             abstract: "Preeclampsia prediction is a critical aspect of maternal health which enables early diagnosis and intervention for better maternal and fetal outcomes. However, preeclampsia prediction remains a challenging task due to diverse patient demographics, varying clinical practices, and limited resources. Traditional diagnostic methods often rely on clinical measurements like blood pressure and proteinuria, which can be expensive and time-consuming. This study proposes TabM, a parameter-efficient and interpretable deep learning-based model uniquely tailored for real-time preeclampsia prediction in low resource settings. The model was trained on datasets from both online and local hospital sources which include features such as maternal age, blood pressure levels and protein-to-creatinine ratios. Despite one dataset being small, the model incorporates domain adaptation strategies and external testing to enhance generalizability. Even in low-resource environments, TabM operates effectively using its ensemble learning mechanism and compact architecture, making it suitable for edge deployment. TabM outperformed traditional machine learning models including XGBoost, Random Forest, and Logistic Regression, achieving an AUCof 0.975. Furthermore, SHAP-based error analysis and confusion matrix breakdowns ensure transparency decision-making in clinical environments. This study highlights the potential of TabM to enhance preeclampsia prediction, making it an ideal solution for real-time clinical application in resource-constraints and diverse-healthcare environments.",
             contributions: [
-                "Privacy-preserving federated learning framework",
-                "Differential privacy integration",
-                "Multi-institutional validation",
-                "HIPAA-compliant implementation"
+                "Novel Parameter-Efficient Deep Learning Model – The study introduces TabM, a compact and interpretable deep learning model specifically designed for real-time preeclampsia prediction in low-resource healthcare settings.",
+                "Robust Multi-Source Training and Domain Adaptation – TabM is trained on both online and local hospital datasets, incorporating domain adaptation strategies to enhance generalizability even with small datasets.",
+                "Superior Performance Compared to Traditional Models – The model outperforms XGBoost, Random Forest, and Logistic Regression, achieving an AUC of 0.975, demonstrating high predictive capability.",
+                "Transparency and Clinical Interpretability – SHAP-based error analysis and confusion matrix insights ensure explainability, supporting reliable and interpretable clinical decision-making."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -58,17 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 3,
             title: "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset",
-            authors: "Johnson, M., Chen, S., Williams, A., Brown, K.",
-            venue: "International Conference on Machine Learning (ICML)",
-            year: 2023,
+            authors: "Fazlay Rabby, Rajdeep Das,Musfiqur Rahman, Rifat Aknda.",
+            venue: "ICEEIE 2025",
+            year: 2025,
             type: "conference",
-            citations: 67,
+            citations: 1,
             abstract: "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Dataset ICEEIE 2025ICEEIE 2025 Surface electromyography (sEMG) provides a non invasive and effective way to interpret hand gestures. It plays a crucial role in areas such as prosthetics, human-computer interaction (HCI), and rehabilitation systems. In this study, a hybrid approach was proposed that combines multi-scale one dimensional convolutional neural networks (1D CNNs), bidirectional long short-term memory (BiLSTM) layers and an attention mechanism. The hybrid approach is lightweight but can easily captures the complex spatiotemporal patterns of sEMG signals. The study also focuses on collecting a novel dataset which was recorded from 26 individuals of different age and gender group. The basic five hand gestures samples were collected by using a user-friendly and customed application. The proposed model achieves an impressive test accuracy of 97% while maintaining a compact of 616K parameters. This lightweight model becomes more suitable for real-time deployment on low-power edge devices. The study further validated through experiments on the publicly available Ninapro dataset DB1 for its robustness and generalizability. By using a hybrid feature extraction techniques with deep neural modeling, the proposed method improves both interpretability and performance which offers a practical solution for real-time applications. This study contributes a scalable data collection framework, a novel benchmark dataset and a hybrid model advancing in sEMG-based gesture recognition.",
             contributions: [
-                "Efficient NAS algorithm",
-                "Mobile-optimized architectures",
-                "Automated model compression",
-                "Cross-platform deployment tools"
+                "Hybrid Lightweight Deep Learning Model – The study proposes a novel model combining multi-scale 1D CNNs, BiLSTM layers, and an attention mechanism, effectively capturing complex spatiotemporal patterns in sEMG signals with only 616K parameters.",
+                "New Diverse Dataset and Scalable Data Collection Framework – A dataset of five hand gestures was collected from 26 participants of different ages and genders using a custom, user-friendly application, providing a benchmark for future research.",
+                "High Accuracy and Real-Time Suitability – The model achieved 97% test accuracy and is compact enough for real-time deployment on low-power edge devices, enabling practical applications in prosthetics, HCI, and rehabilitation systems.",
+                "Robustness and Generalizability Validation – The proposed method was further validated on the publicly available Ninapro DB1 dataset, demonstrating scalability and strong generalization across diverse subjects."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
             citations: 34,
             abstract: "The traditional Know Your Customer (KYC) procedure used by banks is deemed unreliable and costly. Therefore, the adoption of emerging technologies is essential for banking firms' future prospects. One such technology that has gained widespread acceptance is Blockchain, which is known for its reliability and security across various fields. This study aims to investigate how the implementation of Blockchain technology can modify the existing banking business, particularly the KYC document verification process, by storing and monitoring of information. The current need for an optimized KYC system is paramount; one that is coupled with a secure and trustworthy technology like Blockchain that can withstand fraudulent activities while also overcoming scalability and privacy challenges. The article analyzes previous relevant works, which highlight how the implementation of Blockchain technology eliminates the need for intermediaries, thereby reducing the possibility of malicious activities and errors that may occur when there are multiple manual tasks involved. ",
             contributions: [
-                "Domain-specific language model architecture",
-                "Scientific text understanding benchmarks",
-                "Knowledge graph construction",
-                "Multi-domain evaluation framework"
+                "Critical Analysis of Traditional KYC Limitations – The study identifies the inefficiencies, high costs, and unreliability of conventional KYC procedures in banking.",
+                "Proposing Blockchain for KYC Optimization – It highlights how Blockchain can enhance KYC by providing secure, tamper-proof storage and monitoring of customer information, reducing dependency on intermediaries.",
+                "Addressing Scalability and Privacy Challenges – The research highlights how blockchain implementation can overcome critical issues related to scalability and data privacy in banking KYC processes.",
+                "Comprehensive Analysis of Existing Solutions – The study synthesizes previous work on blockchain-enabled KYC systems, providing insights into best practices and technological improvements for secure and efficient customer verification."
             ],
             resources: [
                 { type: "pdf", link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10299643", label: "PDF" },
@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
             citations: 28,
             abstract: "Phishing emails continue to pose a significant threat, causing financial losses and security breaches. This study addresses limitations in existing research, such as reliance on proprietary datasets and lack of real-world application, by proposing a high-performance machine learning model for email classification. Utilizing a comprehensive and largest available public dataset, the model achieves a f1 score of 0.99 and is designed for deployment within relevant applications. Additionally, Explainable AI (XAI) is integrated to enhance user trust. This research offers a practical and highly accurate solution, contributing to the fight against phishing by empowering users with a real-time web-based application for phishing email detection.",
             contributions: [
-                "Clinical interpretation framework",
-                "Explanation quality metrics",
-                "Healthcare professional validation study",
-                "Real-world deployment case studies"
+                "High-Performance Machine Learning Model – The study proposes a robust model for phishing email classification, achieving an F1-score of 0.99 using the largest available public dataset.",
+                "Integration of Explainable AI (XAI) – By incorporating XAI, the model enhances transparency and user trust, making predictions interpretable for real-world applications.",
+                "Practical Real-World Deployment – The approach is designed for implementation in web-based platforms, providing real-time phishing detection for end-users.",
+                "Addressing Gaps in Previous Research – The study overcomes limitations of prior works, including reliance on proprietary datasets and lack of practical applicability, offering a scalable and actionable solution for cybersecurity."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -132,10 +132,10 @@ document.addEventListener('DOMContentLoaded', function() {
             citations: 8,
             abstract: "The COVID-19 pandemic has caused a surge in the use of online delivery services, which rely on user-generated content to promote collaborative consumption. Although Online Food Delivery (OFD) is a popular delivery system in Bangladesh, it has yet to ensure item authenticity, especially with the increasing demand for lightweight commodity delivery services across the country. The authenticity of products, involvement of multiple parties, and fair exchange are all challenging aspects of coast-to-coast services. Therefore, it is necessary for the three entities involved in the supply chain transaction - Seller, Carrier, and Buyer - to establish at least two peer-to-peer operations to ensure reliability and efficiency. To address these limitations and meet consumer expectations, the study proposes a framework for a nationwide on-demand marketplace for lightweight commodity items and a delivery system. Furthermore, transaction details are stored in a Blockchain to ensure the transparency and reliability of the proposed system.",
             contributions: [
-                "Multimodal fusion architecture",
-                "Sensor integration protocols",
-                "Real-time processing optimization",
-                "Safety-critical system validation"
+                "Blockchain-Based Nationwide Delivery Framework – The study proposes a secure and transparent system for lightweight commodity delivery in Bangladesh, leveraging blockchain to ensure transaction reliability among sellers, carriers, and buyers.",
+                "Enhancing Supply Chain Authenticity – By implementing peer-to-peer operations between the three entities, the framework addresses challenges of product authenticity, multi-party involvement, and fair exchanges.",
+                "Support for On-Demand Marketplaces – The proposed system enables a scalable nationwide on-demand marketplace, catering to the growing demand for lightweight delivery services in a post-pandemic context.",
+                "Improved Transparency and Efficiency – Blockchain integration ensures tamper-proof record-keeping and trust in supply chain transactions, enhancing overall efficiency and consumer confidence."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -154,10 +154,10 @@ document.addEventListener('DOMContentLoaded', function() {
             citations: 23,
             abstract: "The proliferation of fake images online poses a significant challenge. According to a 2022 RAND Corporation study, this issue is estimated to cost businesses $10 billion annually. Fake images erode trust and can have detrimental effects, as highlighted by a 2020 Pew Research Center survey revealing that 64% of Americans are concerned about the spread of disinformation. This work introduces a novel blockchain-based system for image authentication. The system leverages the secure and transparent ledger offered by Sepholia Testnet to create an immutable record of an image's authenticity. This is achieved by capturing and storing a cryptographic hash of the image, alongside relevant metadata, on the blockchain. Users can verify image originality by comparing a calculated hash with the one stored on the blockchain. This approach provides enhanced security, transparency, and decentralization compared to traditional methods. Furthermore, the potential integration of a deep learning model for image analysis offers additional benefits. This could significantly reduce the time spent verifying image authenticity, potentially by as much as 50% according to a 2019 Poynter Institute study focusing on journalists grappling with the vast volume of online content.",
             contributions: [
-                "Hybrid quantum-classical framework",
-                "Optimization problem benchmarks",
-                "Quantum advantage analysis",
-                "Simulator integration"
+                "Blockchain-Enabled Image Authentication – The study introduces a system that uses the Sepholia Testnet blockchain to store cryptographic hashes and metadata, creating an immutable record of image authenticity.",
+                "Enhanced Security, Transparency, and Decentralization – By leveraging blockchain, the proposed system improves upon traditional image verification methods, reducing risks of tampering and fostering trust.",
+                "User-Friendly Verification Process – Users can easily verify image originality by comparing computed hashes with the blockchain record, streamlining authenticity checks.",
+                "Potential Integration with Deep Learning – The framework allows for the future integration of deep learning-based image analysis, potentially reducing verification time by up to 50% and improving scalability for high-volume content."
             ],
             resources: [
                 { type: "pdf", link: "#", label: "PDF" },
@@ -308,9 +308,174 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-        
+
+        {
+            id: 14,
+            title: "Assessment of Greenhouse Gas Emissions and Mitigation Strategies for a University in Bangladesh",
+            authors: "Mirza Rasheduzzaman, Md Sajid Hasan, Nayma Akther Jahan, Atik Jawad, M Mofazzal Hossain",
+            venue: "IEEE Access",
+            year: 2025,
+            type: "Journal Article",
+            citations: 1,
+            abstract: "Climate change is an urgent global challenge. Higher education institutions (HEIs) have a crucial role in addressing this issue by reducing their environmental impact. This study presents the first comprehensive assessment of greenhouse gas (GHG) emissions at a university in Bangladesh using the GHG Protocol Corporate Standard to categorize emissions into scopes 1, 2, and 3. The total GHG emissions amount to 2498.80 tons of carbon dioxide equivalent (tCO2e) annually, with a per capita carbon footprint of 0.4671 tCO2e. Scope 1 emissions, primarily from university vehicles, generators, cafeterias, and air conditioners, account for 29.73% (742.55 tCO2e). Scope 2 emissions, related to purchased electricity from power grid, are at 18.18% (454.14 tCO2e). The largest contributor is the indirect emissions from commuting in scope 3, accounting for 52.10% (1302.14 tCO2e) of the total. Major emission sources include air conditioners, purchased electricity and commuting of university personnel by cars. To reduce these emissions, the study presents a scenario based mitigation framework consisting of Conventional, Incremental, and Comprehensive Scenarios with targeted interventions for each scope. These include addressing high fugitive emissions from airconditioner by replacing current coolant gases with more efficient alternatives such as R32, transitioning to hybrid or solar-powered electric vehicles, expanding shared transport options, and integrating rooftop and floating solar systems. Although the study is based on one university, the proposed strategies are designed to be broadly applicable to universities across Bangladesh. The study also emphasizes energy efficiency, eco-friendly mobility, and integrating sustainability into the curriculum. This study underscores the need for localized assessments and tailored strategies to effectively address the unique challenges of reducing GHG emissions in HEIs, providing a robust framework for creating a more sustainable university community.",
+            contributions: [
+                "First Comprehensive GHG Assessment in a Bangladeshi University – The study applies the GHG Protocol Corporate Standard to quantify emissions across scopes 1, 2, and 3, establishing a baseline carbon footprint of 2498.80 tCO₂e annually.",
+                "Identification of Major Emission Sources – It highlights the dominant contributors, including air conditioners, purchased electricity, and commuting, with scope 3 commuting emissions accounting for the largest share (52.10%).",
+                "Scenario-Based Mitigation Framework – The research introduces Conventional, Incremental, and Comprehensive mitigation pathways, offering targeted interventions such as refrigerant replacement, electric/solar vehicle adoption, shared transport, and solar integration.",
+                "Scalable Policy and Practical Insights – While focused on one university, the proposed strategies are designed to be replicable across higher education institutions in Bangladesh, providing actionable guidance for policymakers and administrators to reduce HEI emissions."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
 
 
+
+        {
+            id: 15,
+            title: "The Potential of Agrophotovoltaics in Sustainable Energy Generation: A Case Study in Bangladesh",
+            authors: "Md. Sajid Hasan, Atik Jawad",
+            venue: "2024 5th International Conference on Communications, Information, Electronic and Energy Systems (CIEES)",
+            year: 2024,
+            type: "Conference",
+            citations: 1,
+            abstract: "Bangladesh, with its extensive agricultural landscape, faces considerable energy shortages. Adopting a dual-use strategy for agricultural land, which combines solar technology for energy generation and agricultural practices, could be highly advantageous in the future. To this end, this paper proposes a systematic approach to evaluate the feasibility of APV through proper modeling, design and analysis in a fertile land. The proposed methodology focuses on Naogaon in Bangladesh's Rajshahi division, assessing the viability of Agrophotovoltaic (APV) systems. AquaCrop is used for crop yield analysis, and HelioScope for solar plant design and power generation. Results show the Levelized Cost of Electricity (LCOE) for the APV system to be economically favorable at 0.0358,withanannualelectricityoutputof57.33MWh.Furthermore,theAPVsystemenablesagriculturalproductivity,yielding3.73tonsofcropsperhectare.Environmentalbenefitsaresubstantial,includinga30−tonannualreductioningreenhousegasemissions.ThestudyalsocalculatesasignificantSocialCostofCarbon(SCC)at45,750, demonstrating the system's effectiveness in carbon emission reduction. This research offers a critical framework for future APV system implementations, especially in countries where agriculture is a key economic and environmental element, representing an important stride towards sustainable and renewable energy solutions.",
+            contributions: [
+                "First Systematic APV Feasibility Assessment in Bangladesh – The study develops a structured methodology combining crop yield modeling (AquaCrop) and solar energy design (HelioScope) to evaluate APV systems in fertile agricultural land.",
+                "Dual Productivity Demonstration – The proposed APV system simultaneously generates 57.33 MWh of clean electricity annually (LCOE: 0.0358) while sustaining agricultural output of 3.73 tons of crops per hectare.",
+                "Significant Environmental and Economic Benefits – The system achieves a 30-ton annual reduction in GHG emissions and avoids $45,750 in Social Cost of Carbon (SCC), highlighting its sustainability and cost-effectiveness.",
+                "Scalable Framework for Future Adoption – The findings provide a replicable approach for integrating APV systems into Bangladesh’s agricultural landscape, offering policymakers and researchers a pathway to balance food security with renewable energy expansion."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+
+
+        {
+            id: 16,
+            title: "Superconductors Application in Power Sector: A Review",
+            authors: "Md Sajid Hasan, Jannatun Nayeem Anjuman, Jayed Ali, Atik Jawad",
+            venue: "2024 International BIT Conference (BITCON)",
+            year: 2024,
+            type: "Conference",
+            citations: 1,
+            abstract: "This study investigates the use of high-temperature superconductors (HTS) in the power industry, starting with the historical discovery of superconductors. It highlights the distinct features of HTS, including zero electrical resistance and perfect diamagnetism. The focus is on Yttrium Barium Copper Oxide (YBCO), Bismuth-Strontium-CalciumCopper-Oxide (Bi-2223), and Magnesium Diboride (MgB2), exploring their impact on power transmission efficiency, transformer innovations, and Superconducting Magnetic Energy Storage (SMES) systems. The paper also examines the economic viability and environmental sustainability of these materials in transforming the power sector, addressing challenges and future opportunities for widespread adoption.",
+            contributions: [
+                "Comprehensive Review of HTS Materials – The study explores the properties and applications of key superconductors such as YBCO, Bi-2223, and MgB₂, emphasizing their unique features of zero resistance and perfect diamagnetism.",
+                "Application in Power Sector Innovations – It assesses the role of HTS in advancing power transmission, transformer design, and Superconducting Magnetic Energy Storage (SMES), demonstrating their potential to enhance efficiency.",
+                "Economic and Environmental Evaluation – The research analyzes the cost-effectiveness and sustainability of HTS adoption, linking technological innovation with long-term viability in the power industry.",
+                "Future Challenges and Opportunities – By addressing barriers to scalability and deployment, the study provides a roadmap for advancing HTS integration in energy systems worldwide."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+        {
+            id: 17,
+            title: "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings",
+            authors: "Fazlay Rabbi, Rajdeep, Musfiqur rahman, hridoy hossin, Redwan Ahamad Samir",
+            venue: "BIM2025",
+            year: 2025,
+            type: "Conference",
+            citations: 1,
+            abstract: "Coronary Artery Disease (CAD) is a leading cause of death worldwide, emphasizing the need for early and accurate detection. This study proposes a dual-branch deep learning model using Coronary Angiography (CAG) images, integrating EfficientNet-B0 for feature extraction, CBAM for attention to stenotic regions, and Grad-CAM for visual interpretability. A Bayesian layer refines predictions by incorporating prior medical knowledge by improving diagnostic reliability. Trained on the CADICA dataset, the model achieved 99.75\% accuracy, with high precision, recall and F1-scores across both CAD-positive and negative cases. Compared to state-of-the-art methods, the proposed structure offers superior performance and a lightweight architecture suitable for low-resource settings. The strong accuracy and interpretability of the model make it a practical tool for early CAD diagnosis in clinical environments.",
+            contributions: [
+                "Novel Dual-Branch Deep Learning Architecture – The study introduces a dual-branch model combining EfficientNet-B0 for robust feature extraction, CBAM for focusing on stenotic regions, and Grad-CAM for visual interpretability.",
+                "Integration of Bayesian Learning – By incorporating a Bayesian layer, the model enhances diagnostic reliability through the inclusion of prior medical knowledge.",
+                "High Performance on Real Dataset – Trained on the CADICA dataset, the model achieved 99.75% accuracy with consistently high precision, recall, and F1-scores, outperforming state-of-the-art CAD detection methods.",
+                "Lightweight and Clinically Applicable – The architecture is computationally efficient, making it suitable for deployment in low-resource clinical settings, with strong interpretability to support medical decision-making."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+        {
+            id: 18,
+            title: "Scalable sEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control",
+            authors: "Fazlay Rabbi, Rajdeep, Musfiqur rahman, hridoy hossin, Redwan Ahamad Samir",
+            venue: "BIM2025",
+            year: 2025,
+            type: "Conference",
+            citations: 1,
+            abstract: "Surface electromyography (sEMG) based wheelchair control improve the life of people with severe disabilities. This study presents a low-cost real-time and user-independent wearable system for omnidirectional wheelchair control using sEMG signals. The proposed framework leverages a Myo Armband to acquire data from six gestures. The collected signals later processed through a hybrid deep learning model combining 1D Convolutional Neural Networks (CNN) with a Bidirectional LSTM (BiLSTM) and attention mechanism. Data from 26 participants were collected and validated using a Leave-One-User-Out cross-validation strategy which achieves an average classification accuracy of 97%. The system is integrated with an ESP32 microcontroller and tested on a custom-built electric wheelchair, enabling gesture-based mobility. Real-time responsiveness and optimized power consumption (average 30.5W) ensure practical usability. This study demonstrates the feasibility of deploying affordable, accurate and user-independent sEMG-based assistive wheelchair in low-resource settings.",
+            contributions: [
+                "User-Independent Low-Cost Assistive Framework – The study proposes a real-time, affordable, and user-independent wearable system for omnidirectional wheelchair control using sEMG signals from a Myo Armband.",
+                "Hybrid Deep Learning Architecture – A novel CNN–BiLSTM with attention mechanism is developed to classify six distinct gestures, achieving an average accuracy of 97% using Leave-One-User-Out cross-validation across 26 participants.",
+                "Hardware Integration and Real-World Testing – The system is embedded into an ESP32 microcontroller and successfully implemented on a custom-built electric wheelchair, validating real-time performance.",
+                "Practicality for Low-Resource Settings – With optimized power consumption (30.5W) and high responsiveness, the system demonstrates strong potential for deployment in assistive technologies for people with severe disabilities."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+        {
+            id: 19,
+            title: "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML for Mechanical Arm Control in Low-Resource Settings",
+            authors: "Fazlay Rabby and Md. Rifat Aknda and Mumtahina Tasnim Mahi and Shaikh Radwan Ahmed Ratul and Bahadur Zaman Shezan",
+            venue: "2nd IEEE Conference on Computing Applications and Systems (COMPAS)",
+            year: 2025,
+            type: "Conference",
+            citations: 1,
+            abstract: "This study introduces TinySenseNet, a lightweight, memory-efficient deep learning model for real-time control of robotic arms through surface electromyography (sEMG) and inertial measurement unit (IMU) signal fusion, optimized for deployment on low-power embedded systems. The system leverages a 1D convolutional pipeline with an attention mechanism to extract and fuse multimodal features within a 150ms time window, enabling low-latency gesture recognition using TinyML. A custom hardware setup combining an ESP32 MCU, MyoArmband, and PCA9685-controlled MG996R servos delivers precise 6-DoF articulation with power-aware safety mechanisms. Extensive evaluation across controlled lab settings, real-world noisy environments, and clinical trials with transradial amputees demonstrates superior robustness and generalizability. TinysenseNet achieves 95.7% accuracy for amputees, 93.3% in real-world settings, and 97.2% for able-bodied users, outperforming CNN, SVM, and LSTM baselines by a significant margin. The model occupies only 1.46KB, with 23.8ms latency. The key features of this study are cross-modal delay features, confidence-based actuation with haptic feedback, and a culturally adapted gesture set. This work presents an affordable, scalable, clinically viable solution for intelligent mechanical control in low-resource environments.",
+            contributions: [
+                "Lightweight Multimodal Deep Learning Model – TinySenseNet fuses sEMG and IMU signals using a 1D CNN with attention, achieving low-latency gesture recognition (150ms) and optimized for deployment on low-power embedded systems (TinyML).",
+                "Hardware-Integrated Real-Time Robotic Arm Control – The system uses ESP32, Myo Armband, and PCA9685-controlled MG996R servos to deliver precise 6-DoF articulation with power-aware safety mechanisms.",
+                "High Accuracy and Robustness Across Users and Environments – Achieves 95.7% accuracy for amputees, 93.3% in real-world noisy settings, and 97.2% for able-bodied users, outperforming CNN, SVM, and LSTM baselines.",
+                "Ultra-Compact and Clinically Viable Solution – The model occupies only 1.46KB with 23.8ms latency, incorporates cross-modal delay features, confidence-based actuation with haptic feedback, and culturally adapted gestures, making it scalable and practical for low-resource environments."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
+
+
+        {
+            id: 20,
+            title: "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt",
+            authors: "Fazlay Rabby and Mohammad Hridoy Hossain and Md. Rifat Aknda and Bahadur Zaman Shezan and Sanjida Salwa Mou",
+            venue: "2nd IEEE Conference on Computing Applications and Systems (COMPAS)",
+            year: 2025,
+            type: "Conference",
+            citations: 1,
+            abstract: "Early and precise detection of brain tumors remains a major challenge in clinical radiology, particularly in real time applications. This study introduces a novel hybrid deep learning framework that combines YOLOv11 for rapid tumor localization with MONAI’s MedNeXt for advanced 3D classification and grading. Leveraging a clinically annotated, locally sourced dataset of 3,500 MRI scans along with two benchmark datasets, the system addresses key challenges of accuracy, interpretability, and deployment readiness. YOLOv11 integrates a hybrid CSPDarknet–Swin Transformer backbone with anchor-free detection and Soft-NMS refinement for precise localization across diverse tumor morphologies. MedNeXt, enhanced with SimCLR-based contrastive pretraining, attention mechanisms, and multi-head classification, accurately distinguishes tumor type and severity. The pipeline incorporates Grad-CAM++ for explainability and Monte Carlo Dropout for uncertainty estimation, ensuring clinical transparency and decision support. Optimized using ONNX and TensorRT, the system supports PACS/DICOM and EMR integration for real-time inference in hospital environments. The model achieves state-of-the-art results—99.60% accuracy, 99.76% precision, 99.52% recall, and 99.64% F1-score—outperforming leading architectures like InceptionNetv4 and EfficientNetB0. Designed with a focus on deployment in resource-constrained settings, this framework advances AI-assisted radiology by offering a robust, interpretable, and scalable solution for brain tumor diagnostics.",
+            contributions: [
+                "Hybrid Deep Learning Framework – The study introduces a novel pipeline combining YOLOv11 for rapid tumor localization with MONAI’s MedNeXt for advanced 3D tumor classification and grading.",
+                "High Accuracy and State-of-the-Art Performance – Evaluated on 3,500 locally sourced MRI scans and benchmark datasets, the system achieves 99.60% accuracy, outperforming leading architectures like InceptionNetv4 and EfficientNetB0.",
+                "Clinical Interpretability and Decision Support – Grad-CAM++ and Monte Carlo Dropout provide explainability and uncertainty estimation, supporting transparent and reliable clinical decision-making.",
+                "Deployment-Ready for Real-Time Settings – Optimized with ONNX and TensorRT, the framework integrates with PACS/DICOM and EMR systems, enabling scalable, resource-efficient, real-time AI-assisted radiology solutions."
+            ],
+            resources: [
+                { type: "pdf", link: "#", label: "PDF" },
+                { type: "code", link: "#", label: "Code" },
+                { type: "demo", link: "#", label: "Demo" }
+            ],
+            featured: false
+        },
 
 
 
@@ -449,45 +614,49 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Create publication card
+    // Create publication card (UPDATED - removed abstract and resource buttons)
     function createPublicationCard(pub, index) {
         const card = document.createElement('div');
         card.className = 'publication-item glass-card';
         card.setAttribute('data-aos', 'fade-up');
         card.setAttribute('data-aos-delay', (index * 100).toString());
         
-        // Resource links HTML
-        const resourcesHTML = pub.resources.map(resource => {
-            const iconMap = {
-                pdf: 'fa-file-pdf',
-                code: 'fa-code',
-                dataset: 'fa-database',
-                demo: 'fa-play-circle',
-                slides: 'fa-presentation',
-                video: 'fa-video',
-                model: 'fa-brain'
+        // Helper function to get display type name
+        const getDisplayType = (pubType) => {
+            const typeLabels = {
+                'journal': 'Journal Article',
+                'journal article': 'Journal Article',
+                'conference': 'Conference Paper',
+                'workshop': 'Workshop Paper',
+                'preprint': 'Preprint'
             };
-            
-            return `
-                <a href="${resource.link}" class="btn btn-outline btn-small resource-btn" data-resource-type="${resource.type}" data-resource-label="${resource.label}">
-                    <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
-                    ${resource.label}
-                </a>
-            `;
-        }).join('');
-        
-        const typeLabels = {
-            journal: 'Journal Article',
-            conference: 'Conference Paper',
-            workshop: 'Workshop Paper',
-            preprint: 'Preprint'
+            const normalizedType = pubType.toLowerCase().trim();
+            return typeLabels[normalizedType] || pubType;
+        };
+
+        // Helper function to get icon
+        const getTypeIcon = (pubType) => {
+            const normalizedType = pubType.toLowerCase().trim();
+            switch(normalizedType) {
+                case 'journal':
+                case 'journal article':
+                    return 'fa-book';
+                case 'conference':
+                    return 'fa-users';
+                case 'workshop':
+                    return 'fa-chalkboard-teacher';
+                case 'preprint':
+                    return 'fa-file-alt';
+                default:
+                    return 'fa-file-alt';
+            }
         };
         
         card.innerHTML = `
             <div class="publication-header">
                 <div class="publication-badge ${pub.type}">
-                    <i class="fas ${pub.type === 'journal' ? 'fa-book' : pub.type === 'conference' ? 'fa-users' : pub.type === 'workshop' ? 'fa-chalkboard-teacher' : 'fa-file-alt'}"></i>
-                    <span>${typeLabels[pub.type]}</span>
+                    <i class="fas ${getTypeIcon(pub.type)}"></i>
+                    <span>${getDisplayType(pub.type)}</span>
                 </div>
                 <h3 class="publication-title">${pub.title}</h3>
                 <p class="publication-authors">${pub.authors}</p>
@@ -500,11 +669,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </span>
                 </div>
             </div>
-            <div class="publication-abstract">
-                <p>${pub.abstract}</p>
-            </div>
             <div class="publication-actions">
-                ${resourcesHTML}
                 <button class="btn btn-primary view-details-btn" data-publication-id="${pub.id}">
                     <span>View Details</span>
                     <i class="fas fa-arrow-right"></i>
@@ -569,62 +734,80 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Show publication modal
-    function showPublicationModal(pub) {
-        // Populate modal content
-        document.getElementById('modal-publication-type').textContent = {
-            journal: 'Journal Article',
-            conference: 'Conference Paper',
-            workshop: 'Workshop Paper',
-            preprint: 'Preprint'
-        }[pub.type];
+    // Updated showPublicationModal function
+function showPublicationModal(pub) {
+    // Populate modal content with proper structure
+    document.getElementById('modal-publication-title').textContent = pub.title;
+    document.getElementById('modal-publication-authors').textContent = pub.authors;
+    document.getElementById('modal-publication-venue').textContent = pub.venue;
+    document.getElementById('modal-publication-year').textContent = pub.year;
+    document.getElementById('modal-citation-count').textContent = pub.citations;
+    document.getElementById('modal-publication-abstract').textContent = pub.abstract;
 
-        document.getElementById('modal-publication-title').textContent = pub.title;
-        document.getElementById('modal-publication-authors').textContent = pub.authors;
-        document.getElementById('modal-publication-venue').textContent = pub.venue;
-        document.getElementById('modal-publication-year').textContent = pub.year;
-        document.getElementById('modal-citation-count').textContent = pub.citations;
-        document.getElementById('modal-publication-abstract').textContent = pub.abstract;
+    // Add publication type to meta info
+    const publicationType = {
+        journal: 'Journal Article',
+        conference: 'Conference Paper', 
+        workshop: 'Workshop Paper',
+        preprint: 'Preprint'
+    }[pub.type] || pub.type;
 
-        // Populate contributions
-        const contributionsList = document.getElementById('modal-publication-contributions');
-        contributionsList.innerHTML = '';
-        pub.contributions.forEach(contribution => {
-            const li = document.createElement('li');
-            li.textContent = contribution;
-            contributionsList.appendChild(li);
-        });
+    // Update the meta container to include type
+    const metaContainer = document.querySelector('.modal-meta');
+    metaContainer.innerHTML = `
+        <span id="modal-publication-type">
+            <i class="fas fa-file-alt"></i>
+            ${publicationType}
+        </span>
+        <span id="modal-publication-year">
+            <i class="fas fa-calendar"></i>
+            ${pub.year}
+        </span>
+        <span id="modal-publication-citations">
+            <i class="fas fa-quote-right"></i>
+            <span id="modal-citation-count">${pub.citations}</span> citations
+        </span>
+    `;
 
-        // Populate resources
-        const resourcesContainer = document.getElementById('modal-publication-resources');
-        resourcesContainer.innerHTML = '';
-        pub.resources.forEach(resource => {
-            const iconMap = {
-                pdf: 'fa-file-pdf',
-                code: 'fa-code',
-                dataset: 'fa-database',
-                demo: 'fa-play-circle',
-                slides: 'fa-presentation',
-                video: 'fa-video',
-                model: 'fa-brain'
-            };
+    // Populate contributions
+    const contributionsList = document.getElementById('modal-publication-contributions');
+    contributionsList.innerHTML = '';
+    pub.contributions.forEach(contribution => {
+        const li = document.createElement('li');
+        li.textContent = contribution;
+        contributionsList.appendChild(li);
+    });
 
-            const link = document.createElement('a');
-            link.href = resource.link;
-            link.className = 'btn btn-outline resource-btn';
-            link.setAttribute('data-resource-type', resource.type);
-            link.setAttribute('data-resource-label', resource.label);
-            link.innerHTML = `
-                <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
-                <span>${resource.label}</span>
-            `;
-            resourcesContainer.appendChild(link);
-        });
+    // Populate resources
+    const resourcesContainer = document.getElementById('modal-publication-resources');
+    resourcesContainer.innerHTML = '';
+    pub.resources.forEach(resource => {
+        const iconMap = {
+            pdf: 'fa-file-pdf',
+            code: 'fa-code',
+            dataset: 'fa-database',
+            demo: 'fa-play-circle',
+            slides: 'fa-presentation',
+            video: 'fa-video',
+            model: 'fa-brain'
+        };
 
-        // Show modal
-        modal.classList.add('active');
-        document.body.classList.add('no-scroll');
-    }
+        const link = document.createElement('a');
+        link.href = resource.link;
+        link.className = 'btn btn-outline resource-btn';
+        link.setAttribute('data-resource-type', resource.type);
+        link.setAttribute('data-resource-label', resource.label);
+        link.innerHTML = `
+            <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
+            <span>${resource.label}</span>
+        `;
+        resourcesContainer.appendChild(link);
+    });
+
+    // Show modal
+    modal.classList.add('active');
+    document.body.classList.add('no-scroll');
+}
 
     // Close modal functionality
     modalClose.addEventListener('click', function() {
@@ -653,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const cancelRequestBtn = document.getElementById('cancel-request');
         const successOkBtn = document.getElementById('success-ok');
 
-        // Handle resource button clicks
+        // Handle resource button clicks (now only in modal)
         document.addEventListener('click', function(e) {
             if (e.target.closest('.resource-btn')) {
                 e.preventDefault();
