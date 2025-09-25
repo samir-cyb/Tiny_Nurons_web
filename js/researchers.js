@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const researchers = {
         1: {
             name: "Fazlay Rabby",
-            image: "images/Fazlay_Rabby.png",
-            expertise: "Iot | Tiny ML | Computer Vision",
+            image: "images/rabbi vai2.jpg",
+            expertise: "Biomedical signal processing | Pattern recognition | Internet of Things | TinyML",
             about: "Fazlay Rabby leads our AI research initiatives with over 3 years of experience in machine learning algorithms.",
             publications: [
                 "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Datasets (2025 9th International Conference on Electrical, Electronics, and Information Engineering).",
@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/fazlayrabbyofficial/",
-                github: "https://github.com/fazlayrabby",
-                orcid: "https://orcid.org/0000-0000-0000-0000",
-                researchgate: "https://researchgate.net/profile/Fazlay-Rabby",
-                googlescholar: "https://scholar.google.com/citations?user=USER_ID", // Add this
-                website: "https://personal-website.com" // Add this
+                //github: "https://github.com/fazlayrabby",
+                orcid: "https://orcid.org/0009-0007-8090-1077",
+                researchgate: "https://www.researchgate.net/profile/Fazlay-Rabby-5?ev=hdr_xprf",
+                googlescholar: "https://scholar.google.com/citations?user=DhNowuUAAAAJ&hl=en", // Add this
+                //website: "https://personal-website.com" // Add this
             }
         },
         2: {
