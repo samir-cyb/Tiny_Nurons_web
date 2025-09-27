@@ -1998,6 +1998,83 @@ body.no-scroll {
 }
 
 
+/* ======================================= */
+/* Mobile and Tablet Responsiveness (Fixes)*/
+/* ======================================= */
+
+@media (max-width: 768px) {
+
+    /* 1. Hero Section: Reduce padding */
+    .publications-hero {
+        padding-top: 130px;
+        padding-bottom: 60px;
+    }
+    
+    .hero-stats {
+        flex-wrap: wrap; /* Allow stats to wrap if screen is very small */
+        gap: 30px 15px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem; /* Slightly smaller for mobile */
+    }
+
+
+    /* 2. Publication Filters: Stack Elements */
+    .filters-container {
+        /* Force the filter tabs and search box to stack vertically */
+        flex-direction: column;
+        align-items: stretch; /* Make children take full width */
+        gap: 25px;
+    }
+
+    .search-sort {
+        /* Stack the search box and sort dropdown vertically */
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-box,
+    .search-box input,
+    .sort-select {
+        /* Force search input and dropdown to use full available width */
+        width: 100%;
+        /* Remove fixed width from search input */
+    }
+
+    /* 3. Featured Grid: Force Single Column */
+    .featured-grid {
+        /* Override the minmax(450px) rule for small screens */
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    /* 4. Reduce Section Padding */
+    .featured-publications,
+    .all-publications,
+    .research-metrics {
+        padding: 60px 0;
+    }
+
+    /* 5. Metrics Grid: Ensure proper wrap */
+    .metrics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    /* 6. Publication Item Details */
+    .publication-item {
+        padding: 20px; /* Smaller padding on mobile cards */
+    }
+    
+    .publication-item h3 {
+        font-size: 1.15rem; /* Smaller title size */
+    }
+}
+
+
 
 
 
