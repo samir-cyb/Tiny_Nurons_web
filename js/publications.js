@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 120
     });
 
-const publicationsData = [
+    const publicationsData = [
         
         {
             id: 1,
@@ -18,6 +18,7 @@ const publicationsData = [
             year: 2025,
             type: "Journal Article",
             citations: 7,
+            doi: "https://doi.org/10.1109/NCIM65934.2025.11160134", // ADD THIS LINE
             abstract: "Preeclampsia is a serious pregnancy complication characterized by hypertension and proteinuria that can result in severe maternal and fetal morbidity. Early prediction and timely intervention are essential to improve outcomes. The purpose of this study was to evaluate the effectiveness of several machine learning models in predicting preeclampsia by focusing on their ability to minimize false negatives and enhance clinical decision making. A publicly available dataset comprising patient records was used for model evaluation. Several machine learning models, including Logistic Regression (LR), Passive Aggressive Classifier (PAC), Extra Trees Classifier (ETC), Support Vector Machines (SVM), and CatBoost, were implemented. F1-score, precision, recall, sensitivity and specificity were calculated to measure the performance. Among the models tested, CatBoost outperformed the others, achieving the highest AUC of 0.9992 and an F1 score of 0.9812, demonstrating its strong predictive capability. SVM,LR, ETC, and PAC also showed competitive performance, while Random Forest exhibited the weakest classification ability. These findings highlight the potential of machine learning models, particularly CatBoost, in predicting preeclampsia conditions. The integration of such models into clinical practice could enhance early prediction and intervention, ultimately enhancing maternal and fetal health outcomes. Future studies should concentrate on integrating these models into clinical decision support systems and validating them using diverse datasets to further optimize their applicability in real-world settings.",
             contributions: [
                 "Comprehensive Model Comparison – The study evaluated multiple machine learning models (LR, PAC, ETC, SVM, CatBoost, and Random Forest) on preeclampsia prediction, providing a systematic performance comparison using clinically relevant metrics",
@@ -41,6 +42,7 @@ const publicationsData = [
             year: 2025,
             type: "journal",
             citations: 1,
+            doi: "",
             abstract: "Preeclampsia prediction is a critical aspect of maternal health which enables early diagnosis and intervention for better maternal and fetal outcomes. However, preeclampsia prediction remains a challenging task due to diverse patient demographics, varying clinical practices, and limited resources. Traditional diagnostic methods often rely on clinical measurements like blood pressure and proteinuria, which can be expensive and time-consuming. This study proposes TabM, a parameter-efficient and interpretable deep learning-based model uniquely tailored for real-time preeclampsia prediction in low resource settings. The model was trained on datasets from both online and local hospital sources which include features such as maternal age, blood pressure levels and protein-to-creatinine ratios. Despite one dataset being small, the model incorporates domain adaptation strategies and external testing to enhance generalizability. Even in low-resource environments, TabM operates effectively using its ensemble learning mechanism and compact architecture, making it suitable for edge deployment. TabM outperformed traditional machine learning models including XGBoost, Random Forest, and Logistic Regression, achieving an AUCof 0.975. Furthermore, SHAP-based error analysis and confusion matrix breakdowns ensure transparency decision-making in clinical environments. This study highlights the potential of TabM to enhance preeclampsia prediction, making it an ideal solution for real-time clinical application in resource-constraints and diverse-healthcare environments.",
             contributions: [
                 "Novel Parameter-Efficient Deep Learning Model – The study introduces TabM, a compact and interpretable deep learning model specifically designed for real-time preeclampsia prediction in low-resource healthcare settings.",
@@ -85,6 +87,7 @@ const publicationsData = [
             year: 2023,
             type: "journal",
             citations: 34,
+            doi: "https://doi.org/10.1109/ACCESS.2023.3328536",
             abstract: "The traditional Know Your Customer (KYC) procedure used by banks is deemed unreliable and costly. Therefore, the adoption of emerging technologies is essential for banking firms' future prospects. One such technology that has gained widespread acceptance is Blockchain, which is known for its reliability and security across various fields. This study aims to investigate how the implementation of Blockchain technology can modify the existing banking business, particularly the KYC document verification process, by storing and monitoring of information. The current need for an optimized KYC system is paramount; one that is coupled with a secure and trustworthy technology like Blockchain that can withstand fraudulent activities while also overcoming scalability and privacy challenges. The article analyzes previous relevant works, which highlight how the implementation of Blockchain technology eliminates the need for intermediaries, thereby reducing the possibility of malicious activities and errors that may occur when there are multiple manual tasks involved. ",
             contributions: [
                 "Critical Analysis of Traditional KYC Limitations – The study identifies the inefficiencies, high costs, and unreliability of conventional KYC procedures in banking.",
@@ -108,6 +111,7 @@ const publicationsData = [
             year: 2024,
             type: "Journal",
             citations: 28,
+            doi: "https://www.sciencedirect.com/science/article/pii/S0045790624005524",
             abstract: "Phishing emails continue to pose a significant threat, causing financial losses and security breaches. This study addresses limitations in existing research, such as reliance on proprietary datasets and lack of real-world application, by proposing a high-performance machine learning model for email classification. Utilizing a comprehensive and largest available public dataset, the model achieves a f1 score of 0.99 and is designed for deployment within relevant applications. Additionally, Explainable AI (XAI) is integrated to enhance user trust. This research offers a practical and highly accurate solution, contributing to the fight against phishing by empowering users with a real-time web-based application for phishing email detection.",
             contributions: [
                 "High-Performance Machine Learning Model – The study proposes a robust model for phishing email classification, achieving an F1-score of 0.99 using the largest available public dataset.",
@@ -130,6 +134,7 @@ const publicationsData = [
             year: 2023,
             type: "conference",
             citations: 8,
+            doi: "https://ui.adsabs.harvard.edu/link_gateway/2023arXiv230708050A/doi:10.48550/arXiv.2307.08050",
             abstract: "The COVID-19 pandemic has caused a surge in the use of online delivery services, which rely on user-generated content to promote collaborative consumption. Although Online Food Delivery (OFD) is a popular delivery system in Bangladesh, it has yet to ensure item authenticity, especially with the increasing demand for lightweight commodity delivery services across the country. The authenticity of products, involvement of multiple parties, and fair exchange are all challenging aspects of coast-to-coast services. Therefore, it is necessary for the three entities involved in the supply chain transaction - Seller, Carrier, and Buyer - to establish at least two peer-to-peer operations to ensure reliability and efficiency. To address these limitations and meet consumer expectations, the study proposes a framework for a nationwide on-demand marketplace for lightweight commodity items and a delivery system. Furthermore, transaction details are stored in a Blockchain to ensure the transparency and reliability of the proposed system.",
             contributions: [
                 "Blockchain-Based Nationwide Delivery Framework – The study proposes a secure and transparent system for lightweight commodity delivery in Bangladesh, leveraging blockchain to ensure transaction reliability among sellers, carriers, and buyers.",
@@ -150,7 +155,7 @@ const publicationsData = [
             authors: "Kaniz Fatema Antora, Naser Abdullah Alam, Mohammed Al-Thani, Abdulla Al-Subaiey, Ahasanur Rahman, Kevin Kunjukutty Thomas, SM Zaman, Amith Khandakar",
             venue: "",
             year: 2023,
-            type: "workshop",
+            type: "conference",
             citations: 23,
             abstract: "The proliferation of fake images online poses a significant challenge. According to a 2022 RAND Corporation study, this issue is estimated to cost businesses $10 billion annually. Fake images erode trust and can have detrimental effects, as highlighted by a 2020 Pew Research Center survey revealing that 64% of Americans are concerned about the spread of disinformation. This work introduces a novel blockchain-based system for image authentication. The system leverages the secure and transparent ledger offered by Sepholia Testnet to create an immutable record of an image's authenticity. This is achieved by capturing and storing a cryptographic hash of the image, alongside relevant metadata, on the blockchain. Users can verify image originality by comparing a calculated hash with the one stored on the blockchain. This approach provides enhanced security, transparency, and decentralization compared to traditional methods. Furthermore, the potential integration of a deep learning model for image analysis offers additional benefits. This could significantly reduce the time spent verifying image authenticity, potentially by as much as 50% according to a 2019 Poynter Institute study focusing on journalists grappling with the vast volume of online content.",
             contributions: [
@@ -392,7 +397,7 @@ const publicationsData = [
             year: 2025,
             type: "Conference",
             citations: 1,
-            abstract: "Coronary Artery Disease (CAD) is a leading cause of death worldwide, emphasizing the need for early and accurate detection. This study proposes a dual-branch deep learning model using Coronary Angiography (CAG) images, integrating EfficientNet-B0 for feature extraction, CBAM for attention to stenotic regions, and Grad-CAM for visual interpretability. A Bayesian layer refines predictions by incorporating prior medical knowledge by improving diagnostic reliability. Trained on the CADICA dataset, the model achieved 99.75\% accuracy, with high precision, recall and F1-scores across both CAD-positive and negative cases. Compared to state-of-the-art methods, the proposed structure offers superior performance and a lightweight architecture suitable for low-resource settings. The strong accuracy and interpretability of the model make it a practical tool for early CAD diagnosis in clinical environments.",
+            abstract: "Coronary Artery Disease (CAD) is a leading cause of death worldwide, emphasizing the need for early and accurate detection. This study proposes a dual-branch deep learning model using Coronary Angiography (CAG) images, integrating EfficientNet-B0 for feature extraction, CBAM for attention to stenotic regions, and Grad-CAM for visual interpretability. A Bayesian layer refines predictions by incorporating prior medical knowledge by improving diagnostic reliability. Trained on the CADICA dataset, the model achieved 99.75\\% accuracy, with high precision, recall and F1-scores across both CAD-positive and negative cases. Compared to state-of-the-art methods, the proposed structure offers superior performance and a lightweight architecture suitable for low-resource settings. The strong accuracy and interpretability of the model make it a practical tool for early CAD diagnosis in clinical environments.",
             contributions: [
                 "Novel Dual-Branch Deep Learning Architecture – The study introduces a dual-branch model combining EfficientNet-B0 for robust feature extraction, CBAM for focusing on stenotic regions, and Grad-CAM for visual interpretability.",
                 "Integration of Bayesian Learning – By incorporating a Bayesian layer, the model enhances diagnostic reliability through the inclusion of prior medical knowledge.",
@@ -432,13 +437,13 @@ const publicationsData = [
 
         {
             id: 19,
-            title: "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML for Mechanical Arm Control in Low-Resource Settings",
+            title: "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML for Mechanical Arm Control in Low-Resource Settings",
             authors: "Fazlay Rabby and Md. Rifat Aknda and Mumtahina Tasnim Mahi and Shaikh Radwan Ahmed Ratul and Bahadur Zaman Shezan",
             venue: "2nd IEEE Conference on Computing Applications and Systems (COMPAS)",
             year: 2025,
             type: "Conference",
             citations: 1,
-            abstract: "This study introduces TinySenseNet, a lightweight, memory-efficient deep learning model for real-time control of robotic arms through surface electromyography (sEMG) and inertial measurement unit (IMU) signal fusion, optimized for deployment on low-power embedded systems. The system leverages a 1D convolutional pipeline with an attention mechanism to extract and fuse multimodal features within a 150ms time window, enabling low-latency gesture recognition using TinyML. A custom hardware setup combining an ESP32 MCU, MyoArmband, and PCA9685-controlled MG996R servos delivers precise 6-DoF articulation with power-aware safety mechanisms. Extensive evaluation across controlled lab settings, real-world noisy environments, and clinical trials with transradial amputees demonstrates superior robustness and generalizability. TinysenseNet achieves 95.7% accuracy for amputees, 93.3% in real-world settings, and 97.2% for able-bodied users, outperforming CNN, SVM, and LSTM baselines by a significant margin. The model occupies only 1.46KB, with 23.8ms latency. The key features of this study are cross-modal delay features, confidence-based actuation with haptic feedback, and a culturally adapted gesture set. This work presents an affordable, scalable, clinically viable solution for intelligent mechanical control in low-resource environments.",
+            abstract: "This study introduces TinySenseNet, a lightweight, memory-efficient deep learning model for real-time control of robotic arms through surface electromyography (sEMG) and inertial measurement unit (IMU) signal fusion, optimized for deployment on low-power embedded systems. The system leverages a 1D convolutional pipeline with an attention mechanism to extract and fuse multimodal features within a 150ms time window, enabling low-latency gesture recognition using TinyML. A custom hardware setup combining an ESP32 MCU, MyoArmband, and PCA9685-controlled MG996R servos delivers precise 6-DoF articulation with power-aware safety mechanisms. Extensive evaluation across controlled lab settings, real-world noisy environments, and clinical trials with transradial amputees demonstrates superior robustness and generalizability. TinysenseNet achieves 95.7% accuracy for amputees, 93.3% in real-world settings, and 97.2% for able-bodied users, outperforming CNN, SVM, and LSTM baselines by a significant margin. The model occupies only 1.46KB, with 23.8ms latency. The key features of this study are cross-modal delay features, confidence-based actuation with haptic feedback, and a culturally adapted gesture set. This work presents an affordable, scalable, clinically viable solution for intelligent mechanical control in low-resource environments.",
             contributions: [
                 "Lightweight Multimodal Deep Learning Model – TinySenseNet fuses sEMG and IMU signals using a 1D CNN with attention, achieving low-latency gesture recognition (150ms) and optimized for deployment on low-power embedded systems (TinyML).",
                 "Hardware-Integrated Real-Time Robotic Arm Control – The system uses ESP32, Myo Armband, and PCA9685-controlled MG996R servos to deliver precise 6-DoF articulation with power-aware safety mechanisms.",
@@ -456,13 +461,13 @@ const publicationsData = [
 
         {
             id: 20,
-            title: "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt",
+            title: "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt",
             authors: "Fazlay Rabby and Mohammad Hridoy Hossain and Md. Rifat Aknda and Bahadur Zaman Shezan and Sanjida Salwa Mou",
             venue: "2nd IEEE Conference on Computing Applications and Systems (COMPAS)",
             year: 2025,
             type: "Conference",
             citations: 1,
-            abstract: "Early and precise detection of brain tumors remains a major challenge in clinical radiology, particularly in real time applications. This study introduces a novel hybrid deep learning framework that combines YOLOv11 for rapid tumor localization with MONAI’s MedNeXt for advanced 3D classification and grading. Leveraging a clinically annotated, locally sourced dataset of 3,500 MRI scans along with two benchmark datasets, the system addresses key challenges of accuracy, interpretability, and deployment readiness. YOLOv11 integrates a hybrid CSPDarknet–Swin Transformer backbone with anchor-free detection and Soft-NMS refinement for precise localization across diverse tumor morphologies. MedNeXt, enhanced with SimCLR-based contrastive pretraining, attention mechanisms, and multi-head classification, accurately distinguishes tumor type and severity. The pipeline incorporates Grad-CAM++ for explainability and Monte Carlo Dropout for uncertainty estimation, ensuring clinical transparency and decision support. Optimized using ONNX and TensorRT, the system supports PACS/DICOM and EMR integration for real-time inference in hospital environments. The model achieves state-of-the-art results—99.60% accuracy, 99.76% precision, 99.52% recall, and 99.64% F1-score—outperforming leading architectures like InceptionNetv4 and EfficientNetB0. Designed with a focus on deployment in resource-constrained settings, this framework advances AI-assisted radiology by offering a robust, interpretable, and scalable solution for brain tumor diagnostics.",
+            abstract: "Early and precise detection of brain tumors remains a major challenge in clinical radiology, particularly in real time applications. This study introduces a novel hybrid deep learning framework that combines YOLOv11 for rapid tumor localization with MONAI’s MedNeXt for advanced 3D classification and grading. Leveraging a clinically annotated, locally sourced dataset of 3,500 MRI scans along with two benchmark datasets, the system addresses key challenges of accuracy, interpretability, and deployment readiness. YOLOv11 integrates a hybrid CSPDarknet–Swin Transformer backbone with anchor-free detection and Soft-NMS refinement for precise localization across diverse tumor morphologies. MedNeXt, enhanced with SimCLR-based contrastive pretraining, attention mechanisms, and multi-head classification, accurately distinguishes tumor type and severity. The pipeline incorporates Grad-CAM++ for explainability and Monte Carlo Dropout for uncertainty estimation, ensuring clinical transparency and decision support. Optimized using ONNX and TensorRT, the system supports PACS/DICOM and EMR integration for real-time inference in hospital environments. The model achieves state-of-the-art results—99.60% accuracy, 99.76% precision, 99.52% recall, and 99.64% F1-score—outperforming leading architectures like InceptionNetv4 and EfficientNetB0. Designed with a focus on deployment in resource-constrained settings, this framework advances AI-assisted radiology by offering a robust, interpretable, and scalable solution for brain tumor diagnostics.",
             contributions: [
                 "Hybrid Deep Learning Framework – The study introduces a novel pipeline combining YOLOv11 for rapid tumor localization with MONAI’s MedNeXt for advanced 3D tumor classification and grading.",
                 "High Accuracy and State-of-the-Art Performance – Evaluated on 3,500 locally sourced MRI scans and benchmark datasets, the system achieves 99.60% accuracy, outperforming leading architectures like InceptionNetv4 and EfficientNetB0.",
@@ -476,11 +481,6 @@ const publicationsData = [
             ],
             featured: false
         },
-
-
-
-
-
     ];
 
     // Pagination variables
@@ -553,7 +553,9 @@ const publicationsData = [
         // Filter by type
         let filtered = publicationsData.filter(pub => {
             if (currentFilter === 'all') return true;
-            return pub.type === currentFilter;
+            const pubTypeNormalized = pub.type.toLowerCase().replace(/\s+/g, '');
+            const filterNormalized = currentFilter.toLowerCase().replace(/\s+/g, '');
+            return pubTypeNormalized.includes(filterNormalized);
         });
         
         // Filter by search term
@@ -599,10 +601,10 @@ const publicationsData = [
         
         if (pagePublications.length === 0) {
             container.innerHTML = `
-                <div class="no-publications">
-                    <i class="fas fa-search"></i>
+                <div class="no-publications" style="text-align: center; padding: 40px 20px; color: #6c757d;">
+                    <i class="fas fa-exclamation-circle" style="font-size: 3rem; margin-bottom: 1rem;"></i>
                     <h3>No publications found</h3>
-                    <p>Try adjusting your search terms or filters</p>
+                    <p>Try adjusting your search terms or filters.</p>
                 </div>
             `;
             return;
@@ -614,14 +616,13 @@ const publicationsData = [
         });
     }
 
-    // Create publication card (UPDATED - removed abstract and resource buttons)
+    // Create publication card
     function createPublicationCard(pub, index) {
         const card = document.createElement('div');
         card.className = 'publication-item glass-card';
         card.setAttribute('data-aos', 'fade-up');
         card.setAttribute('data-aos-delay', (index * 100).toString());
         
-        // Helper function to get display type name
         const getDisplayType = (pubType) => {
             const typeLabels = {
                 'journal': 'Journal Article',
@@ -634,7 +635,6 @@ const publicationsData = [
             return typeLabels[normalizedType] || pubType;
         };
 
-        // Helper function to get icon
         const getTypeIcon = (pubType) => {
             const normalizedType = pubType.toLowerCase().trim();
             switch(normalizedType) {
@@ -642,6 +642,7 @@ const publicationsData = [
                 case 'journal article':
                     return 'fa-book';
                 case 'conference':
+                case 'conference paper':
                     return 'fa-users';
                 case 'workshop':
                     return 'fa-chalkboard-teacher';
@@ -654,7 +655,7 @@ const publicationsData = [
         
         card.innerHTML = `
             <div class="publication-header">
-                <div class="publication-badge ${pub.type}">
+                <div class="publication-badge" data-type="${pub.type.toLowerCase().trim()}">
                     <i class="fas ${getTypeIcon(pub.type)}"></i>
                     <span>${getDisplayType(pub.type)}</span>
                 </div>
@@ -687,7 +688,7 @@ const publicationsData = [
         const prevBtn = document.getElementById('prev-page');
         const nextBtn = document.getElementById('next-page');
         
-        pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+        pageInfo.textContent = `Page ${currentPage} of ${totalPages > 0 ? totalPages : 1}`;
         
         prevBtn.disabled = currentPage === 1;
         nextBtn.disabled = currentPage === totalPages || totalPages === 0;
@@ -721,12 +722,13 @@ const publicationsData = [
 
     // Publication detail modal
     const modal = document.getElementById('publication-modal');
-    const modalClose = document.querySelector('.modal-close');
+    const modalClose = modal.querySelector('.modal-close');
 
     // View details functionality
     document.addEventListener('click', function(e) {
-        if (e.target.closest('.view-details-btn')) {
-            const publicationId = parseInt(e.target.closest('.view-details-btn').getAttribute('data-publication-id'));
+        const viewBtn = e.target.closest('.view-details-btn');
+        if (viewBtn) {
+            const publicationId = parseInt(viewBtn.getAttribute('data-publication-id'));
             const publication = publicationsData.find(pub => pub.id === publicationId);
             if (publication) {
                 showPublicationModal(publication);
@@ -734,60 +736,79 @@ const publicationsData = [
         }
     });
 
-    // Updated showPublicationModal function
-function showPublicationModal(pub) {
-    // Populate modal content with proper structure
+    // =======================================================
+    // == CORRECTED FUNCTION START ==
+    // =======================================================
+    function showPublicationModal(pub) {
+    // Populate static content first
     document.getElementById('modal-publication-title').textContent = pub.title;
     document.getElementById('modal-publication-authors').textContent = pub.authors;
-    document.getElementById('modal-publication-venue').textContent = pub.venue;
-    document.getElementById('modal-publication-year').textContent = pub.year;
-    document.getElementById('modal-citation-count').textContent = pub.citations;
     document.getElementById('modal-publication-abstract').textContent = pub.abstract;
 
-    // Add publication type to meta info
-    const publicationType = {
-        journal: 'Journal Article',
-        conference: 'Conference Paper', 
-        workshop: 'Workshop Paper',
-        preprint: 'Preprint'
-    }[pub.type] || pub.type;
+    // Get a mapping for publication types
+    const publicationTypeMap = {
+        'journal': 'Journal Article',
+        'journal article': 'Journal Article',
+        'conference': 'Conference Paper',
+        'conference paper': 'Conference Paper',
+        'workshop': 'Workshop Paper',
+        'preprint': 'Preprint'
+    };
+    const publicationType = publicationTypeMap[pub.type.toLowerCase().trim()] || pub.type;
 
-    // Update the meta container to include type
+    // =======================================================
+    // == UPDATED SECTION: Add DOI link to meta container ==
+    // =======================================================
     const metaContainer = document.querySelector('.modal-meta');
     metaContainer.innerHTML = `
-        <span id="modal-publication-type">
+        <span id="modal-publication-type-display">
             <i class="fas fa-file-alt"></i>
             ${publicationType}
         </span>
-        <span id="modal-publication-year">
-            <i class="fas fa-calendar"></i>
+        <span id="modal-publication-venue-display">
+            <i class="fas fa-university"></i>
+            ${pub.venue}
+        </span>
+        <span id="modal-publication-year-display">
+            <i class="fas fa-calendar-alt"></i>
             ${pub.year}
         </span>
-        <span id="modal-publication-citations">
+        <span id="modal-publication-citations-display">
             <i class="fas fa-quote-right"></i>
-            <span id="modal-citation-count">${pub.citations}</span> citations
+            ${pub.citations} citations
         </span>
+        ${pub.doi ? `
+        <span id="modal-publication-doi-display">
+            <i class="fas fa-external-link-alt"></i>
+            <a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" class="doi-link">
+                DOI: ${pub.doi}
+            </a>
+        </span>
+        ` : ''}
     `;
-
-    // Populate contributions
+    // =======================================================
+    // == END OF UPDATED SECTION ==
+    // =======================================================
+    
+    // Populate contributions list
     const contributionsList = document.getElementById('modal-publication-contributions');
-    contributionsList.innerHTML = '';
+    contributionsList.innerHTML = ''; // Clear previous content
     pub.contributions.forEach(contribution => {
         const li = document.createElement('li');
         li.textContent = contribution;
         contributionsList.appendChild(li);
     });
 
-    // Populate resources
+    // Populate resources links
     const resourcesContainer = document.getElementById('modal-publication-resources');
-    resourcesContainer.innerHTML = '';
+    resourcesContainer.innerHTML = ''; // Clear previous content
     pub.resources.forEach(resource => {
         const iconMap = {
             pdf: 'fa-file-pdf',
             code: 'fa-code',
             dataset: 'fa-database',
             demo: 'fa-play-circle',
-            slides: 'fa-presentation',
+            slides: 'fa-file-powerpoint',
             video: 'fa-video',
             model: 'fa-brain'
         };
@@ -797,6 +818,13 @@ function showPublicationModal(pub) {
         link.className = 'btn btn-outline resource-btn';
         link.setAttribute('data-resource-type', resource.type);
         link.setAttribute('data-resource-label', resource.label);
+        
+        // Open external links in a new tab for better user experience
+        if (resource.link && resource.link !== '#') {
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+        }
+        
         link.innerHTML = `
             <i class="fas ${iconMap[resource.type] || 'fa-link'}"></i>
             <span>${resource.label}</span>
@@ -804,25 +832,34 @@ function showPublicationModal(pub) {
         resourcesContainer.appendChild(link);
     });
 
-    // Show modal
+    // Show the modal
     modal.classList.add('active');
     document.body.classList.add('no-scroll');
 }
 
-    // Close modal functionality
-    modalClose.addEventListener('click', function() {
-        modal.classList.remove('active');
-        document.body.classList.remove('no-scroll');
-    });
 
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
+    
+    // =======================================================
+    // == CORRECTED FUNCTION END ==
+    // =======================================================
+
+    // Close modal functionality
+    if (modalClose) {
+        modalClose.addEventListener('click', function() {
             modal.classList.remove('active');
             document.body.classList.remove('no-scroll');
-        }
-    });
+        });
+    }
 
-    // Escape key to close modal
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    }
+
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             modal.classList.remove('active');
@@ -836,16 +873,14 @@ function showPublicationModal(pub) {
         const cancelRequestBtn = document.getElementById('cancel-request');
         const successOkBtn = document.getElementById('success-ok');
 
-        // Handle resource button clicks (now only in modal)
         document.addEventListener('click', function(e) {
-            if (e.target.closest('.resource-btn')) {
-                e.preventDefault();
-                const resourceBtn = e.target.closest('.resource-btn');
+            const resourceBtn = e.target.closest('.resource-btn');
+            if (resourceBtn) {
                 const resourceType = resourceBtn.getAttribute('data-resource-type');
                 const resourceLabel = resourceBtn.getAttribute('data-resource-label');
                 
-                // Only show modal for dataset and model resources
                 if (resourceType === 'dataset' || resourceType === 'model') {
+                    e.preventDefault();
                     currentRequestedResource = resourceLabel;
                     document.getElementById('requested-resource').value = resourceLabel;
                     showDatasetModal();
@@ -853,114 +888,93 @@ function showPublicationModal(pub) {
             }
         });
 
-        // Show dataset modal
         function showDatasetModal() {
             datasetModal.classList.add('active');
             document.body.classList.add('no-scroll');
         }
 
-        // Close dataset modal
         function closeDatasetModal() {
             datasetModal.classList.remove('active');
-            document.body.classList.remove('no-scroll');
+            if (!publicationModal.classList.contains('active')) {
+                 document.body.classList.remove('no-scroll');
+            }
             datasetRequestForm.reset();
         }
 
-        // Show success modal
         function showSuccessModal() {
-            datasetModal.classList.remove('active');
+            closeDatasetModal();
             successModal.classList.add('active');
         }
 
-        // Close success modal
         function closeSuccessModal() {
             successModal.classList.remove('active');
-            document.body.classList.remove('no-scroll');
+            if (!publicationModal.classList.contains('active')) {
+                 document.body.classList.remove('no-scroll');
+            }
         }
 
-        // Form submission
         datasetRequestForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Here you would typically send the form data to a server
-            // For now, we'll just show the success message
             showSuccessModal();
         });
 
-        // Cancel request
         cancelRequestBtn.addEventListener('click', closeDatasetModal);
-
-        // Success modal OK button
         successOkBtn.addEventListener('click', closeSuccessModal);
 
-        // Close modals when clicking outside
-        datasetModal.addEventListener('click', function(e) {
-            if (e.target === datasetModal) {
-                closeDatasetModal();
-            }
-        });
+        datasetModal.addEventListener('click', e => e.target === datasetModal && closeDatasetModal());
+        successModal.addEventListener('click', e => e.target === successModal && closeSuccessModal());
 
-        successModal.addEventListener('click', function(e) {
-            if (e.target === successModal) {
-                closeSuccessModal();
-            }
-        });
-
-        // Escape key to close modals
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', e => {
             if (e.key === 'Escape') {
-                if (datasetModal.classList.contains('active')) {
-                    closeDatasetModal();
-                } else if (successModal.classList.contains('active')) {
-                    closeSuccessModal();
-                }
+                if (datasetModal.classList.contains('active')) closeDatasetModal();
+                if (successModal.classList.contains('active')) closeSuccessModal();
             }
         });
     }
 
     // Back to top button
     const backToTopBtn = document.querySelector('.back-to-top');
-    
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('visible');
-        } else {
-            backToTopBtn.classList.remove('visible');
-        }
-        
-        // Navbar scroll effect
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-    
-    backToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if(backToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
         });
-    });
+        
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // Count up animation for stats
     const statNumbers = document.querySelectorAll('.stat-number, .metric-value');
-    const observerOptions = {
-        threshold: 0.5
-    };
-    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const statNumber = entry.target;
                 const target = parseInt(statNumber.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
                 let current = 0;
+                const duration = 2000;
+                const stepTime = 16;
+                const totalSteps = duration / stepTime;
+                const increment = target / totalSteps;
                 
                 const updateCount = () => {
-                    current += step;
+                    current += increment;
                     if (current < target) {
                         statNumber.textContent = Math.floor(current);
                         requestAnimationFrame(updateCount);
@@ -973,61 +987,9 @@ function showPublicationModal(pub) {
                 observer.unobserve(statNumber);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.5 });
     
-    statNumbers.forEach(stat => {
-        observer.observe(stat);
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Ripple effect for buttons
-    const buttons = document.querySelectorAll('.btn');
-    
-    buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            const x = e.clientX - e.target.getBoundingClientRect().left;
-            const y = e.clientY - e.target.getBoundingClientRect().top;
-            
-            const ripple = document.createElement('span');
-            ripple.classList.add('ripple-effect');
-            ripple.style.left = `${x}px`;
-            ripple.style.top = `${y}px`;
-            
-            this.appendChild(ripple);
-            
-            setTimeout(() => {
-                ripple.remove();
-            }, 600);
-        });
-    });
-
-    // Featured publications hover effect
-    const featuredPublications = document.querySelectorAll('.featured-publication');
-    featuredPublications.forEach(pub => {
-        pub.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px)';
-        });
-        
-        pub.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
+    statNumbers.forEach(stat => observer.observe(stat));
 
     // Hide loader when page is loaded
     window.addEventListener('load', function() {
@@ -1043,76 +1005,10 @@ function showPublicationModal(pub) {
     // Initialize the page
     applyFilters();
     setupDatasetModal();
-    
-    // Auto-refresh AOS on dynamic content
-    const publicationsContainer = document.getElementById('publications-container');
-    const publicationObserver = new MutationObserver(() => {
-        AOS.refresh();
-    });
-    
-    publicationObserver.observe(publicationsContainer, {
-        childList: true,
-        subtree: true
-    });
-
-    // Keyboard navigation for filters
-    filterTabs.forEach((tab, index) => {
-        tab.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowLeft' && index > 0) {
-                filterTabs[index - 1].focus();
-                filterTabs[index - 1].click();
-            } else if (e.key === 'ArrowRight' && index < filterTabs.length - 1) {
-                filterTabs[index + 1].focus();
-                filterTabs[index + 1].click();
-            }
-        });
-        
-        tab.setAttribute('tabindex', '0');
-        tab.setAttribute('role', 'button');
-    });
-
-    // Publication card animations
-    const publicationCards = document.querySelectorAll('.publication-item, .featured-publication');
-    const cardObserverOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const cardObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, cardObserverOptions);
-
-    // Observe existing cards
-    publicationCards.forEach(card => {
-        cardObserver.observe(card);
-    });
-
-    // CTA section interactions
-    const ctaButtons = document.querySelectorAll('.cta-buttons .btn');
-    ctaButtons.forEach(button => {
-        button.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-3px) scale(1.05)';
-        });
-        
-        button.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
 });
 
-// Highlight current page in navigation
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-const navLinks = document.querySelectorAll('.nav-links a');
 
-navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-    if (linkHref === currentPage || 
-        (currentPage === 'index.html' && linkHref === '/') || 
-        (currentPage === '' && linkHref === 'index.html')) {
-        link.classList.add('active');
-    }
-});
+
+
+
+

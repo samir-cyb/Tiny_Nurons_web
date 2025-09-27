@@ -1843,7 +1843,159 @@ body.no-scroll {
     text-align: center;
 }
 
+/* Add this to better manage space on tablets/smaller desktops */
+@media (max-width: 992px) {
+    .navbar .container {
+        /* Ensure the container uses all available space, but adds padding */
+        padding: 0 15px;
+    }
 
+    .nav-links {
+        /* This is the key change to ensure all links/buttons align */
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Reduce gap between elements to save horizontal space */
+    }
+
+    /* Reduce the button's padding to make it smaller on mobile/tablet */
+    .nav-links .btn {
+        padding: 8px 15px; 
+        font-size: 0.85rem; /* Make the text smaller */
+    }
+    
+    /* Hide the text/icon in the button for even smaller phones if needed */
+    @media (max-width: 768px) {
+        .nav-links .btn span {
+            display: none; /* Hide the "Collaborate With Us" text */
+        }
+        .nav-links .btn i {
+            margin: 0; /* Remove margin if only the icon is left */
+        }
+        .nav-links .btn {
+            padding: 8px 12px; /* Small icon-only button */
+        }
+    }
+}
+
+
+
+/* ============================================= */
+/* ==  Modal Header and Title Layout Fix      == */
+/* ============================================= */
+
+/* 1. Force the header to stack content vertically */
+.publication-modal .modal-header {
+    display: block; /* This is the main fix */
+    width: 100%;
+    text-align: center;
+    border-bottom: none; /* Remove the old border */
+    margin-bottom: 0;
+}
+
+/* 2. Style the title to be at the top and full-width */
+#modal-publication-title {
+    width: 100%;
+    font-size: 2.1rem; /* Adjust size as needed */
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    /* Add a border below the title to separate it */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 3. Style the authors list to appear cleanly below the title */
+.publication-modal .modal-authors {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* 4. Center the meta information (type, venue, year, citations) */
+.publication-modal .modal-meta {
+    justify-content: center;
+}
+
+/* 5. Hide the old, misplaced badge */
+.publication-modal .modal-header > .modal-badge {
+    display: none;
+}
+
+/* ======================================================= */
+/* ==  Responsive Fix for Publication Modal (Mobile)  == */
+/* ======================================================= */
+
+/* For tablets and larger phones (screens <= 768px) */
+@media (max-width: 768px) {
+    #modal-publication-title {
+        font-size: 1.7rem; /* Reduce title font size */
+        line-height: 1.3;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .publication-modal .modal-authors {
+        font-size: 1rem; /* Reduce authors font size */
+        margin-bottom: 15px;
+    }
+
+    .publication-modal .modal-meta {
+        gap: 15px; /* Reduce the gap between meta items */
+        padding: 0; /* Remove horizontal padding for more space */
+    }
+
+    .publication-modal .modal-meta span {
+        font-size: 0.9rem; /* Make meta text slightly smaller */
+    }
+}
+
+/* For smaller mobile phones (screens <= 576px) */
+@media (max-width: 576px) {
+    #modal-publication-title {
+        font-size: 1.5rem; /* Further reduce title size for small screens */
+    }
+
+    /* Stack the meta items vertically for the best readability */
+    .publication-modal .modal-meta {
+        flex-direction: column; /* This is the key change: stack items vertically */
+        align-items: center;    /* Center-align the stacked items */
+        gap: 12px;              /* Adjust gap for vertical layout */
+    }
+}
+
+
+
+
+/* DOI Link Styles */
+#modal-publication-doi-display {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 5px;
+}
+
+.doi-link {
+    color: #4cbce8 !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: rgba(76, 188, 232, 0.1);
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(76, 188, 232, 0.3);
+}
+
+.doi-link:hover {
+    color: white !important;
+    background: rgba(76, 188, 232, 0.3);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* Ensure DOI link is properly styled in modal */
+.modal-meta #modal-publication-doi-display {
+    display: inline-flex !important;
+}
 
 
 

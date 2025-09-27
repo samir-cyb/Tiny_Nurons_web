@@ -16,8 +16,22 @@ document.addEventListener('DOMContentLoaded', function() {
             expertise: "Biomedical signal processing | Pattern recognition | Internet of Things | TinyML",
             about: "Fazlay Rabby leads our AI research initiatives with over 3 years of experience in machine learning algorithms.",
             publications: [
+                "Preeclampsia Prediction Using Machine Learning with Electronic Medical Records in Low-Resource Settings (NCIM 2025)",
+
                 "Scalable Hand Gesture Recognition from Surface Electromyography (sEMG) Signals Using a Hybrid Deep Learning Model Evaluated on Diverse Datasets (2025 9th International Conference on Electrical, Electronics, and Information Engineering).",
+
                 "A Parameter-Efficient Deep Learning Model for Preeclampsia Prediction Using Diverse Datasets in Low-Resource Settings.(Qpain 2025)",
+
+                "Early-Stage Coronary Artery Disease Prediction Using Coronary Angiogram for Stenosis Detection in Low-Resource Settings.(BIM 2025)",
+
+                "Scalable sEMG-Based User-Independent Deep Learning Framework for Assistive Wheelchair Control (BIM 2025)",
+
+                "TinySenseNet: A Lightweight sEMG-IMU Fusion Network Using TinyML for Mechanical Arm Control in Low-Resource Settings (2nd IEEE Conference on Computing Applications and Systems (COMPAS))",
+
+                "Real-Time Brain Tumor Localization and Classification Using YOLOv11 and MONAI MedNeXt (2nd IEEE Conference on Computing Applications and Systems (COMPAS))" 
+
+
+
             ],
             education: [
                 "BSc in Electrical and Electronic Engineering, University of Liberal Arts Bangladesh",
