@@ -2075,4 +2075,69 @@ body.no-scroll {
 }
 
 
+/* ======================================= */
+/* Mobile and Tablet Responsiveness FIX    */
+/* ======================================= */
+
+@media (max-width: 992px) {
+    /* 1. General Section Padding */
+    .publications-hero,
+    .featured-publications,
+    .all-publications,
+    .research-metrics {
+        padding: 50px 0; /* Reduce all vertical padding on sections */
+    }
+
+    /* 2. Publication Filters: Critical Fix */
+    .filters-container {
+        /* Forces the filter tabs and the search/sort box to stack */
+        flex-direction: column;
+        align-items: stretch; /* Ensures they both take full width */
+        gap: 20px;
+    }
+
+    /* 3. Search and Sort Box Layout */
+    .search-sort {
+        /* Forces the search input and the sort dropdown to stack */
+        flex-direction: column; 
+        width: 100%; /* Ensure it uses the full width of the container */
+        gap: 15px;
+    }
+
+    .search-box,
+    .search-box input,
+    .sort-select {
+        /* Ensures both elements use 100% of the available width */
+        width: 100%;
+        min-width: unset; /* Remove any desktop fixed min-width constraints */
+    }
+    
+    /* 4. Featured Grid Layout */
+    .featured-grid {
+        /* Override the desktop minmax(450px) rule, forcing a single column */
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* 5. Hero Stats Wrap */
+    .hero-stats {
+        flex-wrap: wrap; /* Allow stats boxes to wrap into multiple rows */
+        gap: 20px;
+        justify-content: space-around; /* Better spacing when wrapped */
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+}
+
+.publication-item .publication-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    float: right;
+    /* FIX: Remove the fixed, excessive margin */
+    margin-bottom: 5px; 
+}
+
 
