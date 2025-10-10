@@ -22,12 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 120
     });
 
-    // Mobile Menu Toggle
+    // Mobile Menu Toggle - Moved to main.js only
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
+            console.log('Mobile menu button clicked');
             this.classList.toggle('active');
             mobileMenu.classList.toggle('active');
             document.body.classList.toggle('no-scroll');
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileLinks = document.querySelectorAll('.mobile-menu a');
     mobileLinks.forEach(link => {
         link.addEventListener('click', function() {
+            console.log('Mobile menu link clicked');
             if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
             if (mobileMenu) mobileMenu.classList.remove('active');
             document.body.classList.remove('no-scroll');

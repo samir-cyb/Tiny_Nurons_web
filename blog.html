@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Neurons | Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-icon.png">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <img src="images/logo-icon.png" alt="Tiny Neurons">
+            </div>
+            <div class="loader-text">Loading Blog...</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <img src="images/logo-icon.png" alt="Logo" class="logo-icon">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-down" data-aos-delay="150">About</a>
+                <a href="researchers.html" data-aos="fade-down" data-aos-delay="200">Researchers</a>
+                <a href="projects.html" data-aos="fade-down" data-aos-delay="250">Projects</a>
+                <a href="workshop.html" data-aos="fade-down" data-aos-delay="300">Workshops</a>
+                <a href="services.html" data-aos="fade-down" data-aos-delay="350">Services</a>
+                <a href="blog.html" data-aos="fade-down" data-aos-delay="400" class="active">Blog</a>
+                <a href="publications.html" data-aos="fade-down" data-aos-delay="450">Publications</a>
+                <a href="contact.html" data-aos="fade-down" data-aos-delay="500">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="researchers.html">Researchers</a>
+        <a href="projects.html">Projects</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="blog-hero">
+        <div class="hero-bg-parallax" data-parallax="scroll" data-image-src="images/blog-bg.jpg"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Research Insights & Updates</h1>
+                <p class="subtitle">Stay updated with the latest research findings, tutorials, and insights from our team</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Search and Filter -->
+    <section id="blog-filter" class="section bg-light">
+        <div class="container">
+            <div class="filter-container" data-aos="fade-up">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="blog-search" placeholder="Search blog posts...">
+                </div>
+                <div class="filter-options">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="research">Research</option>
+                        <option value="tutorial">Tutorial</option>
+                        <option value="news">News</option>
+                        <option value="insights">Insights</option>
+                    </select>
+                    <select id="sort-filter">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="title">Title A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Latest Blog Posts</h2>
+                <p class="section-subtitle">Insights, tutorials, and research updates from our team</p>
+            </div>
+            
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically loaded here -->
+                <div class="no-posts" id="no-posts">
+                    <i class="fas fa-blog"></i>
+                    <h3>No blog posts yet</h3>
+                    <p>Check back later for updates!</p>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination" style="display: none;">
+                <button id="prev-page" class="btn btn-outline">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <div class="page-numbers" id="page-numbers"></div>
+                <button id="next-page" class="btn btn-outline">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel (Hidden by default) -->
+    <section id="admin-panel" class="section bg-light" style="display: none;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Admin Panel</h2>
+                <p class="section-subtitle">Manage your blog posts</p>
+                <button id="logout-btn" class="btn btn-outline">Logout</button>
+            </div>
+            
+            <div class="admin-actions" data-aos="fade-up">
+                <button id="add-post-btn" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add New Post
+                </button>
+            </div>
+            
+            <div class="admin-posts" id="admin-posts">
+                <!-- Admin post management will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Add/Edit Post Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close">&times;</button>
+            <h3 id="modal-title">Add New Post</h3>
+            <form id="post-form">
+                <input type="hidden" id="post-id">
+                <div class="form-group">
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-category">Category</label>
+                    <select id="post-category" name="category" required>
+                        <option value="research">Research</option>
+                        <option value="tutorial">Tutorial</option>
+                        <option value="news">News</option>
+                        <option value="insights">Insights</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Content</label>
+                    <textarea id="post-content" name="content" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="post-image">Featured Image (Optional)</label>
+                    <input type="file" id="post-image" name="image" accept="image/*" class="file-input">
+                    <div class="image-preview" id="image-preview">
+                        <p>No image selected</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="post-excerpt">Excerpt</label>
+                    <textarea id="post-excerpt" name="excerpt" rows="3" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" id="cancel-btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-btn">Save Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close">&times;</button>
+            <h3>Admin Login</h3>
+            <p>Access the admin panel to manage blog posts</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Blog Post View Modal -->
+    <div id="post-view-modal" class="modal">
+        <div class="modal-content glass-card post-view-content">
+            <button class="modal-close">&times;</button>
+            <div id="post-view-image" class="post-view-image" style="display: none;">
+                <img id="view-modal-image" src="" alt="Blog Post Image">
+            </div>
+            <div class="post-view-body">
+                <div class="post-view-meta">
+                    <span id="view-modal-category" class="blog-category">Research</span>
+                    <span class="post-view-date">
+                        <i class="far fa-calendar"></i>
+                        <span id="view-modal-date">January 1, 2024</span>
+                    </span>
+                </div>
+                <h2 id="view-modal-title">Blog Post Title</h2>
+                <div id="view-modal-content" class="post-view-text">
+                    <!-- Blog post content will be inserted here -->
+                </div>
+                <div class="post-view-actions">
+                    <button class="btn btn-outline" onclick="closePostViewModal()">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Admin Button -->
+    <button id="floating-admin-btn" class="floating-btn" title="Admin Login">
+        <i class="fas fa-user-shield"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Contact Information Column -->
+                <div class="footer-col footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p> +880 1876-419141</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p>tinyneuronsresearchgroup@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p>R39, Noorjahan road, Mohammadpur, Dhaka – 1207, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Logo and Social Media Column -->
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-icon.png" alt="Tiny Neurons Research Group Logo" class="footer-logo">
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61574543930909" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/tiny-neurons-research-group/posts/?feedView=all" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@TinyNeuronsResearchGroup" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tiny Neurons Research Group. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
