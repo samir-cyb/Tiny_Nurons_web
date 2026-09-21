@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Parallax effect
     function initParallax() {
-        if (document.querySelector('.hero-bg-parallax')) {
+        if (window.Parallax && document.querySelector('.hero-bg-parallax')) {
             new Parallax(document.querySelector('.hero-bg-parallax'));
         }
     }

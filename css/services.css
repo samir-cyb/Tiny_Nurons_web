@@ -146,3 +146,29 @@
         display: none;
     }
 }
+
+.service-card > p {
+    text-align: justify;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Update the services-grid section in services.css */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

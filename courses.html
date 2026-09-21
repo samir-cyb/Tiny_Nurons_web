@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>document.documentElement.classList.add('gsap-pre')</script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Tiny Neurons | Our Courses</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/enhance.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo-icon.png">
@@ -31,7 +33,7 @@
             <div class="nav-links">
                 <a href="index.html" data-aos="fade-down" data-aos-delay="100">Home</a>
                 <a href="about.html" data-aos="fade-down" data-aos-delay="150">About</a>
-                <a href="researchers.html" data-aos="fade-down" data-aos-delay="200">Researchers</a>
+                <!--<a href="researchers.html" data-aos="fade-down" data-aos-delay="200">Researchers</a>-->
                 <a href="projects.html" data-aos="fade-down" data-aos-delay="250">Projects</a>
                 <a href="workshop.html" data-aos="fade-down" data-aos-delay="300">Workshops</a>
                 <a href="courses.html" data-aos="fade-down" data-aos-delay="300">Courses</a>
@@ -56,7 +58,7 @@
     <div class="mobile-menu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="researchers.html">Researchers</a>
+        <!--<a href="researchers.html">Researchers</a>-->
         <a href="projects.html">Projects</a>
         <a href="workshop.html">Workshops</a>
         <a href="courses.html" class="active">Courses</a>
@@ -142,7 +144,7 @@
             <div class="courses-grid">
                 <div class="course-card" data-category="ai,ml" data-aos="fade-up" data-aos-delay="100">
                     <div class="course-image">
-                        <img src="images/1.jpeg" alt="Machine Learning Fundamentals">
+                        <img src="images/1.jpeg" alt="Machine Learning Fundamentals" loading="lazy" decoding="async">
                         <span class="course-level beginner">Beginner</span>
                     </div>
                     <div class="course-content">
@@ -162,7 +164,7 @@
                 
                 <div class="course-card" data-category="nlp" data-aos="fade-up" data-aos-delay="150">
                     <div class="course-image">
-                        <img src="images/2.jpeg" alt="Natural Language Processing">
+                        <img src="images/2.jpeg" alt="Natural Language Processing" loading="lazy" decoding="async">
                         <span class="course-level intermediate">Intermediate</span>
                     </div>
                     <div class="course-content">
@@ -182,7 +184,7 @@
                 
                 <div class="course-card" data-category="cv" data-aos="fade-up" data-aos-delay="200">
                     <div class="course-image">
-                        <img src="images/3.jpeg" alt="Computer Vision">
+                        <img src="images/3.jpeg" alt="Computer Vision" loading="lazy" decoding="async">
                         <span class="course-level intermediate">Intermediate</span>
                     </div>
                     <div class="course-content">
@@ -202,7 +204,7 @@
                 
                 <div class="course-card" data-category="data" data-aos="fade-up" data-aos-delay="250">
                     <div class="course-image">
-                        <img src="images/4.jpeg" alt="Data Analysis">
+                        <img src="images/4.jpeg" alt="Data Analysis" loading="lazy" decoding="async">
                         <span class="course-level beginner">Beginner</span>
                     </div>
                     <div class="course-content">
@@ -222,7 +224,7 @@
                 
                 <div class="course-card" data-category="ai,ml" data-aos="fade-up" data-aos-delay="300">
                     <div class="course-image">
-                        <img src="images/5.jpeg" alt="Advanced ML">
+                        <img src="images/5.jpeg" alt="Advanced ML" loading="lazy" decoding="async">
                         <span class="course-level advanced">Advanced</span>
                     </div>
                     <div class="course-content">
@@ -242,7 +244,7 @@
                 
                 <div class="course-card" data-category="ai,nlp" data-aos="fade-up" data-aos-delay="350">
                     <div class="course-image">
-                        <img src="images/6.jpeg" alt="Large Language Models">
+                        <img src="images/6.jpeg" alt="Large Language Models" loading="lazy" decoding="async">
                         <span class="course-level advanced">Advanced</span>
                     </div>
                     <div class="course-content">
@@ -261,7 +263,7 @@
                 </div>
                 <div class="course-card" data-category="cv" data-aos="fade-up" data-aos-delay="200">
                     <div class="course-image">
-                        <img src="images/7.jpeg" alt="Computer Vision">
+                        <img src="images/7.jpeg" alt="Computer Vision" loading="lazy" decoding="async">
                         <span class="course-level intermediate">Intermediate</span>
                     </div>
                     <div class="course-content">
@@ -313,7 +315,7 @@
             <button class="modal-close">&times;</button>
             <div class="modal-header">
                 <div class="modal-image">
-                    <img id="modal-course-image" src="" alt="Course">
+                    <img id="modal-course-image" src="" alt="Course" loading="lazy" decoding="async">
                 </div>
                 <div class="modal-title">
                     <h2 id="modal-course-title"></h2>
@@ -461,8 +463,10 @@
     </button>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/site.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/courses.js"></script>
 </body>

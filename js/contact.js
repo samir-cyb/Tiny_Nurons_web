@@ -192,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const statNumber = entry.target;
+                if (statNumber.getAttribute('data-counter-owner') === 'gsap') { statObserver.unobserve(statNumber); return; } // GSAP handles counters (site.js)
                 const target = parseInt(statNumber.getAttribute('data-count'));
                 const duration = 2000;
                 const step = target / (duration / 16);
